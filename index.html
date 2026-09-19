@@ -1,1234 +1,1237 @@
 <!DOCTYPE html>
 <html lang="gu" data-theme="dark">
 <head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>સેક્સ્યુઅલ હેલ્થ એન્ડ મેડિકલ અવેરનેસ પ્લેટફોર્મ</title>
- <!-- Tailwind CSS Engine -->
- <script src="https://cdn.tailwindcss.com"></script>
- <!-- Lucide Vector Icons -->
- <script src="https://unpkg.com/lucide@latest"></script>
- <script>
- tailwind.config = {
- darkMode: 'class',
- theme: {
- extend: {
- colors: {
- brand: { 50: '#ecfeff', 500: '#06b6d4', 600: '#0891b2', 700: '#0e7490', 900: '#164e63' },
- accent: { 500: '#8b5cf6', 600: '#7c3aed' },
- danger: { 500: '#f43f5e', 600: '#e11d48' },
- success: { 500: '#10b981', 600: '#059669' }
- }
- }
- }
- }
- </script>
- <style>
- /* =========================================
- ✨ PREMIUM NIGHT MODE (DARK THEME) ✨
- ========================================= */
- body:not(.light) {
- background-color: #020617; 
-background-image: 
-radial-gradient(circle at 15% 50%, rgba(8, 145, 178, 0.08) 0%, transparent 40%),
- radial-gradient(circle at 85% 30%, rgba(79, 70, 229, 0.08) 0%, transparent 40%);
- background-attachment: fixed;
- }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>સેક્સ્યુઅલ હેલ્થ એન્ડ મેડિકલ અવેરનેસ પ્લેટફોર્મ</title>
+    <!-- Tailwind CSS Engine -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide Vector Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        brand: { 50: '#ecfeff', 500: '#06b6d4', 600: '#0891b2', 700: '#0e7490', 900: '#164e63' },
+                        accent: { 500: '#8b5cf6', 600: '#7c3aed' },
+                        danger: { 500: '#f43f5e', 600: '#e11d48' },
+                        success: { 500: '#10b981', 600: '#059669' }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* =========================================
+           ✨ PREMIUM NIGHT MODE (DARK THEME) ✨
+           ========================================= */
+        body:not(.light) {
+            background-color: #020617; 
+            background-image: 
+                radial-gradient(circle at 15% 50%, rgba(8, 145, 178, 0.08) 0%, transparent 40%),
+                radial-gradient(circle at 85% 30%, rgba(79, 70, 229, 0.08) 0%, transparent 40%);
+            background-attachment: fixed;
+        }
 
- body:not(.light) .glass-card {
- background: linear-gradient(145deg, rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.4)) !important;
- backdrop-filter: blur(20px) !important;
- -webkit-backdrop-filter: blur(20px) !important;
- border: 1px solid rgba(255, 255, 255, 0.06) !important;
- box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3) !important;
- }
+        body:not(.light) .glass-card {
+            background: linear-gradient(145deg, rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.4)) !important;
+            backdrop-filter: blur(20px) !important;
+            -webkit-backdrop-filter: blur(20px) !important;
+            border: 1px solid rgba(255, 255, 255, 0.06) !important;
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3) !important;
+        }
 
- /* Hover effects for Dark Mode Cards */
- body:not(.light) .group:hover.hover\:border-cyan-500\/50 {
- border-color: rgba(6, 182, 212, 0.4) !important;
- box-shadow: 0 10px 40px -10px rgba(6, 182, 212, 0.15) !important;
- background: linear-gradient(145deg, rgba(15, 23, 42, 0.8), rgba(8, 145, 178, 0.05)) !important;
- }
- body:not(.light) .group:hover.hover\:border-indigo-500\/50 {
- border-color: rgba(79, 70, 229, 0.4) !important;
- box-shadow: 0 10px 40px -10px rgba(79, 70, 229, 0.15) !important;
- background: linear-gradient(145deg, rgba(15, 23, 42, 0.8), rgba(79, 70, 229, 0.05)) !important;
- }
- body:not(.light) .group:hover.hover\:border-rose-500\/50 {
- border-color: rgba(225, 29, 72, 0.4) !important;
- box-shadow: 0 10px 40px -10px rgba(225, 29, 72, 0.15) !important;
- background: linear-gradient(145deg, rgba(15, 23, 42, 0.8), rgba(225, 29, 72, 0.05)) !important;
- }
+        /* Hover effects for Dark Mode Cards */
+        body:not(.light) .group:hover.hover\:border-cyan-500\/50 {
+            border-color: rgba(6, 182, 212, 0.4) !important;
+            box-shadow: 0 10px 40px -10px rgba(6, 182, 212, 0.15) !important;
+            background: linear-gradient(145deg, rgba(15, 23, 42, 0.8), rgba(8, 145, 178, 0.05)) !important;
+        }
+        body:not(.light) .group:hover.hover\:border-indigo-500\/50 {
+            border-color: rgba(79, 70, 229, 0.4) !important;
+            box-shadow: 0 10px 40px -10px rgba(79, 70, 229, 0.15) !important;
+            background: linear-gradient(145deg, rgba(15, 23, 42, 0.8), rgba(79, 70, 229, 0.05)) !important;
+        }
+        body:not(.light) .group:hover.hover\:border-rose-500\/50 {
+            border-color: rgba(225, 29, 72, 0.4) !important;
+            box-shadow: 0 10px 40px -10px rgba(225, 29, 72, 0.15) !important;
+            background: linear-gradient(145deg, rgba(15, 23, 42, 0.8), rgba(225, 29, 72, 0.05)) !important;
+        }
 
- /* Input glow for Dark Mode */
- body:not(.light) input[type="text"] {
- background: rgba(15, 23, 42, 0.6) !important;
- border: 1px solid rgba(255, 255, 255, 0.1) !important;
- color: #f8fafc !important;
- }
- body:not(.light) input[type="text"]:focus {
- border-color: #06b6d4 !important;
- box-shadow: 0 0 0 2px rgba(6, 182, 212, 0.2), inset 0 1px 2px rgba(0,0,0,0.5) !important;
- }
+        /* Input glow for Dark Mode */
+        body:not(.light) input[type="text"] {
+            background: rgba(15, 23, 42, 0.6) !important;
+            border: 1px solid rgba(255, 255, 255, 0.1) !important;
+            color: #f8fafc !important;
+        }
+        body:not(.light) input[type="text"]:focus {
+            border-color: #06b6d4 !important;
+            box-shadow: 0 0 0 2px rgba(6, 182, 212, 0.2), inset 0 1px 2px rgba(0,0,0,0.5) !important;
+        }
 
- body:not(.light) input[type="checkbox"]:checked {
- box-shadow: 0 0 10px rgba(6, 182, 212, 0.5) !important;
- }
+        body:not(.light) input[type="checkbox"]:checked {
+            box-shadow: 0 0 10px rgba(6, 182, 212, 0.5) !important;
+        }
 
- /* Custom Scrollbar (Global) */
- .custom-scrollbar::-webkit-scrollbar { width: 6px; }
- .custom-scrollbar::-webkit-scrollbar-thumb { background: rgba(100, 116, 139, 0.3); border-radius: 9999px; }
- .custom-scrollbar::-webkit-scrollbar-thumb:hover { background: rgba(100, 116, 139, 0.5); }
+        /* Custom Scrollbar (Global) */
+        .custom-scrollbar::-webkit-scrollbar { width: 6px; }
+        .custom-scrollbar::-webkit-scrollbar-thumb { background: rgba(100, 116, 139, 0.3); border-radius: 9999px; }
+        .custom-scrollbar::-webkit-scrollbar-thumb:hover { background: rgba(100, 116, 139, 0.5); }
 
- /* =========================================
- ✨ PREMIUM DAY MODE (LIGHT THEME) ✨
- ========================================= */
- .light {
- background-color: #f8fafc; 
-color: #0f172a; 
-}
+        /* =========================================
+           ✨ PREMIUM DAY MODE (LIGHT THEME) ✨
+           ========================================= */
+        .light {
+            background-color: #f8fafc; 
+            color: #0f172a; 
+        }
 
- .light .glass-card {
- background: rgba(255, 255, 255, 0.85) !important;
- backdrop-filter: blur(16px) !important;
- -webkit-backdrop-filter: blur(16px) !important;
- border: 1px solid rgba(226, 232, 240, 0.9) !important;
- box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.01) !important;
- }
+        .light .glass-card {
+            background: rgba(255, 255, 255, 0.85) !important;
+            backdrop-filter: blur(16px) !important;
+            -webkit-backdrop-filter: blur(16px) !important;
+            border: 1px solid rgba(226, 232, 240, 0.9) !important;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.01) !important;
+        }
 
- .light aside {
- background: linear-gradient(to right, #ffe4e6, #e0e7ff, #ccfbf1) !important;
- border-bottom: 1px solid #fecdd3 !important;
- }
- .light aside .text-rose-300 { color: #e11d48 !important; }
- .light aside .text-white { color: #be123c !important; font-weight: 800 !important; }
+        .light aside {
+            background: linear-gradient(to right, #ffe4e6, #e0e7ff, #ccfbf1) !important;
+            border-bottom: 1px solid #fecdd3 !important;
+        }
+        .light aside .text-rose-300 { color: #e11d48 !important; }
+        .light aside .text-white { color: #be123c !important; font-weight: 800 !important; }
 
- .light .text-slate-100 { color: #0f172a !important; }
- .light .text-slate-200 { color: #1e293b !important; }
- .light .text-slate-300 { color: #334155 !important; }
- .light .text-slate-400 { color: #475569 !important; }
- .light .text-slate-500 { color: #64748b !important; }
+        .light .text-slate-100 { color: #0f172a !important; }
+        .light .text-slate-200 { color: #1e293b !important; }
+        .light .text-slate-300 { color: #334155 !important; }
+        .light .text-slate-400 { color: #475569 !important; }
+        .light .text-slate-500 { color: #64748b !important; }
 
- .light .text-cyan-400 { color: #0891b2 !important; }
- .light .text-indigo-400 { color: #4f46e5 !important; }
- .light .text-rose-400 { color: #e11d48 !important; }
- .light .text-emerald-400 { color: #059669 !important; }
- .light .text-amber-400 { color: #d97706 !important; }
- .light .text-red-500 { color: #dc2626 !important; }
+        .light .text-cyan-400 { color: #0891b2 !important; }
+        .light .text-indigo-400 { color: #4f46e5 !important; }
+        .light .text-rose-400 { color: #e11d48 !important; }
+        .light .text-emerald-400 { color: #059669 !important; }
+        .light .text-amber-400 { color: #d97706 !important; }
+        .light .text-red-500 { color: #dc2626 !important; }
 
- .light .bg-gradient-to-r.from-cyan-400.via-indigo-400.to-rose-400 {
- background-image: linear-gradient(to right, #0284c7, #4f46e5, #e11d48) !important;
- -webkit-background-clip: text;
- color: transparent !important;
- }
+        .light .bg-gradient-to-r.from-cyan-400.via-indigo-400.to-rose-400 {
+            background-image: linear-gradient(to right, #0284c7, #4f46e5, #e11d48) !important;
+            -webkit-background-clip: text;
+            color: transparent !important;
+        }
 
- .light .border-slate-800 { border-color: #e2e8f0 !important; }
- .light .border-slate-700 { border-color: #cbd5e1 !important; }
- .light .border-cyan-500\/30 { border-color: rgba(8, 145, 178, 0.3) !important; }
- .light .border-indigo-500\/30 { border-color: rgba(79, 70, 229, 0.3) !important; }
- .light .border-rose-500\/30 { border-color: rgba(225, 29, 72, 0.3) !important; }
+        .light .border-slate-800 { border-color: #e2e8f0 !important; }
+        .light .border-slate-700 { border-color: #cbd5e1 !important; }
+        .light .border-cyan-500\/30 { border-color: rgba(8, 145, 178, 0.3) !important; }
+        .light .border-indigo-500\/30 { border-color: rgba(79, 70, 229, 0.3) !important; }
+        .light .border-rose-500\/30 { border-color: rgba(225, 29, 72, 0.3) !important; }
 
- .light .bg-slate-900 { background-color: #ffffff !important; }
- .light .bg-slate-800 { background-color: #f1f5f9 !important; }
- .light .bg-slate-800\/30 { background-color: #f8fafc !important; }
- .light .bg-slate-800\/40 { background-color: #f1f5f9 !important; }
+        .light .bg-slate-900 { background-color: #ffffff !important; }
+        .light .bg-slate-800 { background-color: #f1f5f9 !important; }
+        .light .bg-slate-800\/30 { background-color: #f8fafc !important; }
+        .light .bg-slate-800\/40 { background-color: #f1f5f9 !important; }
 
- .light .bg-cyan-500\/10 { background-color: rgba(8, 145, 178, 0.08) !important; }
- .light .bg-cyan-500\/20 { background-color: rgba(8, 145, 178, 0.15) !important; }
- .light .bg-indigo-500\/10 { background-color: rgba(79, 70, 229, 0.08) !important; }
- .light .bg-indigo-500\/20 { background-color: rgba(79, 70, 229, 0.15) !important; }
- .light .bg-rose-500\/10 { background-color: rgba(225, 29, 72, 0.08) !important; }
- .light .bg-rose-500\/20 { background-color: rgba(225, 29, 72, 0.15) !important; }
+        .light .bg-cyan-500\/10 { background-color: rgba(8, 145, 178, 0.08) !important; }
+        .light .bg-cyan-500\/20 { background-color: rgba(8, 145, 178, 0.15) !important; }
+        .light .bg-indigo-500\/10 { background-color: rgba(79, 70, 229, 0.08) !important; }
+        .light .bg-indigo-500\/20 { background-color: rgba(79, 70, 229, 0.15) !important; }
+        .light .bg-rose-500\/10 { background-color: rgba(225, 29, 72, 0.08) !important; }
+        .light .bg-rose-500\/20 { background-color: rgba(225, 29, 72, 0.15) !important; }
 
- .light input[type="text"] {
- background-color: #ffffff !important;
- color: #0f172a !important;
- border-color: #cbd5e1 !important;
- box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.02) !important;
- }
- .light input[type="text"]::placeholder { color: #94a3b8 !important; }
- .light input[type="text"]:focus { border-color: #0891b2 !important; box-shadow: 0 0 0 2px rgba(8, 145, 178, 0.2) !important; }
+        .light input[type="text"] {
+            background-color: #ffffff !important;
+            color: #0f172a !important;
+            border-color: #cbd5e1 !important;
+            box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.02) !important;
+        }
+        .light input[type="text"]::placeholder { color: #94a3b8 !important; }
+        .light input[type="text"]:focus { border-color: #0891b2 !important; box-shadow: 0 0 0 2px rgba(8, 145, 178, 0.2) !important; }
 
- .light input[type="checkbox"] { border-color: #94a3b8 !important; }
+        .light input[type="checkbox"] { border-color: #94a3b8 !important; }
 
- .light .hover\:bg-slate-800:hover { background-color: #f1f5f9 !important; }
- .light .hover\:bg-slate-700:hover { background-color: #e2e8f0 !important; }
+        .light .hover\:bg-slate-800:hover { background-color: #f1f5f9 !important; }
+        .light .hover\:bg-slate-700:hover { background-color: #e2e8f0 !important; }
 
- .light .hover\:text-white:hover { color: #0f172a !important; }
- .light .hover\:bg-cyan-500:hover { background-color: #0891b2 !important; color: #ffffff !important; }
+        .light .hover\:text-white:hover { color: #0f172a !important; }
+        .light .hover\:bg-cyan-500:hover { background-color: #0891b2 !important; color: #ffffff !important; }
 
- .light .group:hover .group-hover\:text-cyan-400 { color: #0891b2 !important; }
- .light .group:hover .group-hover\:text-indigo-400 { color: #4f46e5 !important; }
- .light .group:hover .group-hover\:text-rose-400 { color: #e11d48 !important; }
+        .light .group:hover .group-hover\:text-cyan-400 { color: #0891b2 !important; }
+        .light .group:hover .group-hover\:text-indigo-400 { color: #4f46e5 !important; }
+        .light .group:hover .group-hover\:text-rose-400 { color: #e11d48 !important; }
 
- .light .hover\:border-cyan-500\/40:hover { border-color: rgba(8, 145, 178, 0.4) !important; }
- .light .hover\:border-cyan-500\/50:hover { border-color: rgba(8, 145, 178, 0.5) !important; }
- .light .hover\:border-indigo-500\/50:hover { border-color: rgba(79, 70, 229, 0.5) !important; }
- .light .hover\:border-rose-500\/50:hover { border-color: rgba(225, 29, 72, 0.5) !important; }
+        .light .hover\:border-cyan-500\/40:hover { border-color: rgba(8, 145, 178, 0.4) !important; }
+        .light .hover\:border-cyan-500\/50:hover { border-color: rgba(8, 145, 178, 0.5) !important; }
+        .light .hover\:border-indigo-500\/50:hover { border-color: rgba(79, 70, 229, 0.5) !important; }
+        .light .hover\:border-rose-500\/50:hover { border-color: rgba(225, 29, 72, 0.5) !important; }
 
- .light .filter-btn:not(.text-cyan-400):hover { color: #0f172a !important; border-color: #94a3b8 !important; }
+        .light .filter-btn:not(.text-cyan-400):hover { color: #0f172a !important; border-color: #94a3b8 !important; }
 
- .light .group:hover .group-hover\:bg-cyan-500 { background-color: #0891b2 !important; color: #ffffff !important;}
- .light .group:hover .group-hover\:bg-indigo-500 { background-color: #4f46e5 !important; color: #ffffff !important;}
- .light .group:hover .group-hover\:bg-rose-500 { background-color: #e11d48 !important; color: #ffffff !important;}
- </style>
+        .light .group:hover .group-hover\:bg-cyan-500 { background-color: #0891b2 !important; color: #ffffff !important;}
+        .light .group:hover .group-hover\:bg-indigo-500 { background-color: #4f46e5 !important; color: #ffffff !important;}
+        .light .group:hover .group-hover\:bg-rose-500 { background-color: #e11d48 !important; color: #ffffff !important;}
+    </style>
 </head>
 <body class="bg-slate-950 text-slate-100 min-h-screen transition-colors duration-300 antialiased font-sans flex flex-col" id="appBody">
 
- <!-- Top Emergency Ribbon -->
- <aside class="bg-gradient-to-r from-rose-900 via-purple-900 to-indigo-900 text-xs py-2 px-4 text-center font-medium border-b border-rose-500/20 transition-colors duration-300">
- <span class="inline-flex items-center gap-1.5 text-rose-300">
- <i data-lucide="shield-alert" class="w-4 h-4 inline"></i> રાષ્ટ્રીય સહાય હેલ્પલાઇન: 
-<a href="tel:1097" class="underline font-bold text-white ml-1">1097 (NACO Toll Free)</a> | તબીબી સલાહ ગોપનીય અને મફત છે.
- </span>
- </aside>
-
- <!-- Global Navigation Header -->
- <header class="sticky top-0 z-40 glass-card border-b border-slate-800/80 px-4 lg:px-8 py-4 transition-colors duration-300">
- <div class="max-w-7xl mx-auto flex items-center justify-between">
- <!-- Logo Section -->
- <div class="flex items-center gap-3">
- <div class="p-2.5 bg-gradient-to-tr from-cyan-500 via-indigo-500 to-purple-600 rounded-2xl text-white shadow-lg shadow-cyan-500/20">
- <i data-lucide="activity" class="w-6 h-6"></i>
- </div>
- <div>
- <h1 class="text-xl sm:text-2xl font-black tracking-tight bg-gradient-to-r from-cyan-400 via-teal-300 to-indigo-400 bg-clip-text text-transparent">Health plus</h1>
- <p class="text-[11px] text-slate-400 font-medium">અલ્ટ્રા હેલ્થ એન્ડ રોગ નિવારણ પ્લેટફોર્મ</p>
- </div>
- </div>
-
- <!-- Action Controls (Emergency & Theme Toggle) -->
- <div class="flex items-center gap-3">
- <!-- Emergency Contacts Button -->
- <button onclick="openEmergencyModal()" aria-label="Emergency Contacts" title="ઇમરજન્સી હેલ્પલાઇન નંબર્સ" class="p-2.5 rounded-xl glass-card hover:bg-rose-500/20 hover:border-rose-500/50 transition-all flex items-center justify-center group">
- <span class="text-xl group-hover:scale-110 transition-transform">🆘</span>
- </button>
-
- <!-- Theme Toggle Button -->
- <button onclick="toggleTheme()" aria-label="Toggle Theme" title="ડે/નાઈટ મોડ" class="p-2.5 rounded-xl glass-card hover:bg-slate-800 transition-all text-slate-300">
- <i data-lucide="sun" id="themeIcon" class="w-5 h-5"></i>
- </button>
- </div>
- </div>
- </header>
-
- <main class="flex-grow max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-16">
-
- <!-- Hero Section & Metrics Banner -->
- <section class="text-center space-y-6 pt-4">
-
- <h2 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight max-w-4xl mx-auto bg-gradient-to-r from-cyan-400 via-indigo-400 to-rose-400 bg-clip-text text-transparent">
- My Personal Smart Care
- </h2>
-
- <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 max-w-4xl mx-auto pt-6 text-left">
- <div class="glass-card p-4 rounded-2xl border border-slate-800 transition-all">
- <p class="text-2xl font-extrabold text-cyan-400">21+</p>
- <p class="text-xs text-slate-400 mt-0.5">વિસ્તૃત રોગ પ્રોફાઇલ્સ</p>
- </div>
- <div class="glass-card p-4 rounded-2xl border border-slate-800 transition-all">
- <p class="text-2xl font-extrabold text-indigo-400">ડૉક્ટર-પ્રમાણિત ડેટા</p>
- <p class="text-xs text-slate-400 mt-0.5">1 ડૉક્ટર-પ્રમાણિત ડેટા</p>
- </div>
- <div class="glass-card p-4 rounded-2xl border border-slate-800 transition-all">
- <p class="text-2xl font-extrabold text-rose-400">24/7</p>
- <p class="text-xs text-slate-400 mt-0.5">સહાય નો સમય</p>
- </div>
- <div class="glass-card p-4 rounded-2xl border border-slate-800 transition-all">
- <p class="text-2xl font-extrabold text-emerald-400">ગોપનીય</p>
- <p class="text-xs text-slate-400 mt-0.5">સ્થાનિક બ્રાઉઝર એનાલિસિસ</p>
- </div>
- </div>
- </section>
-
- <!-- 1. Main Database Section -->
- <section id="database" class="space-y-6 scroll-mt-24">
- <div class="flex flex-col md:flex-row gap-4 justify-between items-center border-b border-slate-800/80 pb-6 transition-colors duration-300">
- <div>
- <h3 class="text-2xl font-bold">રોગો અને સંક્રમણ ડેટાબેઝ</h3>
- <p class="text-xs text-slate-400">કેટેગરી પસંદ કરો અથવા સીધા લક્ષણો શોધો</p>
- </div>
-
- <div class="flex flex-col sm:flex-row gap-3 w-full md:w-auto items-center">
- <div class="relative w-full sm:w-80">
- <i data-lucide="search" class="w-4 h-4 absolute left-3.5 top-3.5 text-slate-400"></i>
- <input type="text" id="searchInput" placeholder="રોગનું નામ, લક્ષણ કે દવા શોધો..." oninput="handleSearch()"
- class="w-full pl-10 pr-4 py-2.5 rounded-xl glass-card border border-slate-700 text-sm focus:outline-none focus:border-cyan-500 transition-all">
- </div>
- </div>
- </div>
-
- <!-- Type Filter Tabs -->
- <div class="flex flex-wrap gap-2" id="filterTabs">
- <button onclick="setFilter('all')" class="filter-btn px-4 py-2 rounded-xl text-xs font-semibold glass-card border border-cyan-500/50 bg-cyan-500/10 text-cyan-400 transition-all" data-filter="all">તમામ (All)</button>
- <button onclick="setFilter('viral')" class="filter-btn px-4 py-2 rounded-xl text-xs font-semibold glass-card border border-slate-800 text-slate-400 hover:text-white transition-all" data-filter="viral">વાઈરલ / શ્વસન</button>
- <button onclick="setFilter('bacterial')" class="filter-btn px-4 py-2 rounded-xl text-xs font-semibold glass-card border border-slate-800 text-slate-400 hover:text-white transition-all" data-filter="bacterial">બેક્ટેરિયલ</button>
- <button onclick="setFilter('parasitic')" class="filter-btn px-4 py-2 rounded-xl text-xs font-semibold glass-card border border-slate-800 text-slate-400 hover:text-white transition-all" data-filter="parasitic">પેરાસાઇટિક / અન્ય</button>
- </div>
-
- <!-- Disease Cards Grid -->
- <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="diseaseGrid">
- <!-- Dynamically populated from JS -->
- </div>
- </section>
-
- <!-- 2. Advanced AI Symptom Analyzer Engine -->
- <section id="analyzer" class="glass-card rounded-3xl p-6 sm:p-10 border border-slate-800 scroll-mt-24 relative overflow-hidden transition-all">
- <div class="max-w-4xl mx-auto space-y-8">
- <div class="flex items-start gap-4">
- <div class="p-3 bg-cyan-500/20 text-cyan-400 rounded-2xl border border-cyan-500/30">
- <i data-lucide="stethoscope" class="w-8 h-8"></i>
- </div>
- <div>
- <h3 class="text-2xl font-bold">ડિટેઇલ્ડ સિમ્પટમ રિસ્ક એનાલાઇઝર</h3>
- <p class="text-sm text-slate-400">તમને દેખાતા લક્ષણો સિલેક્ટ કરો જેથી અલ્ગોરિધમ સંભવિત રિસ્ક સ્કોર અને દિશા સૂચવી શકે.</p>
- </div>
- </div>
-
- <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3" id="symptomChecklist">
- <label class="flex items-center gap-3 p-3.5 rounded-2xl glass-card border border-slate-800 hover:border-cyan-500/40 cursor-pointer text-xs sm:text-sm transition-all"><input type="checkbox" value="discharge" class="w-4 h-4 rounded text-cyan-500 accent-cyan-500"> અસામાન્ય સફેદ કે પીળો સ્ત્રાવ</label>
- <label class="flex items-center gap-3 p-3.5 rounded-2xl glass-card border border-slate-800 hover:border-cyan-500/40 cursor-pointer text-xs sm:text-sm transition-all"><input type="checkbox" value="burning" class="w-4 h-4 rounded text-cyan-500 accent-cyan-500"> પેશાબ વખતે બળતરા/પીડા</label>
- <label class="flex items-center gap-3 p-3.5 rounded-2xl glass-card border border-slate-800 hover:border-cyan-500/40 cursor-pointer text-xs sm:text-sm transition-all"><input type="checkbox" value="sores" class="w-4 h-4 rounded text-cyan-500 accent-cyan-500"> ગુપ્તાંગ પર ચાંદા કે ફોલ્લા</label>
- <label class="flex items-center gap-3 p-3.5 rounded-2xl glass-card border border-slate-800 hover:border-cyan-500/40 cursor-pointer text-xs sm:text-sm transition-all"><input type="checkbox" value="itching" class="w-4 h-4 rounded text-cyan-500 accent-cyan-500"> સતત ખંજવાળ અને લાલાશ</label>
- <label class="flex items-center gap-3 p-3.5 rounded-2xl glass-card border border-slate-800 hover:border-cyan-500/40 cursor-pointer text-xs sm:text-sm transition-all"><input type="checkbox" value="warts" class="w-4 h-4 rounded text-cyan-500 accent-cyan-500"> નાના મસા (Warts) જેવો ઉભાર</label>
- <label class="flex items-center gap-3 p-3.5 rounded-2xl glass-card border border-slate-800 hover:border-cyan-500/40 cursor-pointer text-xs sm:text-sm transition-all"><input type="checkbox" value="pelvic_pain" class="w-4 h-4 rounded text-cyan-500 accent-cyan-500"> પેલ્વિક/નીચલા પેટમાં દુખાવો</label>
- <label class="flex items-center gap-3 p-3.5 rounded-2xl glass-card border border-slate-800 hover:border-cyan-500/40 cursor-pointer text-xs sm:text-sm transition-all"><input type="checkbox" value="fever" class="w-4 h-4 rounded text-cyan-500 accent-cyan-500"> રાત્રે તાવ, પરસેવો અને થાક</label>
- <label class="flex items-center gap-3 p-3.5 rounded-2xl glass-card border border-slate-800 hover:border-cyan-500/40 cursor-pointer text-xs sm:text-sm transition-all"><input type="checkbox" value="rash" class="w-4 h-4 rounded text-cyan-500 accent-cyan-500"> હથેળી કે શરીર પર ચકામા</label>
- <label class="flex items-center gap-3 p-3.5 rounded-2xl glass-card border border-slate-800 hover:border-cyan-500/40 cursor-pointer text-xs sm:text-sm transition-all"><input type="checkbox" value="swollen_nodes" class="w-4 h-4 rounded text-cyan-500 accent-cyan-500"> ગળા કે સાથળમાં લસિકાગ્રંથિ સોજી જવી</label>
- <label class="flex items-center gap-3 p-3.5 rounded-2xl glass-card border border-slate-800 hover:border-cyan-500/40 cursor-pointer text-xs sm:text-sm transition-all"><input type="checkbox" value="weight_loss" class="w-4 h-4 rounded text-cyan-500 accent-cyan-500"> અચાનક વજનમાં ઝડપી ઘટાડો</label>
- <label class="flex items-center gap-3 p-3.5 rounded-2xl glass-card border border-slate-800 hover:border-cyan-500/40 cursor-pointer text-xs sm:text-sm transition-all"><input type="checkbox" value="sore_throat" class="w-4 h-4 rounded text-cyan-500 accent-cyan-500"> ગળામાં ખરાશ અને સતત ઉધરસ</label>
- <label class="flex items-center gap-3 p-3.5 rounded-2xl glass-card border border-slate-800 hover:border-cyan-500/40 cursor-pointer text-xs sm:text-sm transition-all"><input type="checkbox" value="breathing_diff" class="w-4 h-4 rounded text-cyan-500 accent-cyan-500"> શ્વાસ લેવામાં તકલીફ/છાતીમાં દુખાવો</label>
- <label class="flex items-center gap-3 p-3.5 rounded-2xl glass-card border border-slate-800 hover:border-cyan-500/40 cursor-pointer text-xs sm:text-sm transition-all"><input type="checkbox" value="jaundice" class="w-4 h-4 rounded text-cyan-500 accent-cyan-500"> આંખો કે ત્વચા પીળી પડવી (કમળો)</label>
- <label class="flex items-center gap-3 p-3.5 rounded-2xl glass-card border border-slate-800 hover:border-cyan-500/40 cursor-pointer text-xs sm:text-sm transition-all"><input type="checkbox" value="nausea" class="w-4 h-4 rounded text-cyan-500 accent-cyan-500"> ઉબકા, ઉલટી કે ભૂખ ન લાગવી</label>
- <label class="flex items-center gap-3 p-3.5 rounded-2xl glass-card border border-slate-800 hover:border-cyan-500/40 cursor-pointer text-xs sm:text-sm transition-all"><input type="checkbox" value="joint_pain" class="w-4 h-4 rounded text-cyan-500 accent-cyan-500"> સાંધા કે સ્નાયુઓમાં અસહ્ય દુખાવો</label>
- <label class="flex items-center gap-3 p-3.5 rounded-2xl glass-card border border-slate-800 hover:border-cyan-500/40 cursor-pointer text-xs sm:text-sm transition-all"><input type="checkbox" value="diarrhea" class="w-4 h-4 rounded text-cyan-500 accent-cyan-500"> લાંબા સમય સુધી ઝાડા કે પેટમાં મરડો</label>
- <label class="flex items-center gap-3 p-3.5 rounded-2xl glass-card border border-slate-800 hover:border-cyan-500/40 cursor-pointer text-xs sm:text-sm transition-all"><input type="checkbox" value="dizziness" class="w-4 h-4 rounded text-cyan-500 accent-cyan-500"> ચક્કર આવવા અને તીવ્ર અશક્તિ</label>
- <label class="flex items-center gap-3 p-3.5 rounded-2xl glass-card border border-slate-800 hover:border-cyan-500/40 cursor-pointer text-xs sm:text-sm transition-all"><input type="checkbox" value="blood_urine" class="w-4 h-4 rounded text-cyan-500 accent-cyan-500"> પેશાબમાં લોહી પડવું કે ઘેરો રંગ</label>
- <label class="flex items-center gap-3 p-3.5 rounded-2xl glass-card border border-slate-800 hover:border-cyan-500/40 cursor-pointer text-xs sm:text-sm transition-all"><input type="checkbox" value="irregular_periods" class="w-4 h-4 rounded text-cyan-500 accent-cyan-500"> અનિયમિત માસિક/હોર્મોનલ બદલાવ</label>
- <label class="flex items-center gap-3 p-3.5 rounded-2xl glass-card border border-slate-800 hover:border-cyan-500/40 cursor-pointer text-xs sm:text-sm transition-all"><input type="checkbox" value="testicular_pain" class="w-4 h-4 rounded text-cyan-500 accent-cyan-500"> અંડકોષમાં દુખાવો કે સોજો</label>
- <label class="flex items-center gap-3 p-3.5 rounded-2xl glass-card border border-slate-800 hover:border-cyan-500/40 cursor-pointer text-xs sm:text-sm transition-all"><input type="checkbox" value="hair_loss" class="w-4 h-4 rounded text-cyan-500 accent-cyan-500"> અતિશય વાળ ખરવા કે ડેન્ડ્રફ</label>
- <label class="flex items-center gap-3 p-3.5 rounded-2xl glass-card border border-slate-800 hover:border-cyan-500/40 cursor-pointer text-xs sm:text-sm transition-all"><input type="checkbox" value="penis_pain" class="w-4 h-4 rounded text-cyan-500 accent-cyan-500"> પ્રજનન સમયે લિંગમાં દુખાવો</label>
- </div>
-
- <div class="flex flex-col sm:flex-row gap-3">
- <button onclick="runDeepAnalysis()" class="flex-1 py-3.5 rounded-2xl bg-gradient-to-r from-cyan-500 via-indigo-600 to-purple-600 font-bold text-sm text-white hover:opacity-95 shadow-lg shadow-indigo-500/20 transition-all flex items-center justify-center gap-2">
- <i data-lucide="cpu" class="w-4 h-4"></i> કમ્પ્લીટ રિસ્ક સ્કોર ગણો
- </button>
- <button onclick="resetAnalyzer()" class="px-6 py-3.5 rounded-2xl glass-card border border-slate-700 text-xs font-semibold hover:bg-slate-800 transition-all">
- રીસેટ
- </button>
- </div>
-
- <div id="analyzerOutput" class="hidden p-6 rounded-2xl border border-slate-700 glass-card space-y-4 transition-all">
- <!-- Dynamic Score & Diagnostic Details -->
- </div>
- </div>
- </section>
-
- <!-- 3. Comprehensive Prevention & Action Guide -->
- <section id="guide" class="space-y-8 scroll-mt-24">
- <h3 class="text-2xl font-bold text-center">વૈજ્ઞાનિક બચાવ અને સુરક્ષા ગાઈડલાઇન્સ</h3>
-
- <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
- <!-- CLICKABLE GUIDE CARD 1 (BARRIER) -->
- <div onclick="openGuideModal('barrier')" class="glass-card p-6 rounded-3xl border border-slate-800 space-y-3 cursor-pointer hover:border-rose-500/50 transition-all group">
- <div class="w-10 h-10 rounded-2xl bg-rose-500/20 text-rose-400 flex items-center justify-center group-hover:bg-rose-500 group-hover:text-white transition-all">
- <i data-lucide="shield-check" class="w-5 h-5"></i>
- </div>
- <h4 class="font-bold text-base group-hover:text-rose-400 transition-all">૧. બેરિયર પદ્ધતિઓ અને સ્વચ્છતા</h4>
- <p class="text-xs text-slate-400 leading-relaxed">
- સુરક્ષિત સંબંધો અને શુદ્ધ પાણી-ખોરાકનું સેવન ટ્રાન્સમિટેબલ રોગો અને બેક્ટેરિયલ ઇન્ફેક્શનથી ૯૦% થી વધુ બચાવ કરે છે. 
-<span class="block mt-2 text-rose-400 font-semibold group-hover:underline">વિગતવાર વાંચવા અહીં ક્લિક કરો &rarr;</span>
- </p>
- </div>
-
- <!-- CLICKABLE GUIDE CARD 2 (VACCINES) -->
- <div onclick="openGuideModal('vaccines')" class="glass-card p-6 rounded-3xl border border-slate-800 space-y-3 cursor-pointer hover:border-rose-500/50 transition-all group">
- <div class="w-10 h-10 rounded-2xl bg-rose-500/20 text-rose-400 flex items-center justify-center group-hover:bg-rose-500 group-hover:text-white transition-all">
- <i data-lucide="syringe" class="w-5 h-5"></i>
- </div>
- <h4 class="font-bold text-base group-hover:text-rose-400 transition-all">૨. રસીકરણ (Vaccines)</h4>
- <p class="text-xs text-slate-400 leading-relaxed">
- HPV, હિપેટાઇટિસ-બી અને અન્ય ગંભીર બીમારીઓ સામે સમયસર રસી લેવાથી લાંબા ગાળાની જટિલતાઓથી સુરક્ષા મળે છે.
- <span class="block mt-2 text-rose-400 font-semibold group-hover:underline">વિગતવાર વાંચવા અહીં ક્લિક કરો &rarr;</span>
- </p>
- </div>
-
- <!-- CLICKABLE GUIDE CARD 3 (NUTRITION & SCREENING) -->
- <div onclick="openGuideModal('nutrition')" class="glass-card p-6 rounded-3xl border border-slate-800 space-y-3 cursor-pointer hover:border-rose-500/50 transition-all group">
- <div class="w-10 h-10 rounded-2xl bg-rose-500/20 text-rose-400 flex items-center justify-center group-hover:bg-rose-500 group-hover:text-white transition-all">
- <i data-lucide="clipboard-check" class="w-5 h-5"></i>
- </div>
- <h4 class="font-bold text-base group-hover:text-rose-400 transition-all">૩. નિયમિત સ્ક્રીનિંગ અને પોષણ</h4>
- <p class="text-xs text-slate-400 leading-relaxed">
- સમયસર લેબ ટેસ્ટ અને વિટામિન-પૌષ્ટિક આહારથી રોગપ્રતિકારક શક્તિ મજબૂત બને છે અને અશક્તિ દૂર થાય છે.
- <span class="block mt-2 text-rose-400 font-semibold group-hover:underline">વિગતવાર વાંચવા અહીં ક્લિક કરો &rarr;</span>
- </p>
- </div>
- </div>
- </section>
-
- <!-- 4. External Knowledge Quiz Module -->
- <section id="quiz" class="space-y-6 scroll-mt-24">
- <div class="text-center space-y-2">
- <h3 class="text-2xl font-bold">જ્ઞાન ચકાસણી</h3>
- <p class="text-xs text-slate-400">તમારી જાણકારી ચકાસો અને તમારા જ્ઞાનને અપડેટ કરો.</p>
- </div>
-
- <div class="max-w-2xl mx-auto glass-card rounded-3xl p-8 sm:p-12 border border-slate-800 text-center space-y-6 transition-all">
- <div class="w-16 h-16 mx-auto bg-cyan-500/20 text-cyan-400 rounded-full flex items-center justify-center mb-4">
- <i data-lucide="clipboard-list" class="w-8 h-8"></i>
- </div>
-
- <h4 class="text-xl font-bold text-slate-100">ઓનલાઈન જ્ઞાન ચકાસણી ફોર્મ</h4>
- <p class="text-sm text-slate-400 max-w-md mx-auto leading-relaxed">
- અમે અમારા પ્લેટફોર્મની ક્વિઝને Google Forms પર ખસેડી છે. કૃપા કરીને નીચેની લિંક પર ક્લિક કરીને ક્વિઝમાં ભાગ લો અને તમારું જ્ઞાન ચકાસો.
- </p>
-
- <div class="pt-4">
- <a href="https://forms.gle/Thas2Kv1bKKsrMcX9" target="_blank" rel="noopener noreferrer" 
-class="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-2xl bg-gradient-to-r from-cyan-500 to-indigo-600 hover:from-cyan-600 hover:to-indigo-700 text-white font-bold text-sm tracking-wide shadow-lg shadow-cyan-500/25 transition-all w-full sm:w-auto">
- ક્વિઝ શરૂ કરો <i data-lucide="external-link" class="w-4 h-4"></i>
- </a>
- </div>
- </div>
- </section>
-
- <!-- 5. IMPORTANT AWARENESS VIDEO SECTION -->
- <section id="awareness-video" class="glass-card rounded-3xl p-6 sm:p-10 border border-slate-800 scroll-mt-24 transition-all">
- <div class="max-w-6xl mx-auto space-y-6 text-center">
- <div class="inline-flex items-center justify-center p-3 bg-rose-500/20 text-rose-400 rounded-2xl border border-rose-500/30 mb-2">
- <i data-lucide="play-circle" class="w-8 h-8"></i>
- </div>
- <h3 class="text-2xl font-bold text-slate-100">સ્વાસ્થ્ય જાગૃતિ: મહત્વપૂર્ણ જનજાગૃતિ વિડીયો</h3>
- <p class="text-sm text-slate-400">માઈક્રોપ્લાસ્ટિક અને પેકેજ્ડ ફૂડ (Packaged Food) આપણા શરીરમાં પ્રવેશીને કઈ રીતે ગંભીર બીમારીઓ સર્જે છે, તે વિશેની વિસ્તૃત માહિતી.</p>
-
- <!-- On-Page Video Cards Grid (Now with 3 Videos) -->
- <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full mt-6 text-left">
-
- <!-- Video Card 1 -->
- <div class="glass-card rounded-2xl border border-slate-700 overflow-hidden group cursor-pointer hover:border-rose-500/50 hover:shadow-lg hover:shadow-rose-500/10 transition-all" onclick="openVideoModal('https://www.youtube.com/embed/njyP1uvAlGs?autoplay=1')">
- <div class="relative w-full aspect-video bg-slate-900">
- <!-- High Quality YouTube Thumbnail -->
- <img src="https://img.youtube.com/vi/njyP1uvAlGs/maxresdefault.jpg" alt="માઈક્રોપ્લાસ્ટિક અને સ્વાસ્થ્ય ભાગ ૧" class="w-full h-full object-cover opacity-70 group-hover:opacity-100 transition-opacity">
- <!-- Play Button Overlay -->
- <div class="absolute inset-0 flex items-center justify-center">
- <div class="w-14 h-14 rounded-full bg-rose-600/90 text-white flex items-center justify-center shadow-lg shadow-rose-600/40 group-hover:scale-110 transition-transform">
- <i data-lucide="play" class="w-6 h-6 ml-1"></i>
- </div>
- </div>
- </div>
- <div class="p-4 bg-slate-900/50">
- <h4 class="font-bold text-sm text-slate-100 group-hover:text-rose-400 transition-colors">ભાગ ૧: માઈક્રોપ્લાસ્ટિક અને સ્વાસ્થ્ય</h4>
- <p class="text-[11px] text-slate-400 mt-1 flex items-center gap-1"><i data-lucide="monitor-play" class="w-3.5 h-3.5"></i> અહી જ વિડીયો જોવા ક્લિક કરો</p>
- </div>
- </div>
-
- <!-- Video Card 2 -->
- <div class="glass-card rounded-2xl border border-slate-700 overflow-hidden group cursor-pointer hover:border-rose-500/50 hover:shadow-lg hover:shadow-rose-500/10 transition-all" onclick="openVideoModal('https://www.youtube.com/embed/OqZzVEBaipg?autoplay=1')">
- <div class="relative w-full aspect-video bg-slate-900">
- <img src="https://img.youtube.com/vi/OqZzVEBaipg/maxresdefault.jpg" alt="માઈક્રોપ્લાસ્ટિક અને સ્વાસ્થ્ય ભાગ ૨" class="w-full h-full object-cover opacity-70 group-hover:opacity-100 transition-opacity">
- <div class="absolute inset-0 flex items-center justify-center">
- <div class="w-14 h-14 rounded-full bg-rose-600/90 text-white flex items-center justify-center shadow-lg shadow-rose-600/40 group-hover:scale-110 transition-transform">
- <i data-lucide="play" class="w-6 h-6 ml-1"></i>
- </div>
- </div>
- </div>
- <div class="p-4 bg-slate-900/50">
- <h4 class="font-bold text-sm text-slate-100 group-hover:text-rose-400 transition-colors">ભાગ ૨: માઈક્રોપ્લાસ્ટિકની ગંભીર અસરો</h4>
- <p class="text-[11px] text-slate-400 mt-1 flex items-center gap-1"><i data-lucide="monitor-play" class="w-3.5 h-3.5"></i> અહી જ વિડીયો જોવા ક્લિક કરો</p>
- </div>
- </div>
-
- <!-- Video Card 3 (NEW) -->
- <div class="glass-card rounded-2xl border border-slate-700 overflow-hidden group cursor-pointer hover:border-rose-500/50 hover:shadow-lg hover:shadow-rose-500/10 transition-all" onclick="openVideoModal('https://www.youtube.com/embed/GQGJ9rS3iOM?autoplay=1')">
- <div class="relative w-full aspect-video bg-slate-900">
- <img src="https://img.youtube.com/vi/GQGJ9rS3iOM/maxresdefault.jpg" alt="પેકેજ્ડ ફૂડનું સત્ય" class="w-full h-full object-cover opacity-70 group-hover:opacity-100 transition-opacity">
- <div class="absolute inset-0 flex items-center justify-center">
- <div class="w-14 h-14 rounded-full bg-rose-600/90 text-white flex items-center justify-center shadow-lg shadow-rose-600/40 group-hover:scale-110 transition-transform">
- <i data-lucide="play" class="w-6 h-6 ml-1"></i>
- </div>
- </div>
- </div>
- <div class="p-4 bg-slate-900/50">
- <h4 class="font-bold text-sm text-slate-100 group-hover:text-rose-400 transition-colors">ભાગ ૩: ફૂડ ઇન્ડસ્ટ્રીનું સત્ય (Packaged Food)</h4>
- <p class="text-[11px] text-slate-400 mt-1 flex items-center gap-1"><i data-lucide="monitor-play" class="w-3.5 h-3.5"></i> અહી જ વિડીયો જોવા ક્લિક કરો</p>
- </div>
- </div>
-
- </div>
- </div>
- </section>
-
- </main>
-
- <!-- NEW FULL-SCREEN VIDEO MODAL (Cinema Mode) -->
- <div id="videoModal" class="fixed inset-0 z-[60] bg-black/95 backdrop-blur-md hidden flex-col items-center justify-center p-4 transition-all">
- <div class="w-full max-w-5xl flex justify-end mb-4">
- <button onclick="closeVideoModal()" class="p-2 rounded-xl bg-slate-800 hover:bg-rose-600 text-white transition-all shadow-lg shadow-black/50">
- <i data-lucide="x" class="w-6 h-6"></i>
- </button>
- </div>
- <div class="w-full max-w-5xl aspect-video bg-black rounded-2xl overflow-hidden border border-slate-700 shadow-2xl relative">
- <iframe id="modalIframe" class="absolute top-0 left-0 w-full h-full" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
- </div>
- </div>
-
- <!-- Emergency Contacts Modal -->
- <div id="emergencyModal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm hidden flex items-center justify-center p-4 transition-all">
- <div class="glass-card bg-slate-900 border border-rose-500/30 max-w-lg w-full rounded-3xl p-6 sm:p-8 space-y-6 relative shadow-2xl shadow-rose-500/20">
- <button onclick="closeEmergencyModal()" class="absolute top-6 right-6 p-2 rounded-xl bg-slate-800 hover:bg-rose-500 hover:text-white text-slate-400 transition-all">
- <i data-lucide="x" class="w-5 h-5"></i>
- </button>
- <div class="text-center space-y-2">
- <h3 class="text-2xl font-black text-slate-100 flex items-center justify-center gap-2">
- <span class="text-2xl">🆘</span> ઇમરજન્સી નંબર્સ
- </h3>
- <p class="text-xs text-slate-400">તાત્કાલિક મેડિકલ અને અન્ય સહાય માટે ટોલ-ફ્રી નંબર</p>
- </div>
-
- <div class="space-y-3 mt-4 max-h-[60vh] overflow-y-auto custom-scrollbar pr-2">
-
- <div class="flex items-center justify-between p-3.5 rounded-2xl bg-slate-800/50 border border-slate-700/50 hover:border-rose-500/40 transition-colors">
- <div class="flex flex-col">
- <span class="text-sm font-bold text-slate-200">રાષ્ટ્રીય સહાય હેલ્પલાઇન</span>
- <span class="text-[10px] text-slate-400">NACO Toll Free (તબીબી સલાહ)</span>
- </div>
- <a href="tel:1097" class="px-4 py-1.5 rounded-xl bg-rose-600 hover:bg-rose-500 text-white font-black tracking-wider shadow-lg shadow-rose-500/30 hover:-translate-y-0.5 transition-all">1097</a>
- </div>
-
- <div class="flex items-center justify-between p-3.5 rounded-2xl bg-slate-800/50 border border-slate-700/50 hover:border-rose-500/40 transition-colors">
- <div class="flex flex-col">
- <span class="text-sm font-bold text-slate-200">એમ્બ્યુલન્સ / મેડિકલ</span>
- <span class="text-[10px] text-slate-400">Ambulance Emergency</span>
- </div>
- <a href="tel:108" class="px-4 py-1.5 rounded-xl bg-rose-600 hover:bg-rose-500 text-white font-black tracking-wider shadow-lg shadow-rose-500/30 hover:-translate-y-0.5 transition-all">108</a>
- </div>
-
- <div class="flex items-center justify-between p-3.5 rounded-2xl bg-slate-800/50 border border-slate-700/50 hover:border-rose-500/40 transition-colors">
- <div class="flex flex-col">
- <span class="text-sm font-bold text-slate-200">જનની સુરક્ષા</span>
- <span class="text-[10px] text-slate-400">ગર્ભવતી મહિલાઓ અને બાળકો માટે</span>
- </div>
- <a href="tel:102" class="px-4 py-1.5 rounded-xl bg-rose-600 hover:bg-rose-500 text-white font-black tracking-wider shadow-lg shadow-rose-500/30 hover:-translate-y-0.5 transition-all">102</a>
- </div>
-
- <div class="flex items-center justify-between p-3.5 rounded-2xl bg-slate-800/50 border border-slate-700/50 hover:border-rose-500/40 transition-colors">
- <div class="flex flex-col">
- <span class="text-sm font-bold text-slate-200">રાષ્ટ્રીય ઇમરજન્સી</span>
- <span class="text-[10px] text-slate-400">મેડિકલ, પોલીસ અને ફાયર</span>
- </div>
- <a href="tel:112" class="px-4 py-1.5 rounded-xl bg-rose-600 hover:bg-rose-500 text-white font-black tracking-wider shadow-lg shadow-rose-500/30 hover:-translate-y-0.5 transition-all">112</a>
- </div>
-
- <div class="flex items-center justify-between p-3.5 rounded-2xl bg-slate-800/50 border border-slate-700/50 hover:border-rose-500/40 transition-colors">
- <div class="flex flex-col">
- <span class="text-sm font-bold text-slate-200">આરોગ્ય મંત્રાલય હેલ્પલાઇન</span>
- <span class="text-[10px] text-slate-400">સામાન્ય સ્વાસ્થ્ય માહિતી</span>
- </div>
- <a href="tel:1075" class="px-4 py-1.5 rounded-xl bg-rose-600 hover:bg-rose-500 text-white font-black tracking-wider shadow-lg shadow-rose-500/30 hover:-translate-y-0.5 transition-all">1075</a>
- </div>
-
- <div class="flex items-center justify-between p-3.5 rounded-2xl bg-slate-800/50 border border-slate-700/50 hover:border-rose-500/40 transition-colors">
- <div class="flex flex-col">
- <span class="text-sm font-bold text-slate-200">Tele-MANAS</span>
- <span class="text-[10px] text-slate-400">માનસિક સ્વાસ્થ્ય (Mental Health)</span>
- </div>
- <a href="tel:14416" class="px-4 py-1.5 rounded-xl bg-rose-600 hover:bg-rose-500 text-white font-black tracking-wider shadow-lg shadow-rose-500/30 hover:-translate-y-0.5 transition-all">14416</a>
- </div>
-
- <div class="flex items-center justify-between p-3.5 rounded-2xl bg-slate-800/50 border border-slate-700/50 hover:border-rose-500/40 transition-colors">
- <div class="flex flex-col">
- <span class="text-sm font-bold text-slate-200">એલ્ડર લાઇન (Elder Line)</span>
- <span class="text-[10px] text-slate-400">વરિષ્ઠ નાગરિકો માટે સહાય</span>
- </div>
- <a href="tel:14567" class="px-4 py-1.5 rounded-xl bg-rose-600 hover:bg-rose-500 text-white font-black tracking-wider shadow-lg shadow-rose-500/30 hover:-translate-y-0.5 transition-all">14567</a>
- </div>
-
- <div class="flex items-center justify-between p-3.5 rounded-2xl bg-slate-800/50 border border-slate-700/50 hover:border-rose-500/40 transition-colors">
- <div class="flex flex-col">
- <span class="text-sm font-bold text-slate-200">મહિલા હેલ્પલાઇન</span>
- <span class="text-[10px] text-slate-400">Women Helpline</span>
- </div>
- <a href="tel:1091" class="px-4 py-1.5 rounded-xl bg-rose-600 hover:bg-rose-500 text-white font-black tracking-wider shadow-lg shadow-rose-500/30 hover:-translate-y-0.5 transition-all">1091</a>
- </div>
-
- <div class="flex items-center justify-between p-3.5 rounded-2xl bg-slate-800/50 border border-slate-700/50 hover:border-rose-500/40 transition-colors">
- <div class="flex flex-col">
- <span class="text-sm font-bold text-slate-200">ચાઇલ્ડ લાઇન</span>
- <span class="text-[10px] text-slate-400">Childline</span>
- </div>
- <a href="tel:1098" class="px-4 py-1.5 rounded-xl bg-rose-600 hover:bg-rose-500 text-white font-black tracking-wider shadow-lg shadow-rose-500/30 hover:-translate-y-0.5 transition-all">1098</a>
- </div>
-
- </div>
- </div>
- </div>
-
- <!-- Detailed Modal View for Disease Deep-Dive -->
- <div id="diseaseModal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm hidden flex items-center justify-center p-4 transition-all">
- <div class="glass-card bg-slate-900 border border-slate-700 max-w-2xl w-full rounded-3xl p-6 sm:p-8 max-h-[90vh] overflow-y-auto custom-scrollbar space-y-6 relative shadow-2xl">
- <button onclick="closeModal()" class="absolute top-6 right-6 p-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-400 hover:text-white transition-all">
- <i data-lucide="x" class="w-5 h-5"></i>
- </button>
- <div id="modalContent">
- <!-- Injected dynamically -->
- </div>
- </div>
- </div>
-
- <!-- MODAL for Guides (Barrier Methods, Vaccines, Nutrition) -->
- <div id="guideModal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm hidden flex items-center justify-center p-4 transition-all">
- <div class="glass-card bg-slate-900 border border-slate-700 max-w-3xl w-full rounded-3xl p-6 sm:p-8 max-h-[90vh] overflow-y-auto custom-scrollbar space-y-6 relative shadow-2xl">
- <button onclick="closeGuideModal()" class="absolute top-6 right-6 p-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-400 hover:text-white transition-all z-10">
- <i data-lucide="x" class="w-5 h-5"></i>
- </button>
- <div id="guideModalContent" class="pt-2">
- <!-- Injected dynamically via JS -->
- </div>
- </div>
- </div>
-
- <!-- Application Footer -->
- <footer class="glass-card border-t border-slate-800/80 mt-20 py-8 px-4 text-center text-xs text-slate-500 space-y-2 transition-colors duration-300">
- <p class="font-semibold text-slate-400">Health plus Interactive Awareness System v3.0</p>
- <p>માહિતી માત્ર શૈક્ષણિક પ્રોજેક્ટ માટે છે. શંકાસ્પદ સ્થિતિમાં હંમેશા MBBS / MD ડૉક્ટર પાસે પરામર્શ મેળવવો.</p>
- </footer>
-
- <!-- Core Interactive Application Script -->
- <script>
- const stiData = [
- {
- id: "hiv",
- name: "HIV / AIDS",
- type: "viral",
- badge: "વાઈરલ (Viral)",
- cause: "હ્યુમન ઇમ્યુનોડેફિશિયન્સી વાઇરસ",
- symptoms: ["તાવ, રાત્રે અતિશય પરસેવો", "અચાનક વજનમાં ઝડપી ઘટાડો", "ગળા અને બગલની લસિકાગ્રંથિઓમાં સોજો", "લાંબા સમય સુધી ઝાડા રહેવા"],
- diagnosis: ["ELISA ટેસ્ટ", "Western Blot", "HIV Viral Load PCR ટેસ્ટ"],
- prevention: ["સુરક્ષિત સંબંધો માટે કન્ડોમ", "Pre-Exposure Prophylaxis (PrEP)", "નવી/જંતુરહિત સિરીંજનો ઉપયોગ"],
- treatment: "ART (એન્ટિરેટ્રોવાયરલ થેરાપી) વાયરસ લોડને અદ્રશ્ય બનાવી સામાન્ય આયુષ્ય આપે છે."
- },
- {
- id: "gonorrhea",
- name: "ગોનોરિયા (Gonorrhea)",
- type: "bacterial",
- badge: "બેક્ટેરિયલ (Bacterial)",
- cause: "Neisseria gonorrhoeae બેક્ટેરિયા",
- symptoms: ["પેશાબ કરતી વખતે તીવ્ર બળતરા", "પીળો કે લીલો ઘટ્ટ સ્ત્રાવ", "અંડકોષ કે પેટના નીચેના ભાગમાં દુખાવો"],
- diagnosis: ["NAAT (ન્યુક્લીક એસિડ ટેસ્ટ)", "સ્ત્રાવનું કલ્ચર પરીક્ષણ"],
- prevention: ["સંપૂર્ણ સંયમ અથવા કન્ડોમનો ઉપયોગ", "નિયમિત ચેકઅપ"],
- treatment: "Ceftriaxone ઇન્જેક્શન અને એઝિથ્રોમાસીન જેવી એન્ટિબાયોટિક્સથી સંપૂર્ણ સાધ્ય છે."
- },
- {
- id: "syphilis",
- name: "સિફિલિસ (Syphilis)",
- type: "bacterial",
- badge: "બેક્ટેરિયલ (Bacterial)",
- cause: "Treponema pallidum બેક્ટેરિયા",
- symptoms: ["પીડારહિત કઠણ ચાંદી (Chancre)", "હથેળી-પગના તળિયે લાલ ચકામા", "સ્નાયુઓનો દુખાવો અને વાળ ખરવા"],
- diagnosis: ["VDRL ટેસ્ટ", "RPR ટેસ્ટ", "TPHA બ્લડ ટેસ્ટ"],
- prevention: ["ચાંદાના પ્રત્યક્ષ સ્પર્શથી બચવું", "પાર્ટનર સ્ક્રીનિંગ"],
- treatment: "પ્રારંભિક સ્ટેજમાં બેન્ઝાથિન પેનિસિલિન ઇન્જેક્શન દ્વારા ૧૦૦% ઈલાજ શક્ય છે."
- },
- {
- id: "herpes",
- name: "જનાંગ હર્પીસ (Genital Herpes - HSV-2)",
- type: "viral",
- badge: "વાઈરલ (Viral)",
- cause: "હર્પીસ સિમ્પ્લેક્સ વાયરસ ટાઇપ-૨",
- symptoms: ["પાણી ભરેલા દર્દનાક ફોલ્લા", "ગુપ્તાંગ આસપાસ તીવ્ર કળતર અને ખંજવાળ", "પેશાબમાં અસહ્ય દુખાવો"],
- diagnosis: ["HSV PCR ટેસ્ટ", "ફોલ્લામાંથી સ્વેબ ટેસ્ટ"],
- prevention: ["ફોલ્લા સક્રિય હોય ત્યારે સંબંધ ટાળવો", "દૈનિક સપ્રેસિવ થેરાપી"],
- treatment: "Acyclovir અને Valacyclovir એન્ટિવાયરલ દવાઓ લક્ષણોને દાબી રાખે છે."
- },
- {
- id: "hpv",
- name: "હ્યુમન પેપિલોમા વાયરસ (HPV)",
- type: "viral",
- badge: "વાઈરલ (Viral)",
- cause: "HPV વાયરસ સ્ટ્રેઇન્સ (6, 11, 16, 18)",
- symptoms: ["ગુપ્તાંગ પર નાના કે મોટા મસા (Warts)", "ગળા અથવા સર્વિક્સમાં અસામાન્ય કોષો"],
- diagnosis: ["Pap Smear ટેસ્ટ", "HPV DNA ટેસ્ટ"],
- prevention: ["Gardasil-9 રસીકરણ (ઉત્તમ નિવારણ)", "નિયમિત સર્વાઇકલ સ્ક્રીનિંગ"],
- treatment: "મસા દૂર કરવા માટે Cryotherapy (બરફથી બાળવું), લેસર અથવા લોકલ ક્રીમ્સ."
- },
- {
- id: "chlamydia",
- name: "ક્લેમીડિયા (Chlamydia)",
- type: "bacterial",
- badge: "બેક્ટેરિયલ (Bacterial)",
- cause: "Chlamydia trachomatis",
- symptoms: ["પેશાબમાં બળતરા", "પાતળો સફેદ સ્ત્રાવ", "સંભોગ દરમિયાન દુખાવો", "ઘણીવાર ૭૦% કેસમાં કોઈ લક્ષણ નહિ"],
- diagnosis: ["Urine NAAT ટેસ્ટ", "સ્વેબ ટેસ્ટ"],
- prevention: ["બેરિયર કન્ડોમ", "વાર્ષિક નિયમિત ટેસ્ટિંગ"],
- treatment: "Doxycycline અથવા Azithromycin દવાઓથી સંપૂર્ણ મુક્તિ."
- },
- {
- id: "trichomoniasis",
- name: "ટ્રાઇકોમોનિઆસિસ (Trichomoniasis)",
- type: "parasitic",
- badge: "પેરાસાઇટિક (Parasitic)",
- cause: "Trichomonas vaginalis પ્રજીવ",
- symptoms: ["ખરાબ વાસવાળો પીળો-લીલો ફીણવાળો સ્ત્રાવ", "તીવ્ર લાલાશ અને ખંજવાળ", "પેશાબમાં બળતરા"],
- diagnosis: ["Microscopic Wet Mount", "રેપિડ એન્ટિજેન ટેસ્ટ"],
- prevention: ["સુરક્ષિત સંબંધો", "બંને પાર્ટનરની એકસાથે દવા"],
- treatment: "Metronidazole અથવા Tinidazole ટેબ્લેટ્સ દ્વારા સરળતાથી મટે છે."
- },
- {
- id: "hepatitis_b",
- name: "હિપેટાઇટિસ-બી (Hepatitis B)",
- type: "viral",
- badge: "વાઈરલ (Viral)",
- cause: "Hepatitis B Virus (HBV)",
- symptoms: ["કમળો (આંખો-ત્વચા પીળી પડવી)", "ઘેરો પેશાબ અને અત્યંત થાક", "લીવરમાં દુખાવો અને ભૂખ ન લાગવી"],
- diagnosis: ["HBsAg બ્લડ ટેસ્ટ", "Liver Function Test (LFT)"],
- prevention: ["Hepatitis B રસી (૩ ડોઝ)", "સંક્રમિત સોયથી બચવું"],
- treatment: "ક્રોનિક કેસમાં Tenofovir અથવા Entecavir એન્ટિવાયરલ દવાઓ."
- },
- {
- id: "pubic_lice",
- name: "પ્યુબિક લાઇસ (Pubic Lice / Crabs)",
- type: "parasitic",
- badge: "પેરાસાઇટિક (Parasitic)",
- cause: "Pthirus pubis જીવાત",
- symptoms: ["ગુપ્તાંગના વાળમાં તીવ્ર ખંજવાળ", "અન્ડરવેરમાં નાના લોહીના ડાઘ", "ઝીણી જીવાત કે ઈંડા દેખાવા"],
- diagnosis: ["મેગ્નિફાઇંગ ગ્લાસ દ્વારા ક્લિનિકલ નિરીક્ષણ"],
- prevention: ["કપડાં-પથારીની સ્વચ્છતા", "સંક્રમિત વ્યક્તિ સાથે પથારી શેર ન કરવી"],
- treatment: "Permethrin ૧% લોશન અને ગરમ પાણીમાં કપડાં ધોવા."
- },
- {
- id: "chancroid",
- name: "શેન્ક્રોઇડ (Chancroid)",
- type: "bacterial",
- badge: "બેક્ટેરિયલ (Bacterial)",
- cause: "Haemophilus ducreyi બેક્ટેરિયા",
- symptoms: ["અત્યંત પીડાદાયક નરમ ચાંદા", "સાથળની લસિકાગ્રંથિ પાકી જવી (Buboes)"],
- diagnosis: ["ચાંદામાંથી કલ્ચર ટેસ્ટ"],
- prevention: ["અવરોધક પદ્ધતિઓ", "સ્વચ્છતા"],
- treatment: "Azithromycin અથવા Ceftriaxone એન્ટિબાયોટિક્સ."
- },
- {
- id: "mycoplasma",
- name: "માયકોપ્લાઝ્મા જીનિટાલિયમ",
- type: "bacterial",
- badge: "બેક્ટેરિયલ (Bacterial)",
- cause: "Mycoplasma genitalium",
- symptoms: ["લાંબા સમય સુધી પેશાબમાં બળતરા", "પેલ્વિક બળતરા રોગ (PID)"],
- diagnosis: ["વિશેષ મોલેક્યુલર PCR ટેસ્ટ"],
- prevention: ["પાર્ટનર ટ્રીટમેન્ટ", "સુરક્ષિત સંબંધો"],
- treatment: "ચોક્કસ કોર્સની મોક્સિફ્લોક્સાસીન (Moxifloxacin) એન્ટિબાયોટિક્સ."
- },
- {
- id: "molluscum",
- name: "મોલસ્કમ કન્ટેજિયોસમ",
- type: "viral",
- badge: "વાઈરલ (Viral)",
- cause: "Poxvirus કુળનો વાયરસ",
- symptoms: ["મોતી જેવા નાના ગોળ મોલસ્કમ દાણા", "વચ્ચે ખાડો હોય તેવા ફોલ્લા"],
- diagnosis: ["ત્વચા નિષ્ણાત દ્વારા વિઝ્યુઅલ તપાસ"],
- prevention: ["સ્કિન-ટુ-સ્કિન ઘર્ષણ ટાળવું", "ટુવાલ અલગ રાખવા"],
- treatment: "Cryo-લેસર અથવા કુદરતી રોગપ્રતિકારક શક્તિથી ૬-૧૨ મહિનામાં આપમેળે દૂર થાય છે."
- },
- {
- id: "common_cold",
- name: "શરદી અને ઉધરસ (Common Cold and Cough)",
- type: "viral",
- badge: "વાઈરલ / શ્વસન (Viral)",
- cause: "રાઇનોવાઇરસ (Rhinovirus), નબળી રોગપ્રતિકારક શક્તિ, એલર્જી અને બદલાતી ઋતુ",
- symptoms: ["ગળામાં ખરાશ અને બળતરા", "નાક બંધ થવું કે વહેવું", "સતત ઉધરસ અને છીંકો આવવી", "શરીરમાં હળવો થાક કે અશક્તિ"],
- diagnosis: ["ક્લિનિકલ લક્ષણોના આધારે સામાન્ય તપાસ"],
- prevention: ["ગરમ પાણી પીવું", "એલર્જીવાળી ધૂળ અને ધુમાડાથી બચવું", "રોગપ્રતિકારક શક્તિ વધારવી"],
- treatment: "આદુ અને મધનું મિશ્રણ, હળદરવાળું ગરમ દૂધ, વરાળ (Steam) લેવી, તુલસી-મરીનો ઉકાળો અને મીઠાના પાણીના કોગળા કરવા."
- },
- {
- id: "typhoid_pneumonia",
- name: "ટાઇફોઇડ અને ન્યુમોનિયા",
- type: "bacterial",
- badge: "બેક્ટેરિયલ / ઇન્ફેક્શન",
- cause: "સાલ્મોનેલા ટાઇફી (ટાઇફોઇડ) અને સ્ટ્રેપ્ટોકોકસ ન્યુમોની / વાયરસ (ન્યુમોનિયા)",
- symptoms: ["તીવ્ર તાવ અને નબળાઈ (ટાઇફોઇડ)", "શ્વાસ લેવામાં તકલીફ અને છાતીમાં દુખાવો (ન્યુમોનિયા)", "ઉબકા, ઉલટી અને કફ"],
- diagnosis: ["Widal ટેસ્ટ, બ્લડ કલ્ચર (ટાઇફોઇડ)", "ચેસ્ટ એક્સ-રે, સ્વેબ ટેસ્ટ (ન્યુમોનિયા)"],
- prevention: ["શુદ્ધ ઉકાળેલું પાણી અને સ્વચ્છ ખોરાક", "રસીકરણ અને સ્વચ્છતા જાળવવી"],
- treatment: "ડૉક્ટરની સલાહ મુજબ એન્ટિબાયોટિક્સનો કોર્સ, પૂરતો પ્રવાહી આહાર, ઓક્સિજન સપોર્ટ અને સંપૂર્ણ બેડ રેસ્ટ."
- },
- {
- id: "malaria_dengue_vector",
- name: "મેલેરિયા, અમીબીય મરડો, ડેન્ગ્યુ અને ચિકનગુનિયા",
- type: "parasitic",
- badge: "વેક્ટર-બોોર્ન / પરજીવી",
- cause: "પ્લાઝમોડિયમ (મેલેરિયા), એન્ટાએમીબા (મરડો), ડેન્ગ્યુ/ચિકનગુનિયા વાયરસ (મચ્છરજન્ય)",
- symptoms: ["ઠંડી વાગીને તાવ આવવો (મેલેરિયા)", "પેટમાં મરડો અને લોહીયુક્ત ઝાડા (અમીબીય મરડો)", "સાંધામાં અસહ્ય દુખાવો અને પ્લેટલેટ્સ ઘટવા (ડેન્ગ્યુ/ચિકનગુનિયા)"],
- diagnosis: ["મેલેરિયા સ્મીયર / રેપિડ ટેસ્ટ", "સ્ટૂલ ટેસ્ટ (મરડો)", "CBC / NS1 એન્ટિજેન ટેસ્ટ (ડેન્ગ્યુ)"],
- prevention: ["મચ્છરદાની અને મચ્છર ભગાડતી ક્રીમનો ઉપયોગ", "ઘરની આસપાસ પાણી જમા ન થવા દેવું અને ઉકાળેલું પાણી પીવું"],
- treatment: "એન્ટિ-મેલેરિયલ/એન્ટિપ્રોટોઝોઅલ દવાઓ, પેરાસિટામોલ (એસ્પિરિન ટાળવી), નારિયેળ પાણી, પપૈયાના પાનનો રસ અને હાઇડ્રેશન."
- },
- {
- id: "filariasis_ascariasis",
- name: "ફિલરિયાસિસ અને એસ્કેરિયાસિસ",
- type: "parasitic",
- badge: "કૃમિજન્ય (Parasitic)",
- cause: "ફિલારીઅલ વોર્મ્સ / ક્યુલેક્સ મચ્છર (ફિલરિયાસિસ) અને એસ્કેરીસ લમ્બ્રોકોઈડિસ (એસ્કેરિયાસિસ)",
- symptoms: ["અંગોમાં સોજો જેમ કે હાથીપગા (ફિલરિયાસિસ)", "પેટમાં દુખાવો અને ગોળ કૃમિની સમસ્યા (એસ્કેરિયાસિસ)"],
- diagnosis: ["નાઇટ બ્લડ સ્મીયર (ફિલરિયાસિસ)", "સ્ટૂલ એક્ઝામિનેશન (એસ્કેરિયાસિસ)"],
- prevention: ["ગટરનું પાણી જમા ન થવા દેવું", "શાકભાજી-ફળો બરાબર ધોઈને ખાવા અને હાથ સાબુથી સાફ રાખવા"],
- treatment: "DEC, આઈવરમેક્ટિન (ફિલરિયાસિસ માટે) અને એલ્બેન્ડાઝોલ / મેબેન્ડાઝોલ ડી-વોર્મિંગ દવાઓ (એસ્કેરિયાસિસ માટે)."
- },
- {
- id: "weakness",
- name: "શારીરિક નબળાઈ (Weakness / Fatigue)",
- type: "parasitic",
- badge: "પોષણ અને જીવનશૈલી",
- cause: "વિટામિન B12, D, આયર્ન કે કેલ્શિયમની ઉણપ, અપૂરતી ઊંઘ, ડિહાઈડ્રેશન અને તણાવ",
- symptoms: ["સતત થાક અને અશક્તિ અનુભવાવી", "શારીરિક સ્ટૅમિના ઘટવો", "ચક્કર આવવા"],
- diagnosis: ["બ્લડ કાઉન્ટ (CBC) અને વિટામિન પ્રોફાઇલ ટેસ્ટ"],
- prevention: ["સમયસર પૌષ્ટિક આહાર અને પૂરતી ઊંઘ", "ડિહાઈડ્રેશનથી બચવા પુષ્કળ પ્રવાહી લેવું"],
- treatment: "લીલા પાંદડાવાળા શાકભાજી, ડ્રાયફ્રૂટ્સ, ફળો, નારિયેળ પાણી, છાશ, વિટામિન સપ્લીમેન્ટ્સ અને હળવી કસરત/યોગ."
- },
- {
- id: "hair_fall",
- name: "ખરતા વાળ (Hair Fall)",
- type: "parasitic",
- badge: "ત્વચા અને હોર્મોનલ",
- cause: "પ્રોટીન/આયર્ન/વિટામિનની ઉણપ, હોર્મોનલ અસંતુલન (PCOD/થાઇરોઇડ), ખોડો અને માનસિક તાણ",
- symptoms: ["વાળ અતિશય ખરવા", "સ્કેલ્પમાં ડેન્ડ્રફ કે ખંજવાળ", "વાળની ચમક અને મજબૂતાઈ ઘટવી"],
- diagnosis: ["હોર્મોનલ અને ન્યુટ્રિશનલ બ્લડ ટેસ્ટ"],
- prevention: ["કેમિકલ અને heat પ્રોડક્ટ્સનો ઓછો ઉપયોગ", "માનસિક તણાવથી દૂર રહેવું"],
- treatment: "પ્રોટીનયુક્ત આહાર (પનીર, કઠોળ, ઈંડા), હૂંફાળા તેલથી મસાજ, હર્બલ/માઈલ્ડ શેમ્પૂ, પ્રાણાયામ અને બાયોટિન સપ્લીમેન્ટ્સ."
- },
- {
- id: "vitamin_deficiencies",
- name: "વિટામિન્સની ઉણપ અને રોગો",
- type: "parasitic",
- badge: "પોષણની ઉણપ (Deficiency)",
- cause: "આહારમાં વિટામિન્સ (A, B-કોમ્પ્લેક્સ, C, D, E, K) યુક્ત ખોરાકનો અભાવ",
- symptoms: ["રાતોઅંધાપણું, બેરીબેરી, સ્કર્વી, રિકેટ્સ અને લોહી ગંઠાઈ જવામાં તકલીફ"],
- diagnosis: ["વિટામિન ડેફિશિયન્સી બ્લડ પેનલ"],
- prevention: ["સંતુલિત આહાર અને સૂર્યપ્રકાશનું સેવન", "ફળો અને લીલા શાકભાજીનો નિયમિત ખોરાકમાં સમાવેશ"],
- treatment: "વિટામિન A માટે ગાજર/પપૈયું; B માટે ડ્રાયફ્રૂટ્સ/દૂધ; C માટે ખાટાં ફળો/આમળા; D માટે સૂર્યપ્રકાશ; E માટે બદામ; K માટે પાલક/કોબીજ."
- },
- {
- id: "kidney_stones",
- name: "પથરી (Kidney Stones)",
- type: "parasitic",
- badge: "યુરિનરી સિસ્ટમ",
- cause: "ઓછું પાણી પીવું, ખોરાકમાં વધુ પડતું મીઠું/ઓક્સાલેટ, જંક ફૂડ અને વારસાગત કારણો",
- symptoms: ["તીવ્ર પેટ કે પીઠનો દુખાવો (Flank pain)", "પેશાબ કરતી વખતે બળતરા કે લોહી પડવું", "ઉબકા અને ઉલટી"],
- diagnosis: ["સોનોગ્રાફી (USG Abdomen / KUB)", "યુરિન રૂટીન ટેસ્ટ"],
- prevention: ["દિવસમાં ૩ થી ૪ લીટર પાણી પીવું", "પાલક અને ટામેટાંના બીજનું સેવન મર્યાદિત રાખવું"],
- treatment: "પુષ્કળ પ્રવાહી, લીંબુ પાણી, નારિયેળ પાણી અને ડૉક્ટરની સલાહ મુજબ દવાઓ અથવા લિથોટ્રિપ્સી / સર્જરી."
- },
- {
- id: "infertility",
- name: "અફળદ્રુપતા (Infertility)",
- type: "parasitic",
- badge: "પ્રજનન સ્વાસ્થ્ય",
- cause: "પુરુષોમાં શુક્રાણુઓની ઓછી ગુણવત્તા/સ્પર્મ કાઉન્ટ અને સ્ત્રીઓમાં PCOD, ટ્યુબ બ્લોક કે હોર્મોનલ અસંતુલન",
- symptoms: ["ગર્ભ ધારણ કરવામાં લાંબા સમય સુધી મુશ્કેલી", "અનિયમિત માસિક કે હોર્મોનલ અસંતુલન"],
- diagnosis: ["સેમેન એનાલિસિસ, પેલ્વિક અલ્ટ્રાસાઉન્ડ, હોર્મોન ટેસ્ટ"],
- prevention: ["ધૂમ્રપાન અને આલ્કોહોલથી દૂર રહેવું", "વજન નિયંત્રણમાં રાખવું અને પૌષ્ટિક આહાર લેવો"],
- treatment: "જીવનશૈલીમાં સુધારો, વજન નિયંત્રણ, ફર્ટિલિટી સ્પેશિયાલિસ્ટની સલાહ મુજબ હોર્મોનલ થેરાપી, દવાઓ અથવા IVF પદ્ધતિઓ."
- }
- ];
-
- // --- DATA FOR ALL GUIDES MODALS ---
- const guideData = {
- 'barrier': `
- <div class="flex items-center gap-4 mb-6 border-b border-slate-800 pb-4">
- <div class="w-12 h-12 rounded-2xl bg-rose-500/20 text-rose-400 flex items-center justify-center">
- <i data-lucide="shield-check" class="w-6 h-6"></i>
- </div>
- <div>
- <h3 class="text-2xl font-black text-slate-100">બેરિયર પદ્ધતિઓ અને સ્વચ્છતા</h3>
- <p class="text-xs text-slate-400 mt-1">વિગતવાર વૈજ્ઞાનિક માર્ગદર્શિકા</p>
- </div>
- </div>
-
- <div class="space-y-8 text-slate-300 text-sm leading-relaxed px-1">
- <div class="space-y-4">
- <h4 class="text-lg font-bold text-rose-400 border-l-4 border-rose-400 pl-3">મુખ્ય બેરિયર પદ્ધતિઓ</h4>
- <ul class="list-disc pl-5 space-y-3">
- <li><strong class="text-slate-100">પુરુષ કોન્ડોમ (Male Condom):</strong> આ લેટેક્સ, પોલીયુરેથીન અથવા પોલીઆઇસોપ્રીનમાંથી બનેલું પાતળું આવરણ છે. તે STIs (જેમ કે HIV, સિફિલિસ) અને ગર્ભાવસ્થા બંને સામે રક્ષણ આપવા માટે સૌથી અસરકારક, સરળતાથી ઉપલબ્ધ અને સસ્તી પદ્ધતિ છે.</li>
- <li><strong class="text-slate-100">સ્ત્રી કોન્ડોમ (Female Condom):</strong> આ પોલીયુરેથીન અથવા નાઇટ્રાઇલમાંથી બનેલું પાઉચ છે જે શારીરિક સંબંધ પહેલાં યોનિમાર્ગ (Vagina) ની અંદર મૂકવામાં આવે છે. તે પણ STIs અને ગર્ભાવસ્થા બંને સામે રક્ષણ આપે છે.</li>
- <li><strong class="text-slate-100">ડાયાફ્રામ (Diaphragm):</strong> આ સિલિકોનથી બનેલો એક નાનો, છીછરો કપ છે જેને યોનિમાર્ગની અંદર ગર્ભાશયના મુખ (Cervix) ને કવર કરવા માટે મૂકવામાં આવે છે. વધુ અસરકારકતા માટે તેને સ્પર્મીસાઇડ (શુક્રાણુનાશક ક્રીમ/જેલ) સાથે વાપરવામાં આવે છે. <span class="text-rose-400 italic">(નોંધ: આ પદ્ધતિ STIs સામે રક્ષણ આપતી નથી).</span></li>
- <li><strong class="text-slate-100">સર્વાઇકલ કેપ (Cervical Cap):</strong> આ ડાયાફ્રામ જેવું જ હોય છે પરંતુ આકારમાં નાનું હોય છે અને સર્વિક્સ પર ચુસ્તપણે બેસે છે.</li>
- <li><strong class="text-slate-100">સ્પર્મીસાઇડ્સ (Spermicides):</strong> આ ક્રીમ, જેલ, ફોમ અથવા ફિલ્મ સ્વરૂપે આવે છે જેમાં એવા રસાયણો હોય છે જે શુક્રાણુઓને નિષ્ક્રિય કરે છે. તેનો ઉપયોગ મોટાભાગે કોન્ડોમ અથવા ડાયાફ્રામ જેવી અન્ય બેરિયર પદ્ધતિઓ સાથે વધારાની સુરક્ષા માટે કરવામાં આવે છે.</li>
- </ul>
- </div>
-
- <div class="space-y-4 pt-4 border-t border-slate-800">
- <h4 class="text-lg font-bold text-rose-400 border-l-4 border-rose-400 pl-3">સ્વચ્છતા (Hygiene) અને તેનું મહત્વ</h4>
- <p class="text-slate-400 font-medium bg-slate-800/30 p-4 rounded-xl border border-slate-700/50">શારીરિક અને જાતીય સ્વાસ્થ્ય જાળવવા માટે સ્વચ્છતા અત્યંત જરૂરી છે. યોગ્ય સ્વચ્છતા ન રાખવાથી બેક્ટેરિયલ અથવા ફંગલ ઇન્ફેક્શન થવાનું જોખમ રહે છે.</p>
-
- <h5 class="font-bold text-rose-400 mt-6 mb-2">૧. બેરિયર પદ્ધતિઓ વાપરતી વખતે રાખવાની સ્વચ્છતા:</h5>
- <ul class="list-disc pl-5 space-y-2">
- <li><strong class="text-slate-100">હાથ ધોવા:</strong> કોઈપણ બેરિયર પદ્ધતિ (જેમ કે કોન્ડોમ લગાવતા કે ડાયાફ્રામ અંદર મૂકતા પહેલા) ને સ્પર્શ કરતા પહેલા હાથ સાબુ અને પાણીથી બરાબર ધોવા જોઈએ.</li>
- <li><strong class="text-slate-100">સિંગલ યુઝ:</strong> કોન્ડોમનો માત્ર એક જ વાર ઉપયોગ કરવો. તેને ક્યારેય ધોઈને ફરીથી વાપરવો નહીં. બે વાર સંબંધ બાંધવા માટે દર વખતે નવો કોન્ડોમ વાપરવો.</li>
- <li><strong class="text-slate-100">યોગ્ય સંગ્રહ:</strong> કોન્ડોમને પાકિટમાં (wallet) લાંબા સમય સુધી કે સીધા સૂર્યપ્રકાશ અને ગરમીવાળી જગ્યાએ ન રાખવા, કારણ કે ગરમીથી લેટેક્સ નબળું પડી શકે છે. ઉપયોગ કરતા પહેલા હંમેશા એક્સપાયરી ડેટ (Expiry Date) તપાસવી.</li>
- <li><strong class="text-slate-100">રીયુઝેબલ સાધનોની સફાઈ:</strong> જો ડાયાફ્રામ અથવા સર્વાઇકલ કેપનો ઉપયોગ કરતા હોવ, તો ઉપયોગ પછી તેને હળવા સાબુ અને હૂંફાળા પાણીથી ધોઈ, બરાબર સૂકવીને તેના સ્વચ્છ કેસમાં પાછા મૂકવા જોઈએ.</li>
- </ul>
-
- <h5 class="font-bold text-rose-400 mt-6 mb-2">૨. વ્યક્તિગત અને જાતીય સ્વચ્છતા (Personal & Sexual Hygiene):</h5>
- <ul class="list-disc pl-5 space-y-2">
- <li><strong class="text-slate-100">સફાઈ:</strong> શારીરિક સંબંધ પહેલાં અને પછી ગુપ્તાંગોને હળવા ગરમ પાણીથી સાફ કરવા જોઈએ. યોનિમાર્ગની અંદર સાબુ કે કેમિકલયુક્ત વોશ (Intimate wash/Douching) નો ઉપયોગ ટાળવો જોઈએ, કારણ કે તે કુદરતી pH બેલેન્સ બગાડે છે અને સારા બેક્ટેરિયાનો નાશ કરે છે.</li>
- <li><strong class="text-slate-100">પેશાબ કરવો:</strong> શારીરિક સંબંધ બાંધ્યા પછી તરત જ પેશાબ કરવાની આદત રાખવી. આનાથી યુરેથ્રા (મૂત્રમાર્ગ) માં પ્રવેશેલા બેક્ટેરિયા બહાર નીકળી જાય છે અને યુરિનરી ટ્રેક્ટ ઇન્ફેક્શન (UTI) નું જોખમ નોંધપાત્ર રીતે ઘટે છે.</li>
- <li><strong class="text-slate-100">યોગ્ય અંડરવેર:</strong> હંમેશા સુતરાઉ (cotton) અને યોગ્ય ફિટિંગવાળા અંડરવેર પહેરવા જોઈએ. સિન્થેટિક કાપડ ભેજ પકડી રાખે છે, જેનાથી ફંગલ ઇન્ફેક્શન થઈ શકે છે.</li>
- </ul>
-
- <h5 class="font-bold text-rose-400 mt-6 mb-2">૩. માસિક ધર્મ દરમિયાન સ્વચ્છતા (Menstrual Hygiene):</h5>
- <ul class="list-disc pl-5 space-y-2">
- <li>ઇન્ફેક્શનથી બચવા માટે સેનિટરી પેડ કે ટેમ્પૂન દર ૪ થી ૬ કલાકે બદલવા જોઈએ.</li>
- <li>જો મેન્સ્ટ્રુઅલ કપ (Menstrual Cup) નો ઉપયોગ કરતા હોવ, તો માસિક ચક્રની શરૂઆતમાં અને અંતમાં તેને ઉકળતા પાણીમાં નાખીને સ્ટરીલાઈઝ (જંતુમુક્ત) કરવો ફરજિયાત છે. તેને બદલતી વખતે પણ હાથ સ્વચ્છ હોવા જરૂરી છે.</li>
- </ul>
- </div>
- </div>
- `,
- 'vaccines': `
- <div class="flex items-center gap-4 mb-6 border-b border-slate-800 pb-4">
- <div class="w-12 h-12 rounded-2xl bg-rose-500/20 text-rose-400 flex items-center justify-center">
- <i data-lucide="syringe" class="w-6 h-6"></i>
- </div>
- <div>
- <h3 class="text-2xl font-black text-slate-100">રસીકરણ (Vaccines)</h3>
- <p class="text-xs text-slate-400 mt-1">વિગતવાર વૈજ્ઞાનિક માર્ગદર્શિકા</p>
- </div>
- </div>
-
- <div class="space-y-8 text-slate-300 text-sm leading-relaxed px-1">
- <div class="space-y-4">
- <h4 class="text-lg font-bold text-rose-400 border-l-4 border-rose-400 pl-3">રસી કેવી રીતે કામ કરે છે?</h4>
- <ul class="list-disc pl-5 space-y-3">
- <li><strong class="text-slate-100">ઓળખ અને એન્ટિબોડીઝ:</strong> રસીમાં જે-તે રોગના જીવાણુઓ (વાયરસ કે બેક્ટેરિયા) નબળા કે મૃત સ્વરૂપમાં અથવા તેમના પ્રોટીન સ્વરૂપમાં હોય છે. જ્યારે રસી શરીરમાં દાખલ થાય છે, ત્યારે આપણી રોગપ્રતિકારક શક્તિ તેને 'દુશ્મન' તરીકે ઓળખીને તેની સામે લડવા માટે એન્ટિબોડીઝ (Antibodies) બનાવે છે.</li>
- <li><strong class="text-slate-100">મેમરી (યાદશક્તિ):</strong> રોગપ્રતિકારક શક્તિ આ જીવાણુઓની રચના યાદ રાખી લે છે. ભવિષ્યમાં જ્યારે ખરેખર તે રોગના જીવાણુઓ હુમલો કરે, ત્યારે શરીર તરત જ એન્ટિબોડીઝ બનાવીને રોગ ગંભીર સ્વરૂપ ધારણ કરે તે પહેલાં જ જીવાણુઓનો નાશ કરી દે છે.</li>
- </ul>
- </div>
-
- <div class="space-y-4 pt-4 border-t border-slate-800">
- <h4 class="text-lg font-bold text-rose-400 border-l-4 border-rose-400 pl-3">રસીના મુખ્ય પ્રકારો</h4>
- <ul class="list-disc pl-5 space-y-2">
- <li><strong class="text-slate-100">૧. લાઇવ-એટેન્યુએટેડ રસી (Live-attenuated vaccines):</strong> આમાં જીવંત પરંતુ ખૂબ જ નબળા પડેલા જીવાણુઓ હોય છે, જે બીમારી કર્યા વગર પ્રતિકારક શક્તિ વધારે છે. (દા.ત., ઓરી, રૂબેલા, ચિકનપોક્સ).</li>
- <li><strong class="text-slate-100">૨. ઇનએક્ટિવેટેડ રસી (Inactivated vaccines):</strong> આ રસીમાં મૃત જીવાણુઓનો ઉપયોગ થાય છે. (દા.ત., હડકવા, હેપેટાઇટિસ A, ઇન્જેક્શનવાળી પોલિયોની રસી).</li>
- <li><strong class="text-slate-100">૩. સબયુનિટ અને કોન્જુગેટ રસી (Subunit/Conjugate vaccines):</strong> આમાં આખા જીવાણુને બદલે તેના માત્ર ચોક્કસ ભાગ (જેમ કે પ્રોટીન કે ખાંડ) નો ઉપયોગ થાય છે. (દા.ત., હેપેટાઇટિસ B, HPV).</li>
- <li><strong class="text-slate-100">૪. ટોક્સોઇડ રસી (Toxoid vaccines):</strong> આ રસી બેક્ટેરિયા દ્વારા ઉત્પન્ન થતા ઝેરી તત્વો (Toxins) સામે રક્ષણ આપે છે. (દા.ત., ટિટાનસ/ધનુર્વા, ડિપ્થેરિયા).</li>
- <li><strong class="text-slate-100">૫. mRNA રસી:</strong> આ આધુનિક ટેકનોલોજી છે જેમાં કોષોને વાયરસ જેવું પ્રોટીન બનાવવાની સૂચના આપવામાં આવે છે જેથી રોગપ્રતિકારક શક્તિ સક્રિય થાય. (દા.ત., કોવિડ-19 રસી).</li>
- </ul>
- </div>
-
- <div class="space-y-4 pt-4 border-t border-slate-800">
- <h4 class="text-lg font-bold text-rose-400 border-l-4 border-rose-400 pl-3">રસીકરણનું મહત્વ</h4>
- <ul class="list-disc pl-5 space-y-2">
- <li><strong class="text-slate-100">જીવનરક્ષક:</strong> રસીકરણ દર વર્ષે દુનિયાભરમાં લાખો બાળકો અને વયસ્કોના જીવ બચાવે છે અને અપંગતા આવતી રોકે છે.</li>
- <li><strong class="text-slate-100">હર્ડ ઇમ્યુનિટી (Herd Immunity):</strong> જ્યારે સમાજમાં મોટાભાગના લોકોને રસી મુકાયેલી હોય, ત્યારે રોગનો ફેલાવો અટકી જાય છે. આનાથી એવા લોકોને પણ આપમેળે રક્ષણ મળે છે જેઓ કોઈ કારણસર રસી લઈ શકતા નથી (જેમ કે નવજાત શિશુ અથવા કેન્સર જેવી ગંભીર બીમારીવાળા દર્દીઓ).</li>
- <li><strong class="text-slate-100">રોગ નાબૂદી:</strong> વ્યાપક રસીકરણને કારણે શીતળા (Smallpox) જેવી ભયાનક બીમારી દુનિયામાંથી સંપૂર્ણપણે નાબૂદ થઈ ગઈ છે અને પોલિયો પણ નાબૂદીના આરે છે.</li>
- </ul>
- </div>
-
- <div class="space-y-4 pt-4 border-t border-slate-800">
- <h4 class="text-lg font-bold text-rose-400 border-l-4 border-rose-400 pl-3">સામાન્ય આડઅસરો (Side Effects)</h4>
- <p class="text-slate-400 bg-slate-800/30 p-4 rounded-xl border border-slate-700/50 leading-relaxed">
- રસી લીધા પછી હળવો તાવ આવવો, ઈન્જેક્શનની જગ્યાએ થોડો દુખાવો થવો, સોજો આવવો કે લાલાશ થવી એ એકદમ સામાન્ય બાબત છે. આ એ વાતનું પ્રમાણ છે કે શરીરની રોગપ્રતિકારક શક્તિ રસી પ્રત્યે યોગ્ય પ્રતિભાવ આપી રહી છે અને એન્ટિબોડીઝ બનાવી રહી છે. આ લક્ષણો સામાન્ય રીતે એક કે બે દિવસમાં પોતાની મેળે જ મટી જાય છે.<br><br>
- <span class="text-rose-300 font-semibold italic">નોંધ:</span> બાળકો માટે રાષ્ટ્રીય રસીકરણ કાર્યક્રમ (National Immunization Schedule) મુજબ જન્મથી જ રસીકરણ શરૂ કરી દેવામાં આવે છે, જેમાં BCG, પોલિયો, પેન્ટાવેલેન્ટ અને ઓરી જેવી મુખ્ય રસીઓનો સમાવેશ થાય છે.
- </p>
- </div>
- </div>
- `,
- 'nutrition': `
- <div class="flex items-center gap-4 mb-6 border-b border-slate-800 pb-4">
- <div class="w-12 h-12 rounded-2xl bg-rose-500/20 text-rose-400 flex items-center justify-center">
- <i data-lucide="clipboard-check" class="w-6 h-6"></i>
- </div>
- <div>
- <h3 class="text-2xl font-black text-slate-100">નિયમિત સ્ક્રીનિંગ અને પોષણ</h3>
- <p class="text-xs text-slate-400 mt-1">વિગતવાર વૈજ્ઞાનિક માર્ગદર્શિકા</p>
- </div>
- </div>
-
- <div class="space-y-8 text-slate-300 text-sm leading-relaxed px-1">
-
- <div class="space-y-4">
- <h4 class="text-lg font-bold text-rose-400 border-l-4 border-rose-400 pl-3">૧. નિયમિત સ્ક્રીનિંગ (સમયસર લેબ ટેસ્ટ) નું મહત્વ</h4>
- <ul class="list-disc pl-5 space-y-3">
- <li><strong class="text-slate-100">બીમારીની વહેલી જાણ:</strong> ઘણા રોગોની શરૂઆતમાં કોઈ લક્ષણો દેખાતા નથી. રેગ્યુલર બ્લડ ટેસ્ટ દ્વારા વિટામિન્સની ઉણપ, ડાયાબિટીસ, થાઈરોઈડ કે કોલેસ્ટ્રોલ જેવી સમસ્યાઓ ગંભીર સ્વરૂપ ધારણ કરે તે પહેલાં જ પકડી શકાય છે.</li>
- <li><strong class="text-slate-100">અશક્તિનું ચોક્કસ કારણ:</strong> ઘણીવાર પૂરતી ઊંઘ અને ખોરાક લેવા છતાં સતત થાક લાગે છે, જેનું કારણ લોહીની ઉણપ (એનિમિયા) કે અમુક ચોક્કસ વિટામિનની કમી હોઈ શકે છે. ટેસ્ટથી અટકળો કરવાને બદલે સાચું કારણ જાણી શકાય છે.</li>
- </ul>
-
- <h5 class="font-bold text-slate-200 mt-6 mb-2">મહત્વપૂર્ણ લેબ ટેસ્ટ્સ:</h5>
- <ul class="list-disc pl-5 space-y-2">
- <li><strong class="text-slate-100">CBC (કમ્પ્લીટ બ્લડ કાઉન્ટ):</strong> શરીરમાં લોહીના ટકા (હિમોગ્લોબિન) અને કોઈપણ પ્રકારનું છૂપું ઇન્ફેક્શન જાણવા માટે.</li>
- <li><strong class="text-slate-100">વિટામિન B12 અને D3:</strong> ખાસ કરીને ભારતીય આહાર પદ્ધતિ અને શાકાહારી લોકોમાં B12 અને D3 ની ઉણપ ખૂબ સામાન્ય છે. તેની કમી નબળાઈ, સાંધાના દુખાવા, યાદશક્તિ ઘટવી અને નર્વસ સિસ્ટમની સમસ્યાઓ સર્જે છે.</li>
- <li><strong class="text-slate-100">બ્લડ સુગર (HbA1c) અને લિપિડ પ્રોફાઇલ:</strong> ડાયાબિટીસની સ્થિતિ અને હૃદયના સ્વાસ્થ્ય (કોલેસ્ટ્રોલ લેવલ) ની સચોટ ચકાસણી માટે.</li>
- <li><strong class="text-slate-100">થાઇરોઇડ પ્રોફાઇલ (TSH):</strong> અચાનક વજન વધવું કે ઘટવું અને વાળ ખરવા પાછળ થાઇરોઇડ હોર્મોન્સનું અસંતુલન જવાબદાર હોઈ શકે છે.</li>
- </ul>
- </div>
-
- <div class="space-y-4 pt-4 border-t border-slate-800">
- <h4 class="text-lg font-bold text-rose-400 border-l-4 border-rose-400 pl-3">૨. પોષણ અને વિટામિન-પૌષ્ટિક આહાર (Nutrition)</h4>
- <p class="text-slate-400 font-medium bg-slate-800/30 p-4 rounded-xl border border-slate-700/50 leading-relaxed">
- યોગ્ય રિપોર્ટ આવ્યા પછી, જે વિટામિન કે મિનરલની ઉણપ હોય તેને પૌષ્ટિક ખોરાક દ્વારા પૂરી કરી શકાય છે. દવાઓ કરતા કુદરતી ખોરાકમાંથી મળતા પોષક તત્વો શરીર ઝડપથી ગ્રહણ કરે છે.
- </p>
-
- <ul class="list-disc pl-5 space-y-3 mt-4">
- <li><strong class="text-slate-100">વિટામિન C અને એન્ટીઓક્સીડન્ટ્સ:</strong> રોગપ્રતિકારક શક્તિ વધારવા અને શ્વેતકણો (White Blood Cells) ને સક્રિય કરવા માટે આ સૌથી જરૂરી છે. લીંબુ, સંતરા, આમળા, જામફળ અને ટામેટાં તેના ઉત્તમ સ્ત્રોત છે.</li>
- <li><strong class="text-slate-100">આયર્ન (લોહતત્વ):</strong> શરીરમાં ઓક્સિજનનું વહન કરવા, હિમોગ્લોબિન વધારવા અને અશક્તિ દૂર કરવા માટે આયર્ન જરૂરી છે. પાલક, ગોળ, બીટ, ખજૂર, અંજીર અને કઠોળમાંથી તે પૂરતા પ્રમાણમાં મળે છે. આયર્નવાળા ખોરાક સાથે વિટામિન C લેવાથી તેનું શોષણ સારી રીતે થાય છે.</li>
- <li><strong class="text-slate-100">પ્રોટીન:</strong> સ્નાયુઓની મજબૂતી, શારીરિક વિકાસ અને કોષોના રોજના સમારકામ માટે પ્રોટીન અનિવાર્ય છે. દૂધ, દહીં, પનીર, સોયાબીન, મગ, ચણા અને અન્ય કઠોળ પ્રોટીનના શ્રેષ્ઠ સ્ત્રોત છે.</li>
- <li><strong class="text-slate-100">ઝિંક અને ઓમેગા-3 ફેટી એસિડ્સ:</strong> ઇન્ફેક્શન સામે લડવા અને હૃદય/મગજને સ્વસ્થ રાખવા માટે અખરોટ, બદામ, ચિયા સીડ્સ (Chia seeds) અને ફ્લેક્સ સીડ્સ (અળસી) ને આહારમાં સામેલ કરવા જોઈએ.</li>
- <li><strong class="text-slate-100">હાઇડ્રેશન (પાણી):</strong> માત્ર ખોરાક જ નહીં, દિવસ દરમિયાન ૩ થી ૪ લીટર પાણી પીવાથી શરીરમાંથી ઝેરી તત્વો (Toxins) બહાર નીકળે છે અને આખો દિવસ સ્ફૂર્તિ રહે છે.</li>
- </ul>
-
- <p class="text-rose-200 bg-rose-500/10 p-4 rounded-xl border border-rose-500/20 leading-relaxed mt-4 italic">
- માત્ર સારો ખોરાક લેવો પૂરતો નથી; શરીર તે પોષક તત્વોને યોગ્ય રીતે પચાવી અને શોષી રહ્યું છે કે નહીં તે જાણવા માટે વર્ષમાં ઓછામાં ઓછું એક વાર પ્રિવેન્ટિવ હેલ્થ ચેકઅપ ( Preventive Health Checkup) કરાવવું હિતાવહ છે. રિપોર્ટના આધારે આહારમાં જરૂરી ફેરફાર કરવાથી રોગપ્રતિકારક શક્તિ એવી રીતે વિકસે છે કે શરીર ઋતુગત બીમારીઓ અને વાયરલ ઇન્ફેક્શન સામે આપમેળે જ ઢાલ બનીને ઊભું રહી શકે.
- </p>
- </div>
- </div>
- `
- };
-
- let currentFilter = 'all';
-
- function renderGrid(list) {
- const grid = document.getElementById('diseaseGrid');
- grid.innerHTML = '';
-
- if (list.length === 0) {
- grid.innerHTML = `<div class="col-span-full text-center py-16 text-slate-500 font-medium">કોઈ મેળ ખાતી માહિતી મળી નથી. કૃપા કરીને અન્ય નામ કે લક્ષણ લખી જુઓ.</div>`;
- return;
- }
-
- list.forEach(item => {
- const card = document.createElement('div');
- card.className = "glass-card rounded-3xl p-6 border border-slate-800 flex flex-col justify-between hover:border-cyan-500/50 hover:shadow-xl hover:shadow-cyan-500/5 transition-all duration-300 group";
-
- const badgeColor = item.type === 'viral' ? 'bg-indigo-500/20 text-indigo-400 border-indigo-500/30' :
- item.type === 'bacterial' ? 'bg-cyan-500/20 text-cyan-400 border-cyan-500/30' : 
-'bg-purple-500/20 text-purple-400 border-purple-500/30';
-
- card.innerHTML = `
- <div class="space-y-4">
- <div class="flex justify-between items-start gap-2">
- <h4 class="font-black text-lg text-slate-100 group-hover:text-cyan-400 transition-all">${item.name}</h4>
- <span class="text-[11px] px-2.5 py-1 rounded-full border ${badgeColor} font-bold whitespace-nowrap">${item.badge}</span>
- </div>
-
- <p class="text-xs text-slate-400"><strong>કારક:</strong> ${item.cause}</p>
-
- <div class="space-y-1.5">
- <p class="text-[11px] font-bold text-slate-400 uppercase tracking-wider">મુખ્ય લક્ષણો:</p>
- <ul class="text-xs text-slate-300 space-y-1">
- ${item.symptoms.slice(0, 3).map(s => `<li class="flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-cyan-400"></span>${s}</li>`).join('')}
- </ul>
- </div>
- </div>
-
- <div class="mt-6 pt-4 border-t border-slate-800/80 flex items-center justify-between">
- <span class="text-[11px] text-slate-400 font-medium truncate max-w-[170px]">${item.treatment}</span>
- <button onclick="openModal('${item.id}')" class="px-3 py-1.5 rounded-xl bg-slate-800 hover:bg-cyan-500 hover:text-white text-xs font-semibold transition-all">
- સંપૂર્ણ વિગત
- </button>
- </div>
- `;
- grid.appendChild(card);
- });
- lucide.createIcons();
- }
-
- function handleSearch() {
- const query = document.getElementById('searchInput').value.toLowerCase().trim();
- const filtered = stiData.filter(d => {
- const matchesFilter = currentFilter === 'all' || d.type === currentFilter;
- const matchesSearch = d.name.toLowerCase().includes(query) || 
-d.symptoms.some(s => s.toLowerCase().includes(query)) ||
- d.cause.toLowerCase().includes(query) ||
- d.treatment.toLowerCase().includes(query);
- return matchesFilter && matchesSearch;
- });
- renderGrid(filtered);
- }
-
- function setFilter(type) {
- currentFilter = type;
- document.querySelectorAll('.filter-btn').forEach(btn => {
- if (btn.dataset.filter === type) {
- btn.className = "filter-btn px-4 py-2 rounded-xl text-xs font-semibold glass-card border border-cyan-500/50 bg-cyan-500/10 text-cyan-400 transition-all";
- } else {
- btn.className = "filter-btn px-4 py-2 rounded-xl text-xs font-semibold glass-card border border-slate-800 text-slate-400 hover:text-white transition-all";
- }
- });
- handleSearch();
- }
-
- function openModal(id) {
- const item = stiData.find(d => d.id === id);
- if (!item) return;
-
- const modalContent = document.getElementById('modalContent');
- modalContent.innerHTML = `
- <div class="space-y-5">
- <div>
- <span class="text-xs px-3 py-1 rounded-full bg-cyan-500/20 text-cyan-400 border border-cyan-500/30 font-bold">${item.badge}</span>
- <h3 class="text-2xl font-black mt-2 text-slate-100">${item.name}</h3>
- <p class="text-xs text-slate-400 mt-0.5">મુખ્ય કારણ/કારક: <span class="text-slate-200 font-semibold">${item.cause}</span></p>
- </div>
-
- <div class="space-y-2">
- <h5 class="text-xs font-bold text-cyan-400 uppercase tracking-wider">વિગતવાર લક્ષણો (Symptoms)</h5>
- <ul class="text-xs text-slate-300 space-y-1.5 list-disc list-inside">
- ${item.symptoms.map(s => `<li>${s}</li>`).join('')}
- </ul>
- </div>
-
- <div class="space-y-2">
- <h5 class="text-xs font-bold text-indigo-400 uppercase tracking-wider">લેબોરેટરી નિદાન ટેસ્ટ (Diagnostic Tests)</h5>
- <div class="flex flex-wrap gap-2">
- ${item.diagnosis.map(d => `<span class="px-2.5 py-1 rounded-lg bg-indigo-500/10 border border-indigo-500/20 text-indigo-300 text-xs">${d}</span>`).join('')}
- </div>
- </div>
-
- <div class="space-y-2">
- <h5 class="text-xs font-bold text-emerald-400 uppercase tracking-wider">બચાવના ઉપાયો (Prevention)</h5>
- <ul class="text-xs text-slate-300 space-y-1.5 list-disc list-inside">
- ${item.prevention.map(p => `<li>${p}</li>`).join('')}
- </ul>
- </div>
-
- <div class="p-4 rounded-2xl bg-cyan-950/40 border border-cyan-500/30">
- <h5 class="text-xs font-bold text-cyan-300">પ્રમાણિત સારવાર / ઘરેલું ઉપાયો (Treatment):</h5>
- <p class="text-xs text-slate-300 mt-1 leading-relaxed">${item.treatment}</p>
- </div>
- </div>
- `;
- document.getElementById('diseaseModal').classList.remove('hidden');
- lucide.createIcons();
- }
-
- function closeModal() {
- document.getElementById('diseaseModal').classList.add('hidden');
- }
-
- // --- FUNCTIONS FOR EMERGENCY MODAL ---
- function openEmergencyModal() {
- document.getElementById('emergencyModal').classList.remove('hidden');
- lucide.createIcons();
- }
-
- function closeEmergencyModal() {
- document.getElementById('emergencyModal').classList.add('hidden');
- }
-
- // --- FUNCTIONS FOR GUIDE MODAL ---
- function openGuideModal(guideId) {
- const content = guideData[guideId];
- if(content) {
- document.getElementById('guideModalContent').innerHTML = content;
- document.getElementById('guideModal').classList.remove('hidden');
- lucide.createIcons();
- }
- }
-
- function closeGuideModal() {
- document.getElementById('guideModal').classList.add('hidden');
- }
-
- // --- FUNCTIONS FOR VIDEO MODAL (NEW) ---
- function openVideoModal(videoUrl) {
- document.getElementById('modalIframe').src = videoUrl;
- document.getElementById('videoModal').classList.remove('hidden');
- document.getElementById('videoModal').classList.add('flex');
- lucide.createIcons();
- }
-
- function closeVideoModal() {
- document.getElementById('modalIframe').src = ""; // Stops video playback when closed
- document.getElementById('videoModal').classList.add('hidden');
- document.getElementById('videoModal').classList.remove('flex');
- }
-
- function runDeepAnalysis() {
- const selected = Array.from(document.querySelectorAll('#symptomChecklist input:checked')).map(cb => cb.value);
- const out = document.getElementById('analyzerOutput');
- out.classList.remove('hidden');
-
- if (selected.length === 0) {
- out.innerHTML = `<p class="text-xs text-amber-400 font-semibold">કૃપા કરીને ચકાસણી માટે ઓછામાં ઓછું એક લક્ષણ પસંદ કરો.</p>`;
- return;
- }
-
- let score = selected.length * 12; // Adjusted for more options
- let riskLevel = "સામાન્ય (Low)";
- let riskColor = "text-emerald-400";
- let desc = "તમારા લક્ષણો સામાન્ય શારીરિક થાક, હળવો ચેપ અથવા બળતરા હોઈ શકે છે. પૂરતું પાણી પીઓ, પોષક આહાર લો અને સ્વચ્છતા રાખો.";
-
- if (selected.includes('penis_pain')) {
- score = 31.5;
- riskLevel = "ખતરો (Danger)";
- riskColor = "text-rose-500";
- desc = "ખતરો! પ્રજનન સમયે દુખાવો એ સંક્રમણ કે અન્ય સમસ્યાનું લક્ષણ હોઈ શકે છે. તાત્કાલિક ડૉક્ટરને બતાવો.";
- } else if (selected.includes('breathing_diff') || selected.includes('jaundice') || selected.includes('blood_urine')) {
- score = Math.max(score, 85);
- riskLevel = "ગંભીર જોખમ (Severe Health Risk)";
- riskColor = "text-red-500";
- desc = "શ્વાસ લેવામાં તકલીફ, કમળો કે પેશાબમાં લોહી જેવા લક્ષણો ગંભીર બીમારી (જેમકે ન્યુમોનિયા, લિવર ઇન્ફેક્શન કે પથરી) સૂચવે છે. તાત્કાલિક મેડિકલ સહાય લો.";
- } else if (selected.includes('sores') || selected.includes('discharge') || selected.includes('swollen_nodes')) {
- score = Math.max(score, 75);
- riskLevel = "ઉચ્ચ જોખમ (High Risk - Immediate Attention)";
- riskColor = "text-rose-400";
- desc = "તમે પસંદ કરેલા લક્ષણો (ચાંદા, સ્ત્રાવ કે સોજી ગયેલી ગાંઠો) સક્રિય બેક્ટેરિયલ/વાઇરલ ચેપ તરફ મજબૂત નિર્દેશ કરે છે. વિલંબ કર્યા વિના યોગ્ય ડૉક્ટર પાસે તપાસ કરાવો.";
- } else if (selected.includes('warts')) {
- score = Math.max(score, 60);
- riskLevel = "મધ્યમ જોખમ (HPV/Skin Condition Probability)";
- riskColor = "text-indigo-400";
- desc = "મસા જેવા લક્ષણો હ્યુમન પેપિલોમા વાયરસ (HPV) અથવા ત્વચા સંબંધી સમસ્યા સૂચવે છે. ડૉક્ટર પાસે ક્લિનિકલ સ્ક્રીનિંગ કરાવવું હિતાવહ છે.";
- } else if (selected.includes('fever') && (selected.includes('diarrhea') || selected.includes('nausea'))) {
- score = Math.max(score, 50);
- riskLevel = "મધ્યમ જોખમ (Viral/Bacterial Fever)";
- riskColor = "text-amber-400";
- desc = "તાવ સાથે ઝાડા કે ઉલટી પાણીજન્ય રોગ (જેમકે ટાઇફોઇડ કે મેલેરિયા) તરફ નિર્દેશ કરે છે. યોગ્ય બ્લડ ટેસ્ટ કરાવો.";
- }
-
- let displayScore = score === 31.5 ? "31.5" : Math.min(score, 98);
-
- out.innerHTML = `
- <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 pb-3 border-b border-slate-700">
- <div>
- <span class="text-xs font-bold text-slate-400 uppercase">રિસ્ક લેવલ સ્ટેટસ:</span>
- <h4 class="text-base font-black ${riskColor}">${riskLevel}</h4>
- </div>
- <div class="text-right">
- <span class="text-2xl font-black ${riskColor}">${displayScore}%</span>
- <span class="text-xs text-slate-400 block">સંભાવના સ્કોર</span>
- </div>
- </div>
- <p class="text-xs text-slate-300 leading-relaxed">${desc}</p>
- <div class="text-[11px] text-slate-400 italic bg-slate-800/40 p-3 rounded-xl border border-slate-700/50">
- સૂચના: આ AI ગણતરી ફક્ત પ્રાથમિક માર્ગદર્શન માટે છે. અંતિમ નિદાન લેબોરેટરી ટેસ્ટ દ્વારા જ શક્ય છે.
- </div>
- `;
- }
-
- function resetAnalyzer() {
- document.querySelectorAll('#symptomChecklist input').forEach(cb => cb.checked = false);
- document.getElementById('analyzerOutput').classList.add('hidden');
- }
-
- function toggleTheme() {
- const body = document.getElementById('appBody');
- const themeIcon = document.getElementById('themeIcon');
- if (body.classList.contains('light')) {
- body.classList.remove('light');
- body.className = "bg-slate-950 text-slate-100 min-h-screen transition-colors duration-300 antialiased font-sans flex flex-col";
- themeIcon.setAttribute('data-lucide', 'sun');
- } else {
- body.classList.add('light');
- body.className = "light bg-slate-50 text-slate-900 min-h-screen transition-colors duration-300 antialiased font-sans flex flex-col";
- themeIcon.setAttribute('data-lucide', 'moon');
- }
- lucide.createIcons();
- }
-
- // Initialize application on load
- window.onload = function() {
- renderGrid(stiData);
- lucide.createIcons();
- };
- </script>
+    <!-- Top Emergency Ribbon -->
+    <aside class="bg-gradient-to-r from-rose-900 via-purple-900 to-indigo-900 text-xs py-2 px-4 text-center font-medium border-b border-rose-500/20 transition-colors duration-300">
+        <span class="inline-flex items-center gap-1.5 text-rose-300">
+            <i data-lucide="shield-alert" class="w-4 h-4 inline"></i> રાષ્ટ્રીય સહાય હેલ્પલાઇન: 
+            <a href="tel:1097" class="underline font-bold text-white ml-1">1097 (NACO Toll Free)</a> | તબીબી સલાહ ગોપનીય અને મફત છે.
+        </span>
+    </aside>
+
+    <!-- Global Navigation Header -->
+    <header class="sticky top-0 z-40 glass-card border-b border-slate-800/80 px-4 lg:px-8 py-4 transition-colors duration-300">
+        <div class="max-w-7xl mx-auto flex items-center justify-between">
+            <!-- Logo Section -->
+            <div class="flex items-center gap-3">
+                <div class="p-2.5 bg-gradient-to-tr from-cyan-500 via-indigo-500 to-purple-600 rounded-2xl text-white shadow-lg shadow-cyan-500/20">
+                    <i data-lucide="activity" class="w-6 h-6"></i>
+                </div>
+                <div>
+                    <h1 class="text-xl sm:text-2xl font-black tracking-tight bg-gradient-to-r from-cyan-400 via-teal-300 to-indigo-400 bg-clip-text text-transparent">Health plus</h1>
+                    <p class="text-[11px] text-slate-400 font-medium">અલ્ટ્રા હેલ્થ એન્ડ રોગ નિવારણ પ્લેટફોર્મ</p>
+                </div>
+            </div>
+
+            <!-- Action Controls (Emergency & Theme Toggle) -->
+            <div class="flex items-center gap-3">
+                <!-- Emergency Contacts Button -->
+                <button onclick="openEmergencyModal()" aria-label="Emergency Contacts" title="ઇમરજન્સી હેલ્પલાઇન નંબર્સ" class="p-2.5 rounded-xl glass-card hover:bg-rose-500/20 hover:border-rose-500/50 transition-all flex items-center justify-center group">
+                    <span class="text-xl group-hover:scale-110 transition-transform">🆘</span>
+                </button>
+
+                <!-- Theme Toggle Button -->
+                <button onclick="toggleTheme()" aria-label="Toggle Theme" title="ડે/નાઈટ મોડ" class="p-2.5 rounded-xl glass-card hover:bg-slate-800 transition-all text-slate-300">
+                    <i data-lucide="sun" id="themeIcon" class="w-5 h-5"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-16">
+
+        <!-- Hero Section & Metrics Banner -->
+        <section class="text-center space-y-6 pt-4">
+            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full glass-card border border-cyan-500/30 text-cyan-400 text-xs font-bold tracking-widest uppercase shadow-sm">
+                <i data-lucide="database" class="w-4 h-4"></i> મેડિકલ સ્પેસિસિફિકેશન ડેટાબેઝ v3.0 (વિસ્તૃત)
+            </div>
+
+            <h2 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight max-w-4xl mx-auto bg-gradient-to-r from-cyan-400 via-indigo-400 to-rose-400 bg-clip-text text-transparent">
+                My Personal Smart Care
+            </h2>
+
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 max-w-4xl mx-auto pt-6 text-left">
+                <div class="glass-card p-4 rounded-2xl border border-slate-800 transition-all">
+                    <p class="text-2xl font-extrabold text-cyan-400">21+</p>
+                    <p class="text-xs text-slate-400 mt-0.5">વિસ્તૃત રોગ પ્રોફાઇલ્સ</p>
+                </div>
+                <div class="glass-card p-4 rounded-2xl border border-slate-800 transition-all">
+                    <p class="text-2xl font-extrabold text-indigo-400">ડૉક્ટર-પ્રમાણિત ડેટા</p>
+                    <p class="text-xs text-slate-400 mt-0.5">તમામ ડેટા ડૉક્ટર-પ્રમાણિત છે.</p>
+                </div>
+                <div class="glass-card p-4 rounded-2xl border border-slate-800 transition-all">
+                    <p class="text-2xl font-extrabold text-rose-400">24/7</p>
+                    <p class="text-xs text-slate-400 mt-0.5">સહાય નો સમય</p>
+                </div>
+                <div class="glass-card p-4 rounded-2xl border border-slate-800 transition-all">
+                    <p class="text-2xl font-extrabold text-emerald-400">ગોપનીય</p>
+                    <p class="text-xs text-slate-400 mt-0.5">તમારું searching ગુપ્ત રહેશે.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 1. Main Database Section -->
+        <section id="database" class="space-y-6 scroll-mt-24">
+            <div class="flex flex-col md:flex-row gap-4 justify-between items-center border-b border-slate-800/80 pb-6 transition-colors duration-300">
+                <div>
+                    <h3 class="text-2xl font-bold">રોગો અને સંક્રમણ ડેટાબેઝ</h3>
+                    <p class="text-xs text-slate-400">કેટેગરી પસંદ કરો અથવા સીધા લક્ષણો શોધો</p>
+                </div>
+
+                <div class="flex flex-col sm:flex-row gap-3 w-full md:w-auto items-center">
+                    <div class="relative w-full sm:w-80">
+                        <i data-lucide="search" class="w-4 h-4 absolute left-3.5 top-3.5 text-slate-400"></i>
+                        <input type="text" id="searchInput" placeholder="રોગનું નામ, લક્ષણ કે દવા શોધો..." oninput="handleSearch()"
+                            class="w-full pl-10 pr-4 py-2.5 rounded-xl glass-card border border-slate-700 text-sm focus:outline-none focus:border-cyan-500 transition-all">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Type Filter Tabs -->
+            <div class="flex flex-wrap gap-2" id="filterTabs">
+                <button onclick="setFilter('all')" class="filter-btn px-4 py-2 rounded-xl text-xs font-semibold glass-card border border-cyan-500/50 bg-cyan-500/10 text-cyan-400 transition-all" data-filter="all">તમામ (All)</button>
+                <button onclick="setFilter('viral')" class="filter-btn px-4 py-2 rounded-xl text-xs font-semibold glass-card border border-slate-800 text-slate-400 hover:text-white transition-all" data-filter="viral">વાઈરલ / શ્વસન</button>
+                <button onclick="setFilter('bacterial')" class="filter-btn px-4 py-2 rounded-xl text-xs font-semibold glass-card border border-slate-800 text-slate-400 hover:text-white transition-all" data-filter="bacterial">બેક્ટેરિયલ</button>
+                <button onclick="setFilter('parasitic')" class="filter-btn px-4 py-2 rounded-xl text-xs font-semibold glass-card border border-slate-800 text-slate-400 hover:text-white transition-all" data-filter="parasitic">પેરાસાઇટિક / અન્ય</button>
+            </div>
+
+            <!-- Disease Cards Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="diseaseGrid">
+                <!-- Dynamically populated from JS -->
+            </div>
+        </section>
+
+        <!-- 2. Advanced AI Symptom Analyzer Engine -->
+        <section id="analyzer" class="glass-card rounded-3xl p-6 sm:p-10 border border-slate-800 scroll-mt-24 relative overflow-hidden transition-all">
+            <div class="max-w-4xl mx-auto space-y-8">
+                <div class="flex items-start gap-4">
+                    <div class="p-3 bg-cyan-500/20 text-cyan-400 rounded-2xl border border-cyan-500/30">
+                        <i data-lucide="stethoscope" class="w-8 h-8"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold">ડિટેઇલ્ડ સિમ્પટમ રિસ્ક એનાલાઇઝર</h3>
+                        <p class="text-sm text-slate-400">તમને દેખાતા લક્ષણો સિલેક્ટ કરો જેથી અલ્ગોરિધમ સંભવિત રિસ્ક સ્કોર અને દિશા સૂચવી શકે.</p>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3" id="symptomChecklist">
+                    <label class="flex items-center gap-3 p-3.5 rounded-2xl glass-card border border-slate-800 hover:border-cyan-500/40 cursor-pointer text-xs sm:text-sm transition-all"><input type="checkbox" value="discharge" class="w-4 h-4 rounded text-cyan-500 accent-cyan-500"> !(#$?>:{}%</label>
+                    <label class="flex items-center gap-3 p-3.5 rounded-2xl glass-card border border-slate-800 hover:border-cyan-500/40 cursor-pointer text-xs sm:text-sm transition-all"><input type="checkbox" value="burning" class="w-4 h-4 rounded text-cyan-500 accent-cyan-500"> *)%^&$*@)##-*/</label>
+                    <label class="flex items-center gap-3 p-3.5 rounded-2xl glass-card border border-slate-800 hover:border-cyan-500/40 cursor-pointer text-xs sm:text-sm transition-all"><input type="checkbox" value="sores" class="w-4 h-4 rounded text-cyan-500 accent-cyan-500"> (^$##)&$>{})</label>
+                    <label class="flex items-center gap-3 p-3.5 rounded-2xl glass-card border border-slate-800 hover:border-cyan-500/40 cursor-pointer text-xs sm:text-sm transition-all"><input type="checkbox" value="itching" class="w-4 h-4 rounded text-cyan-500 accent-cyan-500"> &%$#_@+*</label>
+                    <label class="flex items-center gap-3 p-3.5 rounded-2xl glass-card border border-slate-800 hover:border-cyan-500/40 cursor-pointer text-xs sm:text-sm transition-all"><input type="checkbox" value="warts" class="w-4 h-4 rounded text-cyan-500 accent-cyan-500"> (&^#)$_)?{"|"})</label>
+                    <label class="flex items-center gap-3 p-3.5 rounded-2xl glass-card border border-slate-800 hover:border-cyan-500/40 cursor-pointer text-xs sm:text-sm transition-all"><input type="checkbox" value="pelvic_pain" class="w-4 h-4 rounded text-cyan-500 accent-cyan-500"> *(&^#%/-*</label>
+                    <label class="flex items-center gap-3 p-3.5 rounded-2xl glass-card border border-slate-800 hover:border-cyan-500/40 cursor-pointer text-xs sm:text-sm transition-all"><input type="checkbox" value="fever" class="w-4 h-4 rounded text-cyan-500 accent-cyan-500"> $@*%#^</label>
+                    <label class="flex items-center gap-3 p-3.5 rounded-2xl glass-card border border-slate-800 hover:border-cyan-500/40 cursor-pointer text-xs sm:text-sm transition-all"><input type="checkbox" value="rash" class="w-4 h-4 rounded text-cyan-500 accent-cyan-500"> +_#!*~</label>
+                    <label class="flex items-center gap-3 p-3.5 rounded-2xl glass-card border border-slate-800 hover:border-cyan-500/40 cursor-pointer text-xs sm:text-sm transition-all"><input type="checkbox" value="swollen_nodes" class="w-4 h-4 rounded text-cyan-500 accent-cyan-500"> ^(+*_(%/*</label>
+                    <label class="flex items-center gap-3 p-3.5 rounded-2xl glass-card border border-slate-800 hover:border-cyan-500/40 cursor-pointer text-xs sm:text-sm transition-all"><input type="checkbox" value="weight_loss" class="w-4 h-4 rounded text-cyan-500 accent-cyan-500"> I(*$$+</label>
+                    <label class="flex items-center gap-3 p-3.5 rounded-2xl glass-card border border-slate-800 hover:border-cyan-500/40 cursor-pointer text-xs sm:text-sm transition-all"><input type="checkbox" value="sore_throat" class="w-4 h-4 rounded text-cyan-500 accent-cyan-500"> (&#NG)</label>
+                    <label class="flex items-center gap-3 p-3.5 rounded-2xl glass-card border border-slate-800 hover:border-cyan-500/40 cursor-pointer text-xs sm:text-sm transition-all"><input type="checkbox" value="breathing_diff" class="w-4 h-4 rounded text-cyan-500 accent-cyan-500"> $#^#%</label>
+                    <label class="flex items-center gap-3 p-3.5 rounded-2xl glass-card border border-slate-800 hover:border-cyan-500/40 cursor-pointer text-xs sm:text-sm transition-all"><input type="checkbox" value="jaundice" class="w-4 h-4 rounded text-cyan-500 accent-cyan-500"> <?":}$#"></label>
+                    <label class="flex items-center gap-3 p-3.5 rounded-2xl glass-card border border-slate-800 hover:border-cyan-500/40 cursor-pointer text-xs sm:text-sm transition-all"><input type="checkbox" value="nausea" class="w-4 h-4 rounded text-cyan-500 accent-cyan-500"> )*#^$</label>
+                    <label class="flex items-center gap-3 p-3.5 rounded-2xl glass-card border border-slate-800 hover:border-cyan-500/40 cursor-pointer text-xs sm:text-sm transition-all"><input type="checkbox" value="joint_pain" class="w-4 h-4 rounded text-cyan-500 accent-cyan-500"> +)$^@?}|</label>
+                    <label class="flex items-center gap-3 p-3.5 rounded-2xl glass-card border border-slate-800 hover:border-cyan-500/40 cursor-pointer text-xs sm:text-sm transition-all"><input type="checkbox" value="diarrhea" class="w-4 h-4 rounded text-cyan-500 accent-cyan-500"> (&*^)@(*&))</label>
+                    <label class="flex items-center gap-3 p-3.5 rounded-2xl glass-card border border-slate-800 hover:border-cyan-500/40 cursor-pointer text-xs sm:text-sm transition-all"><input type="checkbox" value="dizziness" class="w-4 h-4 rounded text-cyan-500 accent-cyan-500"> ચક્કર આવવા અને તીવ્ર અશક્તિ</label>
+                    <label class="flex items-center gap-3 p-3.5 rounded-2xl glass-card border border-slate-800 hover:border-cyan-500/40 cursor-pointer text-xs sm:text-sm transition-all"><input type="checkbox" value="blood_urine" class="w-4 h-4 rounded text-cyan-500 accent-cyan-500"> પેશાબમાં લોહી પડવું કે ઘેરો રંગ</label>
+                    <label class="flex items-center gap-3 p-3.5 rounded-2xl glass-card border border-slate-800 hover:border-cyan-500/40 cursor-pointer text-xs sm:text-sm transition-all"><input type="checkbox" value="irregular_periods" class="w-4 h-4 rounded text-cyan-500 accent-cyan-500"> અનિયમિત માસિક/હોર્મોનલ બદલાવ</label>
+                    <label class="flex items-center gap-3 p-3.5 rounded-2xl glass-card border border-slate-800 hover:border-cyan-500/40 cursor-pointer text-xs sm:text-sm transition-all"><input type="checkbox" value="testicular_pain" class="w-4 h-4 rounded text-cyan-500 accent-cyan-500"> અંડકોષમાં દુખાવો કે સોજો</label>
+                    <label class="flex items-center gap-3 p-3.5 rounded-2xl glass-card border border-slate-800 hover:border-cyan-500/40 cursor-pointer text-xs sm:text-sm transition-all"><input type="checkbox" value="hair_loss" class="w-4 h-4 rounded text-cyan-500 accent-cyan-500"> અતિશય વાળ ખરવા કે ડેન્ડ્રફ</label>
+                    <label class="flex items-center gap-3 p-3.5 rounded-2xl glass-card border border-slate-800 hover:border-cyan-500/40 cursor-pointer text-xs sm:text-sm transition-all"><input type="checkbox" value="penis_pain" class="w-4 h-4 rounded text-cyan-500 accent-cyan-500"> પ્રજનન સમયે લિંગમાં દુખાવો</label>
+                </div>
+
+                <div class="flex flex-col sm:flex-row gap-3">
+                    <button onclick="runDeepAnalysis()" class="flex-1 py-3.5 rounded-2xl bg-gradient-to-r from-cyan-500 via-indigo-600 to-purple-600 font-bold text-sm text-white hover:opacity-95 shadow-lg shadow-indigo-500/20 transition-all flex items-center justify-center gap-2">
+                        <i data-lucide="cpu" class="w-4 h-4"></i> કમ્પ્લીટ રિસ્ક સ્કોર ગણો
+                    </button>
+                    <button onclick="resetAnalyzer()" class="px-6 py-3.5 rounded-2xl glass-card border border-slate-700 text-xs font-semibold hover:bg-slate-800 transition-all">
+                        રીસેટ
+                    </button>
+                </div>
+
+                <div id="analyzerOutput" class="hidden p-6 rounded-2xl border border-slate-700 glass-card space-y-4 transition-all">
+                    <!-- Dynamic Score & Diagnostic Details -->
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Comprehensive Prevention & Action Guide -->
+        <section id="guide" class="space-y-8 scroll-mt-24">
+            <h3 class="text-2xl font-bold text-center">વૈજ્ઞાનિક બચાવ અને સુરક્ષા ગાઈડલાઇન્સ</h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- CLICKABLE GUIDE CARD 1 (BARRIER) -->
+                <div onclick="openGuideModal('barrier')" class="glass-card p-6 rounded-3xl border border-slate-800 space-y-3 cursor-pointer hover:border-rose-500/50 transition-all group">
+                    <div class="w-10 h-10 rounded-2xl bg-rose-500/20 text-rose-400 flex items-center justify-center group-hover:bg-rose-500 group-hover:text-white transition-all">
+                        <i data-lucide="shield-check" class="w-5 h-5"></i>
+                    </div>
+                    <h4 class="font-bold text-base group-hover:text-rose-400 transition-all">૧. બેરિયર પદ્ધતિઓ અને સ્વચ્છતા</h4>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        સુરક્ષિત સંબંધો અને શુદ્ધ પાણી-ખોરાકનું સેવન ટ્રાન્સમિટેબલ રોગો અને બેક્ટેરિયલ ઇન્ફેક્શનથી ૯૦% થી વધુ બચાવ કરે છે. 
+                        <span class="block mt-2 text-rose-400 font-semibold group-hover:underline">વિગતવાર વાંચવા અહીં ક્લિક કરો &rarr;</span>
+                    </p>
+                </div>
+
+                <!-- CLICKABLE GUIDE CARD 2 (VACCINES) -->
+                <div onclick="openGuideModal('vaccines')" class="glass-card p-6 rounded-3xl border border-slate-800 space-y-3 cursor-pointer hover:border-rose-500/50 transition-all group">
+                    <div class="w-10 h-10 rounded-2xl bg-rose-500/20 text-rose-400 flex items-center justify-center group-hover:bg-rose-500 group-hover:text-white transition-all">
+                        <i data-lucide="syringe" class="w-5 h-5"></i>
+                    </div>
+                    <h4 class="font-bold text-base group-hover:text-rose-400 transition-all">૨. રસીકરણ (Vaccines)</h4>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        HPV, હિપેટાઇટિસ-બી અને અન્ય ગંભીર બીમારીઓ સામે સમયસર રસી લેવાથી લાંબા ગાળાની જટિલતાઓથી સુરક્ષા મળે છે.
+                        <span class="block mt-2 text-rose-400 font-semibold group-hover:underline">વિગતવાર વાંચવા અહીં ક્લિક કરો &rarr;</span>
+                    </p>
+                </div>
+
+                <!-- CLICKABLE GUIDE CARD 3 (NUTRITION & SCREENING) -->
+                <div onclick="openGuideModal('nutrition')" class="glass-card p-6 rounded-3xl border border-slate-800 space-y-3 cursor-pointer hover:border-rose-500/50 transition-all group">
+                    <div class="w-10 h-10 rounded-2xl bg-rose-500/20 text-rose-400 flex items-center justify-center group-hover:bg-rose-500 group-hover:text-white transition-all">
+                        <i data-lucide="clipboard-check" class="w-5 h-5"></i>
+                    </div>
+                    <h4 class="font-bold text-base group-hover:text-rose-400 transition-all">૩. નિયમિત સ્ક્રીનિંગ અને પોષણ</h4>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        સમયસર લેબ ટેસ્ટ અને વિટામિન-પૌષ્ટિક આહારથી રોગપ્રતિકારક શક્તિ મજબૂત બને છે અને અશક્તિ દૂર થાય છે.
+                        <span class="block mt-2 text-rose-400 font-semibold group-hover:underline">વિગતવાર વાંચવા અહીં ક્લિક કરો &rarr;</span>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. External Knowledge Quiz Module -->
+        <section id="quiz" class="space-y-6 scroll-mt-24">
+            <div class="text-center space-y-2">
+                <h3 class="text-2xl font-bold">જ્ઞાન ચકાસણી</h3>
+                <p class="text-xs text-slate-400">તમારી જાણકારી ચકાસો અને તમારા જ્ઞાનને અપડેટ કરો.</p>
+            </div>
+
+            <div class="max-w-2xl mx-auto glass-card rounded-3xl p-8 sm:p-12 border border-slate-800 text-center space-y-6 transition-all">
+                <div class="w-16 h-16 mx-auto bg-cyan-500/20 text-cyan-400 rounded-full flex items-center justify-center mb-4">
+                    <i data-lucide="clipboard-list" class="w-8 h-8"></i>
+                </div>
+
+                <h4 class="text-xl font-bold text-slate-100">ઓનલાઈન જ્ઞાન ચકાસણી ફોર્મ</h4>
+                <p class="text-sm text-slate-400 max-w-md mx-auto leading-relaxed">
+                    અમે અમારા પ્લેટફોર્મની ક્વિઝને Google Forms પર ખસેડી છે. કૃપા કરીને નીચેની લિંક પર ક્લિક કરીને ક્વિઝમાં ભાગ લો અને તમારું જ્ઞાન ચકાસો.
+                </p>
+
+                <div class="pt-4">
+                    <a href="https://forms.gle/Thas2Kv1bKKsrMcX9" target="_blank" rel="noopener noreferrer" 
+                       class="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-2xl bg-gradient-to-r from-cyan-500 to-indigo-600 hover:from-cyan-600 hover:to-indigo-700 text-white font-bold text-sm tracking-wide shadow-lg shadow-cyan-500/25 transition-all w-full sm:w-auto">
+                        ક્વિઝ શરૂ કરો <i data-lucide="external-link" class="w-4 h-4"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. IMPORTANT AWARENESS VIDEO SECTION -->
+        <section id="awareness-video" class="glass-card rounded-3xl p-6 sm:p-10 border border-slate-800 scroll-mt-24 transition-all">
+            <div class="max-w-6xl mx-auto space-y-6 text-center">
+                <div class="inline-flex items-center justify-center p-3 bg-rose-500/20 text-rose-400 rounded-2xl border border-rose-500/30 mb-2">
+                    <i data-lucide="play-circle" class="w-8 h-8"></i>
+                </div>
+                <h3 class="text-2xl font-bold text-slate-100">સ્વાસ્થ્ય જાગૃતિ: મહત્વપૂર્ણ જનજાગૃતિ વિડીયો</h3>
+                <p class="text-sm text-slate-400">માઈક્રોપ્લાસ્ટિક અને પેકેજ્ડ ફૂડ (Packaged Food) આપણા શરીરમાં પ્રવેશીને કઈ રીતે ગંભીર બીમારીઓ સર્જે છે, તે વિશેની વિસ્તૃત માહિતી.</p>
+
+                <!-- On-Page Video Cards Grid (Now with 3 Videos) -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full mt-6 text-left">
+
+                    <!-- Video Card 1 -->
+                    <div class="glass-card rounded-2xl border border-slate-700 overflow-hidden group cursor-pointer hover:border-rose-500/50 hover:shadow-lg hover:shadow-rose-500/10 transition-all" onclick="openVideoModal('https://www.youtube.com/embed/njyP1uvAlGs?autoplay=1')">
+                        <div class="relative w-full aspect-video bg-slate-900">
+                            <!-- High Quality YouTube Thumbnail -->
+                            <img src="https://img.youtube.com/vi/njyP1uvAlGs/maxresdefault.jpg" alt="માઈક્રોપ્લાસ્ટિક અને સ્વાસ્થ્ય ભાગ ૧" class="w-full h-full object-cover opacity-70 group-hover:opacity-100 transition-opacity">
+                            <!-- Play Button Overlay -->
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <div class="w-14 h-14 rounded-full bg-rose-600/90 text-white flex items-center justify-center shadow-lg shadow-rose-600/40 group-hover:scale-110 transition-transform">
+                                    <i data-lucide="play" class="w-6 h-6 ml-1"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-4 bg-slate-900/50">
+                            <h4 class="font-bold text-sm text-slate-100 group-hover:text-rose-400 transition-colors">ભાગ ૧: માઈક્રોપ્લાસ્ટિક અને સ્વાસ્થ્ય</h4>
+                            <p class="text-[11px] text-slate-400 mt-1 flex items-center gap-1"><i data-lucide="monitor-play" class="w-3.5 h-3.5"></i> અહી જ વિડીયો જોવા ક્લિક કરો</p>
+                        </div>
+                    </div>
+
+                    <!-- Video Card 2 -->
+                    <div class="glass-card rounded-2xl border border-slate-700 overflow-hidden group cursor-pointer hover:border-rose-500/50 hover:shadow-lg hover:shadow-rose-500/10 transition-all" onclick="openVideoModal('https://www.youtube.com/embed/OqZzVEBaipg?autoplay=1')">
+                        <div class="relative w-full aspect-video bg-slate-900">
+                            <img src="https://img.youtube.com/vi/OqZzVEBaipg/maxresdefault.jpg" alt="માઈક્રોપ્લાસ્ટિક અને સ્વાસ્થ્ય ભાગ ૨" class="w-full h-full object-cover opacity-70 group-hover:opacity-100 transition-opacity">
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <div class="w-14 h-14 rounded-full bg-rose-600/90 text-white flex items-center justify-center shadow-lg shadow-rose-600/40 group-hover:scale-110 transition-transform">
+                                    <i data-lucide="play" class="w-6 h-6 ml-1"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-4 bg-slate-900/50">
+                            <h4 class="font-bold text-sm text-slate-100 group-hover:text-rose-400 transition-colors">ભાગ ૨: માઈક્રોપ્લાસ્ટિકની ગંભીર અસરો</h4>
+                            <p class="text-[11px] text-slate-400 mt-1 flex items-center gap-1"><i data-lucide="monitor-play" class="w-3.5 h-3.5"></i> અહી જ વિડીયો જોવા ક્લિક કરો</p>
+                        </div>
+                    </div>
+
+                    <!-- Video Card 3 (NEW) -->
+                    <div class="glass-card rounded-2xl border border-slate-700 overflow-hidden group cursor-pointer hover:border-rose-500/50 hover:shadow-lg hover:shadow-rose-500/10 transition-all" onclick="openVideoModal('https://www.youtube.com/embed/GQGJ9rS3iOM?autoplay=1')">
+                        <div class="relative w-full aspect-video bg-slate-900">
+                            <img src="https://img.youtube.com/vi/GQGJ9rS3iOM/maxresdefault.jpg" alt="પેકેજ્ડ ફૂડનું સત્ય" class="w-full h-full object-cover opacity-70 group-hover:opacity-100 transition-opacity">
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <div class="w-14 h-14 rounded-full bg-rose-600/90 text-white flex items-center justify-center shadow-lg shadow-rose-600/40 group-hover:scale-110 transition-transform">
+                                    <i data-lucide="play" class="w-6 h-6 ml-1"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-4 bg-slate-900/50">
+                            <h4 class="font-bold text-sm text-slate-100 group-hover:text-rose-400 transition-colors">ભાગ ૩: ફૂડ ઇન્ડસ્ટ્રીનું સત્ય (Packaged Food)</h4>
+                            <p class="text-[11px] text-slate-400 mt-1 flex items-center gap-1"><i data-lucide="monitor-play" class="w-3.5 h-3.5"></i> અહી જ વિડીયો જોવા ક્લિક કરો</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- NEW FULL-SCREEN VIDEO MODAL (Cinema Mode) -->
+    <div id="videoModal" class="fixed inset-0 z-[60] bg-black/95 backdrop-blur-md hidden flex-col items-center justify-center p-4 transition-all">
+        <div class="w-full max-w-5xl flex justify-end mb-4">
+            <button onclick="closeVideoModal()" class="p-2 rounded-xl bg-slate-800 hover:bg-rose-600 text-white transition-all shadow-lg shadow-black/50">
+                <i data-lucide="x" class="w-6 h-6"></i>
+            </button>
+        </div>
+        <div class="w-full max-w-5xl aspect-video bg-black rounded-2xl overflow-hidden border border-slate-700 shadow-2xl relative">
+            <iframe id="modalIframe" class="absolute top-0 left-0 w-full h-full" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <!-- Emergency Contacts Modal -->
+    <div id="emergencyModal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm hidden flex items-center justify-center p-4 transition-all">
+        <div class="glass-card bg-slate-900 border border-rose-500/30 max-w-lg w-full rounded-3xl p-6 sm:p-8 space-y-6 relative shadow-2xl shadow-rose-500/20">
+            <button onclick="closeEmergencyModal()" class="absolute top-6 right-6 p-2 rounded-xl bg-slate-800 hover:bg-rose-500 hover:text-white text-slate-400 transition-all">
+                <i data-lucide="x" class="w-5 h-5"></i>
+            </button>
+            <div class="text-center space-y-2">
+                <h3 class="text-2xl font-black text-slate-100 flex items-center justify-center gap-2">
+                    <span class="text-2xl">🆘</span> ઇમરજન્સી નંબર્સ
+                </h3>
+                <p class="text-xs text-slate-400">તાત્કાલિક મેડિકલ અને અન્ય સહાય માટે ટોલ-ફ્રી નંબર</p>
+            </div>
+
+            <div class="space-y-3 mt-4 max-h-[60vh] overflow-y-auto custom-scrollbar pr-2">
+
+                <div class="flex items-center justify-between p-3.5 rounded-2xl bg-slate-800/50 border border-slate-700/50 hover:border-rose-500/40 transition-colors">
+                    <div class="flex flex-col">
+                        <span class="text-sm font-bold text-slate-200">રાષ્ટ્રીય સહાય હેલ્પલાઇન</span>
+                        <span class="text-[10px] text-slate-400">NACO Toll Free (તબીબી સલાહ)</span>
+                    </div>
+                    <a href="tel:1097" class="px-4 py-1.5 rounded-xl bg-rose-600 hover:bg-rose-500 text-white font-black tracking-wider shadow-lg shadow-rose-500/30 hover:-translate-y-0.5 transition-all">1097</a>
+                </div>
+
+                <div class="flex items-center justify-between p-3.5 rounded-2xl bg-slate-800/50 border border-slate-700/50 hover:border-rose-500/40 transition-colors">
+                    <div class="flex flex-col">
+                        <span class="text-sm font-bold text-slate-200">એમ્બ્યુલન્સ / મેડિકલ</span>
+                        <span class="text-[10px] text-slate-400">Ambulance Emergency</span>
+                    </div>
+                    <a href="tel:108" class="px-4 py-1.5 rounded-xl bg-rose-600 hover:bg-rose-500 text-white font-black tracking-wider shadow-lg shadow-rose-500/30 hover:-translate-y-0.5 transition-all">108</a>
+                </div>
+
+                <div class="flex items-center justify-between p-3.5 rounded-2xl bg-slate-800/50 border border-slate-700/50 hover:border-rose-500/40 transition-colors">
+                    <div class="flex flex-col">
+                        <span class="text-sm font-bold text-slate-200">જનની સુરક્ષા</span>
+                        <span class="text-[10px] text-slate-400">ગર્ભવતી મહિલાઓ અને બાળકો માટે</span>
+                    </div>
+                    <a href="tel:102" class="px-4 py-1.5 rounded-xl bg-rose-600 hover:bg-rose-500 text-white font-black tracking-wider shadow-lg shadow-rose-500/30 hover:-translate-y-0.5 transition-all">102</a>
+                </div>
+
+                <div class="flex items-center justify-between p-3.5 rounded-2xl bg-slate-800/50 border border-slate-700/50 hover:border-rose-500/40 transition-colors">
+                    <div class="flex flex-col">
+                        <span class="text-sm font-bold text-slate-200">રાષ્ટ્રીય ઇમરજન્સી</span>
+                        <span class="text-[10px] text-slate-400">મેડિકલ, પોલીસ અને ફાયર</span>
+                    </div>
+                    <a href="tel:112" class="px-4 py-1.5 rounded-xl bg-rose-600 hover:bg-rose-500 text-white font-black tracking-wider shadow-lg shadow-rose-500/30 hover:-translate-y-0.5 transition-all">112</a>
+                </div>
+
+                <div class="flex items-center justify-between p-3.5 rounded-2xl bg-slate-800/50 border border-slate-700/50 hover:border-rose-500/40 transition-colors">
+                    <div class="flex flex-col">
+                        <span class="text-sm font-bold text-slate-200">આરોગ્ય મંત્રાલય હેલ્પલાઇન</span>
+                        <span class="text-[10px] text-slate-400">સામાન્ય સ્વાસ્થ્ય માહિતી</span>
+                    </div>
+                    <a href="tel:1075" class="px-4 py-1.5 rounded-xl bg-rose-600 hover:bg-rose-500 text-white font-black tracking-wider shadow-lg shadow-rose-500/30 hover:-translate-y-0.5 transition-all">1075</a>
+                </div>
+
+                <div class="flex items-center justify-between p-3.5 rounded-2xl bg-slate-800/50 border border-slate-700/50 hover:border-rose-500/40 transition-colors">
+                    <div class="flex flex-col">
+                        <span class="text-sm font-bold text-slate-200">Tele-MANAS</span>
+                        <span class="text-[10px] text-slate-400">માનસિક સ્વાસ્થ્ય (Mental Health)</span>
+                    </div>
+                    <a href="tel:14416" class="px-4 py-1.5 rounded-xl bg-rose-600 hover:bg-rose-500 text-white font-black tracking-wider shadow-lg shadow-rose-500/30 hover:-translate-y-0.5 transition-all">14416</a>
+                </div>
+
+                <div class="flex items-center justify-between p-3.5 rounded-2xl bg-slate-800/50 border border-slate-700/50 hover:border-rose-500/40 transition-colors">
+                    <div class="flex flex-col">
+                        <span class="text-sm font-bold text-slate-200">એલ્ડર લાઇન (Elder Line)</span>
+                        <span class="text-[10px] text-slate-400">વરિષ્ઠ નાગરિકો માટે સહાય</span>
+                    </div>
+                    <a href="tel:14567" class="px-4 py-1.5 rounded-xl bg-rose-600 hover:bg-rose-500 text-white font-black tracking-wider shadow-lg shadow-rose-500/30 hover:-translate-y-0.5 transition-all">14567</a>
+                </div>
+
+                <div class="flex items-center justify-between p-3.5 rounded-2xl bg-slate-800/50 border border-slate-700/50 hover:border-rose-500/40 transition-colors">
+                    <div class="flex flex-col">
+                        <span class="text-sm font-bold text-slate-200">મહિલા હેલ્પલાઇન</span>
+                        <span class="text-[10px] text-slate-400">Women Helpline</span>
+                    </div>
+                    <a href="tel:1091" class="px-4 py-1.5 rounded-xl bg-rose-600 hover:bg-rose-500 text-white font-black tracking-wider shadow-lg shadow-rose-500/30 hover:-translate-y-0.5 transition-all">1091</a>
+                </div>
+
+                <div class="flex items-center justify-between p-3.5 rounded-2xl bg-slate-800/50 border border-slate-700/50 hover:border-rose-500/40 transition-colors">
+                    <div class="flex flex-col">
+                        <span class="text-sm font-bold text-slate-200">ચાઇલ્ડ લાઇન</span>
+                        <span class="text-[10px] text-slate-400">Childline</span>
+                    </div>
+                    <a href="tel:1098" class="px-4 py-1.5 rounded-xl bg-rose-600 hover:bg-rose-500 text-white font-black tracking-wider shadow-lg shadow-rose-500/30 hover:-translate-y-0.5 transition-all">1098</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Detailed Modal View for Disease Deep-Dive -->
+    <div id="diseaseModal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm hidden flex items-center justify-center p-4 transition-all">
+        <div class="glass-card bg-slate-900 border border-slate-700 max-w-2xl w-full rounded-3xl p-6 sm:p-8 max-h-[90vh] overflow-y-auto custom-scrollbar space-y-6 relative shadow-2xl">
+            <button onclick="closeModal()" class="absolute top-6 right-6 p-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-400 hover:text-white transition-all">
+                <i data-lucide="x" class="w-5 h-5"></i>
+            </button>
+            <div id="modalContent">
+                <!-- Injected dynamically -->
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL for Guides (Barrier Methods, Vaccines, Nutrition) -->
+    <div id="guideModal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm hidden flex items-center justify-center p-4 transition-all">
+        <div class="glass-card bg-slate-900 border border-slate-700 max-w-3xl w-full rounded-3xl p-6 sm:p-8 max-h-[90vh] overflow-y-auto custom-scrollbar space-y-6 relative shadow-2xl">
+            <button onclick="closeGuideModal()" class="absolute top-6 right-6 p-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-400 hover:text-white transition-all z-10">
+                <i data-lucide="x" class="w-5 h-5"></i>
+            </button>
+            <div id="guideModalContent" class="pt-2">
+                <!-- Injected dynamically via JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Application Footer -->
+    <footer class="glass-card border-t border-slate-800/80 mt-20 py-8 px-4 text-center text-xs text-slate-500 space-y-2 transition-colors duration-300">
+        <p class="font-semibold text-slate-400">Health plus Interactive Awareness System v3.0</p>
+        <p>માહિતી માત્ર શૈક્ષણિક પ્રોજેક્ટ માટે છે. શંકાસ્પદ સ્થિતિમાં હંમેશા MBBS / MD ડૉક્ટર પાસે પરામર્શ મેળવવો.</p>
+    </footer>
+
+    <!-- Core Interactive Application Script -->
+    <script>
+        const stiData = [
+            {
+                id: "hiv",
+                name: "HIV / AIDS",
+                type: "viral",
+                badge: "વાઈરલ (Viral)",
+                cause: "હ્યુમન ઇમ્યુનોડેફિશિયન્સી વાઇરસ",
+                symptoms: ["તાવ, રાત્રે અતિશય પરસેવો", "અચાનક વજનમાં ઝડપી ઘટાડો", "ગળા અને બગલની લસિકાગ્રંથિઓમાં સોજો", "લાંબા સમય સુધી ઝાડા રહેવા"],
+                diagnosis: ["ELISA ટેસ્ટ", "Western Blot", "HIV Viral Load PCR ટેસ્ટ"],
+                prevention: ["સુરક્ષિત સંબંધો માટે કન્ડોમ", "Pre-Exposure Prophylaxis (PrEP)", "નવી/જંતુરહિત સિરીંજનો ઉપયોગ"],
+                treatment: "ART (એન્ટિરેટ્રોવાયરલ થેરાપી) વાયરસ લોડને અદ્રશ્ય બનાવી સામાન્ય આયુષ્ય આપે છે."
+            },
+            {
+                id: "gonorrhea",
+                name: "ગોનોરિયા (Gonorrhea)",
+                type: "bacterial",
+                badge: "બેક્ટેરિયલ (Bacterial)",
+                cause: "Neisseria gonorrhoeae બેક્ટેરિયા",
+                symptoms: ["પેશાબ કરતી વખતે તીવ્ર બળતરા", "પીળો કે લીલો ઘટ્ટ સ્ત્રાવ", "અંડકોષ કે પેટના નીચેના ભાગમાં દુખાવો"],
+                diagnosis: ["NAAT (ન્યુક્લીક એસિડ ટેસ્ટ)", "સ્ત્રાવનું કલ્ચર પરીક્ષણ"],
+                prevention: ["સંપૂર્ણ સંયમ અથવા કન્ડોમનો ઉપયોગ", "નિયમિત ચેકઅપ"],
+                treatment: "Ceftriaxone ઇન્જેક્શન અને એઝિથ્રોમાસીન જેવી એન્ટિબાયોટિક્સથી સંપૂર્ણ સાધ્ય છે."
+            },
+            {
+                id: "syphilis",
+                name: "સિફિલિસ (Syphilis)",
+                type: "bacterial",
+                badge: "બેક્ટેરિયલ (Bacterial)",
+                cause: "Treponema pallidum બેક્ટેરિયા",
+                symptoms: ["પીડારહિત કઠણ ચાંદી (Chancre)", "હથેળી-પગના તળિયે લાલ ચકામા", "સ્નાયુઓનો દુખાવો અને વાળ ખરવા"],
+                diagnosis: ["VDRL ટેસ્ટ", "RPR ટેસ્ટ", "TPHA બ્લડ ટેસ્ટ"],
+                prevention: ["ચાંદાના પ્રત્યક્ષ સ્પર્શથી બચવું", "પાર્ટનર સ્ક્રીનિંગ"],
+                treatment: "પ્રારંભિક સ્ટેજમાં બેન્ઝાથિન પેનિસિલિન ઇન્જેક્શન દ્વારા ૧૦૦% ઈલાજ શક્ય છે."
+            },
+            {
+                id: "herpes",
+                name: "જનાંગ હર્પીસ (Genital Herpes - HSV-2)",
+                type: "viral",
+                badge: "વાઈરલ (Viral)",
+                cause: "હર્પીસ સિમ્પ્લેક્સ વાયરસ ટાઇપ-૨",
+                symptoms: ["પાણી ભરેલા દર્દનાક ફોલ્લા", "ગુપ્તાંગ આસપાસ તીવ્ર કળતર અને ખંજવાળ", "પેશાબમાં અસહ્ય દુખાવો"],
+                diagnosis: ["HSV PCR ટેસ્ટ", "ફોલ્લામાંથી સ્વેબ ટેસ્ટ"],
+                prevention: ["ફોલ્લા સક્રિય હોય ત્યારે સંબંધ ટાળવો", "દૈનિક સપ્રેસિવ થેરાપી"],
+                treatment: "Acyclovir અને Valacyclovir એન્ટિવાયરલ દવાઓ લક્ષણોને દાબી રાખે છે."
+            },
+            {
+                id: "hpv",
+                name: "હ્યુમન પેપિલોમા વાયરસ (HPV)",
+                type: "viral",
+                badge: "વાઈરલ (Viral)",
+                cause: "HPV વાયરસ સ્ટ્રેઇન્સ (6, 11, 16, 18)",
+                symptoms: ["ગુપ્તાંગ પર નાના કે મોટા મસા (Warts)", "ગળા અથવા સર્વિક્સમાં અસામાન્ય કોષો"],
+                diagnosis: ["Pap Smear ટેસ્ટ", "HPV DNA ટેસ્ટ"],
+                prevention: ["Gardasil-9 રસીકરણ (ઉત્તમ નિવારણ)", "નિયમિત સર્વાઇકલ સ્ક્રીનિંગ"],
+                treatment: "મસા દૂર કરવા માટે Cryotherapy (બરફથી બાળવું), લેસર અથવા લોકલ ક્રીમ્સ."
+            },
+            {
+                id: "chlamydia",
+                name: "ક્લેમીડિયા (Chlamydia)",
+                type: "bacterial",
+                badge: "બેક્ટેરિયલ (Bacterial)",
+                cause: "Chlamydia trachomatis",
+                symptoms: ["પેશાબમાં બળતરા", "પાતળો સફેદ સ્ત્રાવ", "સંભોગ દરમિયાન દુખાવો", "ઘણીવાર ૭૦% કેસમાં કોઈ લક્ષણ નહિ"],
+                diagnosis: ["Urine NAAT ટેસ્ટ", "સ્વેબ ટેસ્ટ"],
+                prevention: ["બેરિયર કન્ડોમ", "વાર્ષિક નિયમિત ટેસ્ટિંગ"],
+                treatment: "Doxycycline અથવા Azithromycin દવાઓથી સંપૂર્ણ મુક્તિ."
+            },
+            {
+                id: "trichomoniasis",
+                name: "ટ્રાઇકોમોનિઆસિસ (Trichomoniasis)",
+                type: "parasitic",
+                badge: "પેરાસાઇટિક (Parasitic)",
+                cause: "Trichomonas vaginalis પ્રજીવ",
+                symptoms: ["ખરાબ વાસવાળો પીળો-લીલો ફીણવાળો સ્ત્રાવ", "તીવ્ર લાલાશ અને ખંજવાળ", "પેશાબમાં બળતરા"],
+                diagnosis: ["Microscopic Wet Mount", "રેપિડ એન્ટિજેન ટેસ્ટ"],
+                prevention: ["સુરક્ષિત સંબંધો", "બંને પાર્ટનરની એકસાથે દવા"],
+                treatment: "Metronidazole અથવા Tinidazole ટેબ્લેટ્સ દ્વારા સરળતાથી મટે છે."
+            },
+            {
+                id: "hepatitis_b",
+                name: "હિપેટાઇટિસ-બી (Hepatitis B)",
+                type: "viral",
+                badge: "વાઈરલ (Viral)",
+                cause: "Hepatitis B Virus (HBV)",
+                symptoms: ["કમળો (આંખો-ત્વચા પીળી પડવી)", "ઘેરો પેશાબ અને અત્યંત થાક", "લીવરમાં દુખાવો અને ભૂખ ન લાગવી"],
+                diagnosis: ["HBsAg બ્લડ ટેસ્ટ", "Liver Function Test (LFT)"],
+                prevention: ["Hepatitis B રસી (૩ ડોઝ)", "સંક્રમિત સોયથી બચવું"],
+                treatment: "ક્રોનિક કેસમાં Tenofovir અથવા Entecavir એન્ટિવાયરલ દવાઓ."
+            },
+            {
+                id: "pubic_lice",
+                name: "પ્યુબિક લાઇસ (Pubic Lice / Crabs)",
+                type: "parasitic",
+                badge: "પેરાસાઇટિક (Parasitic)",
+                cause: "Pthirus pubis જીવાત",
+                symptoms: ["ગુપ્તાંગના વાળમાં તીવ્ર ખંજવાળ", "અન્ડરવેરમાં નાના લોહીના ડાઘ", "ઝીણી જીવાત કે ઈંડા દેખાવા"],
+                diagnosis: ["મેગ્નિફાઇંગ ગ્લાસ દ્વારા ક્લિનિકલ નિરીક્ષણ"],
+                prevention: ["કપડાં-પથારીની સ્વચ્છતા", "સંક્રમિત વ્યક્તિ સાથે પથારી શેર ન કરવી"],
+                treatment: "Permethrin ૧% લોશન અને ગરમ પાણીમાં કપડાં ધોવા."
+            },
+            {
+                id: "chancroid",
+                name: "શેન્ક્રોઇડ (Chancroid)",
+                type: "bacterial",
+                badge: "બેક્ટેરિયલ (Bacterial)",
+                cause: "Haemophilus ducreyi બેક્ટેરિયા",
+                symptoms: ["અત્યંત પીડાદાયક નરમ ચાંદા", "સાથળની લસિકાગ્રંથિ પાકી જવી (Buboes)"],
+                diagnosis: ["ચાંદામાંથી કલ્ચર ટેસ્ટ"],
+                prevention: ["અવરોધક પદ્ધતિઓ", "સ્વચ્છતા"],
+                treatment: "Azithromycin અથવા Ceftriaxone એન્ટિબાયોટિક્સ."
+            },
+            {
+                id: "mycoplasma",
+                name: "માયકોપ્લાઝ્મા જીનિટાલિયમ",
+                type: "bacterial",
+                badge: "બેક્ટેરિયલ (Bacterial)",
+                cause: "Mycoplasma genitalium",
+                symptoms: ["લાંબા સમય સુધી પેશાબમાં બળતરા", "પેલ્વિક બળતરા રોગ (PID)"],
+                diagnosis: ["વિશેષ મોલેક્યુલર PCR ટેસ્ટ"],
+                prevention: ["પાર્ટનર ટ્રીટમેન્ટ", "સુરક્ષિત સંબંધો"],
+                treatment: "ચોક્કસ કોર્સની મોક્સિફ્લોક્સાસીન (Moxifloxacin) એન્ટિબાયોટિક્સ."
+            },
+            {
+                id: "molluscum",
+                name: "મોલસ્કમ કન્ટેજિયોસમ",
+                type: "viral",
+                badge: "વાઈરલ (Viral)",
+                cause: "Poxvirus કુળનો વાયરસ",
+                symptoms: ["મોતી જેવા નાના ગોળ મોલસ્કમ દાણા", "વચ્ચે ખાડો હોય તેવા ફોલ્લા"],
+                diagnosis: ["ત્વચા નિષ્ણાત દ્વારા વિઝ્યુઅલ તપાસ"],
+                prevention: ["સ્કિન-ટુ-સ્કિન ઘર્ષણ ટાળવું", "ટુવાલ અલગ રાખવા"],
+                treatment: "Cryo-લેસર અથવા કુદરતી રોગપ્રતિકારક શક્તિથી ૬-૧૨ મહિનામાં આપમેળે દૂર થાય છે."
+            },
+            {
+                id: "common_cold",
+                name: "શરદી અને ઉધરસ (Common Cold and Cough)",
+                type: "viral",
+                badge: "વાઈરલ / શ્વસન (Viral)",
+                cause: "રાઇનોવાઇરસ (Rhinovirus), નબળી રોગપ્રતિકારક શક્તિ, એલર્જી અને બદલાતી ઋતુ",
+                symptoms: ["ગળામાં ખરાશ અને બળતરા", "નાક બંધ થવું કે વહેવું", "સતત ઉધરસ અને છીંકો આવવી", "શરીરમાં હળવો થાક કે અશક્તિ"],
+                diagnosis: ["ક્લિનિકલ લક્ષણોના આધારે સામાન્ય તપાસ"],
+                prevention: ["ગરમ પાણી પીવું", "એલર્જીવાળી ધૂળ અને ધુમાડાથી બચવું", "રોગપ્રતિકારક શક્તિ વધારવી"],
+                treatment: "આદુ અને મધનું મિશ્રણ, હળદરવાળું ગરમ દૂધ, વરાળ (Steam) લેવી, તુલસી-મરીનો ઉકાળો અને મીઠાના પાણીના કોગળા કરવા."
+            },
+            {
+                id: "typhoid_pneumonia",
+                name: "ટાઇફોઇડ અને ન્યુમોનિયા",
+                type: "bacterial",
+                badge: "બેક્ટેરિયલ / ઇન્ફેક્શન",
+                cause: "સાલ્મોનેલા ટાઇફી (ટાઇફોઇડ) અને સ્ટ્રેપ્ટોકોકસ ન્યુમોની / વાયરસ (ન્યુમોનિયા)",
+                symptoms: ["તીવ્ર તાવ અને નબળાઈ (ટાઇફોઇડ)", "શ્વાસ લેવામાં તકલીફ અને છાતીમાં દુખાવો (ન્યુમોનિયા)", "ઉબકા, ઉલટી અને કફ"],
+                diagnosis: ["Widal ટેસ્ટ, બ્લડ કલ્ચર (ટાઇફોઇડ)", "ચેસ્ટ એક્સ-રે, સ્વેબ ટેસ્ટ (ન્યુમોનિયા)"],
+                prevention: ["શુદ્ધ ઉકાળેલું પાણી અને સ્વચ્છ ખોરાક", "રસીકરણ અને સ્વચ્છતા જાળવવી"],
+                treatment: "ડૉક્ટરની સલાહ મુજબ એન્ટિબાયોટિક્સનો કોર્સ, પૂરતો પ્રવાહી આહાર, ઓક્સિજન સપોર્ટ અને સંપૂર્ણ બેડ રેસ્ટ."
+            },
+            {
+                id: "malaria_dengue_vector",
+                name: "મેલેરિયા, અમીબીય મરડો, ડેન્ગ્યુ અને ચિકનગુનિયા",
+                type: "parasitic",
+                badge: "વેક્ટર-બોોર્ન / પરજીવી",
+                cause: "પ્લાઝમોડિયમ (મેલેરિયા), એન્ટાએમીબા (મરડો), ડેન્ગ્યુ/ચિકનગુનિયા વાયરસ (મચ્છરજન્ય)",
+                symptoms: ["ઠંડી વાગીને તાવ આવવો (મેલેરિયા)", "પેટમાં મરડો અને લોહીયુક્ત ઝાડા (અમીબીય મરડો)", "સાંધામાં અસહ્ય દુખાવો અને પ્લેટલેટ્સ ઘટવા (ડેન્ગ્યુ/ચિકનગુનિયા)"],
+                diagnosis: ["મેલેરિયા સ્મીયર / રેપિડ ટેસ્ટ", "સ્ટૂલ ટેસ્ટ (મરડો)", "CBC / NS1 એન્ટિજેન ટેસ્ટ (ડેન્ગ્યુ)"],
+                prevention: ["મચ્છરદાની અને મચ્છર ભગાડતી ક્રીમનો ઉપયોગ", "ઘરની આસપાસ પાણી જમા ન થવા દેવું અને ઉકાળેલું પાણી પીવું"],
+                treatment: "એન્ટિ-મેલેરિયલ/એન્ટિપ્રોટોઝોઅલ દવાઓ, પેરાસિટામોલ (એસ્પિરિન ટાળવી), નારિયેળ પાણી, પપૈયાના પાનનો રસ અને હાઇડ્રેશન."
+            },
+            {
+                id: "filariasis_ascariasis",
+                name: "ફિલરિયાસિસ અને એસ્કેરિયાસિસ",
+                type: "parasitic",
+                badge: "કૃમિજન્ય (Parasitic)",
+                cause: "ફિલારીઅલ વોર્મ્સ / ક્યુલેક્સ મચ્છર (ફિલરિયાસિસ) અને એસ્કેરીસ લમ્બ્રોકોઈડિસ (એસ્કેરિયાસિસ)",
+                symptoms: ["અંગોમાં સોજો જેમ કે હાથીપગા (ફિલરિયાસિસ)", "પેટમાં દુખાવો અને ગોળ કૃમિની સમસ્યા (એસ્કેરિયાસિસ)"],
+                diagnosis: ["નાઇટ બ્લડ સ્મીયર (ફિલરિયાસિસ)", "સ્ટૂલ એક્ઝામિનેશન (એસ્કેરિયાસિસ)"],
+                prevention: ["ગટરનું પાણી જમા ન થવા દેવું", "શાકભાજી-ફળો બરાબર ધોઈને ખાવા અને હાથ સાબુથી સાફ રાખવા"],
+                treatment: "DEC, આઈવરમેક્ટિન (ફિલરિયાસિસ માટે) અને એલ્બેન્ડાઝોલ / મેબેન્ડાઝોલ ડી-વોર્મિંગ દવાઓ (એસ્કેરિયાસિસ માટે)."
+            },
+            {
+                id: "weakness",
+                name: "શારીરિક નબળાઈ (Weakness / Fatigue)",
+                type: "parasitic",
+                badge: "પોષણ અને જીવનશૈલી",
+                cause: "વિટામિન B12, D, આયર્ન કે કેલ્શિયમની ઉણપ, અપૂરતી ઊંઘ, ડિહાઈડ્રેશન અને તણાવ",
+                symptoms: ["સતત થાક અને અશક્તિ અનુભવાવી", "શારીરિક સ્ટૅમિના ઘટવો", "ચક્કર આવવા"],
+                diagnosis: ["બ્લડ કાઉન્ટ (CBC) અને વિટામિન પ્રોફાઇલ ટેસ્ટ"],
+                prevention: ["સમયસર પૌષ્ટિક આહાર અને પૂરતી ઊંઘ", "ડિહાઈડ્રેશનથી બચવા પુષ્કળ પ્રવાહી લેવું"],
+                treatment: "લીલા પાંદડાવાળા શાકભાજી, ડ્રાયફ્રૂટ્સ, ફળો, નારિયેળ પાણી, છાશ, વિટામિન સપ્લીમેન્ટ્સ અને હળવી કસરત/યોગ."
+            },
+            {
+                id: "hair_fall",
+                name: "ખરતા વાળ (Hair Fall)",
+                type: "parasitic",
+                badge: "ત્વચા અને હોર્મોનલ",
+                cause: "પ્રોટીન/આયર્ન/વિટામિનની ઉણપ, હોર્મોનલ અસંતુલન (PCOD/થાઇરોઇડ), ખોડો અને માનસિક તાણ",
+                symptoms: ["વાળ અતિશય ખરવા", "સ્કેલ્પમાં ડેન્ડ્રફ કે ખંજવાળ", "વાળની ચમક અને મજબૂતાઈ ઘટવી"],
+                diagnosis: ["હોર્મોનલ અને ન્યુટ્રિશનલ બ્લડ ટેસ્ટ"],
+                prevention: ["કેમિકલ અને heat પ્રોડક્ટ્સનો ઓછો ઉપયોગ", "માનસિક તણાવથી દૂર રહેવું"],
+                treatment: "પ્રોટીનયુક્ત આહાર (પનીર, કઠોળ, ઈંડા), હૂંફાળા તેલથી મસાજ, હર્બલ/માઈલ્ડ શેમ્પૂ, પ્રાણાયામ અને બાયોટિન સપ્લીમેન્ટ્સ."
+            },
+            {
+                id: "vitamin_deficiencies",
+                name: "વિટામિન્સની ઉણપ અને રોગો",
+                type: "parasitic",
+                badge: "પોષણની ઉણપ (Deficiency)",
+                cause: "આહારમાં વિટામિન્સ (A, B-કોમ્પ્લેક્સ, C, D, E, K) યુક્ત ખોરાકનો અભાવ",
+                symptoms: ["રાતોઅંધાપણું, બેરીબેરી, સ્કર્વી, રિકેટ્સ અને લોહી ગંઠાઈ જવામાં તકલીફ"],
+                diagnosis: ["વિટામિન ડેફિશિયન્સી બ્લડ પેનલ"],
+                prevention: ["સંતુલિત આહાર અને સૂર્યપ્રકાશનું સેવન", "ફળો અને લીલા શાકભાજીનો નિયમિત ખોરાકમાં સમાવેશ"],
+                treatment: "વિટામિન A માટે ગાજર/પપૈયું; B માટે ડ્રાયફ્રૂટ્સ/દૂધ; C માટે ખાટાં ફળો/આમળા; D માટે સૂર્યપ્રકાશ; E માટે બદામ; K માટે પાલક/કોબીજ."
+            },
+            {
+                id: "kidney_stones",
+                name: "પથરી (Kidney Stones)",
+                type: "parasitic",
+                badge: "યુરિનરી સિસ્ટમ",
+                cause: "ઓછું પાણી પીવું, ખોરાકમાં વધુ પડતું મીઠું/ઓક્સાલેટ, જંક ફૂડ અને વારસાગત કારણો",
+                symptoms: ["તીવ્ર પેટ કે પીઠનો દુખાવો (Flank pain)", "પેશાબ કરતી વખતે બળતરા કે લોહી પડવું", "ઉબકા અને ઉલટી"],
+                diagnosis: ["સોનોગ્રાફી (USG Abdomen / KUB)", "યુરિન રૂટીન ટેસ્ટ"],
+                prevention: ["દિવસમાં ૩ થી ૪ લીટર પાણી પીવું", "પાલક અને ટામેટાંના બીજનું સેવન મર્યાદિત રાખવું"],
+                treatment: "પુષ્કળ પ્રવાહી, લીંબુ પાણી, નારિયેળ પાણી અને ડૉક્ટરની સલાહ મુજબ દવાઓ અથવા લિથોટ્રિપ્સી / સર્જરી."
+            },
+            {
+                id: "infertility",
+                name: "અફળદ્રુપતા (Infertility)",
+                type: "parasitic",
+                badge: "પ્રજનન સ્વાસ્થ્ય",
+                cause: "પુરુષોમાં શુક્રાણુઓની ઓછી ગુણવત્તા/સ્પર્મ કાઉન્ટ અને સ્ત્રીઓમાં PCOD, ટ્યુબ બ્લોક કે હોર્મોનલ અસંતુલન",
+                symptoms: ["ગર્ભ ધારણ કરવામાં લાંબા સમય સુધી મુશ્કેલી", "અનિયમિત માસિક કે હોર્મોનલ અસંતુલન"],
+                diagnosis: ["સેમેન એનાલિસિસ, પેલ્વિક અલ્ટ્રાસાઉન્ડ, હોર્મોન ટેસ્ટ"],
+                prevention: ["ધૂમ્રપાન અને આલ્કોહોલથી દૂર રહેવું", "વજન નિયંત્રણમાં રાખવું અને પૌષ્ટિક આહાર લેવો"],
+                treatment: "જીવનશૈલીમાં સુધારો, વજન નિયંત્રણ, ફર્ટિલિટી સ્પેશિયાલિસ્ટની સલાહ મુજબ હોર્મોનલ થેરાપી, દવાઓ અથવા IVF પદ્ધતિઓ."
+            }
+        ];
+
+        // --- DATA FOR ALL GUIDES MODALS ---
+        const guideData = {
+            'barrier': `
+                <div class="flex items-center gap-4 mb-6 border-b border-slate-800 pb-4">
+                    <div class="w-12 h-12 rounded-2xl bg-rose-500/20 text-rose-400 flex items-center justify-center">
+                        <i data-lucide="shield-check" class="w-6 h-6"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-black text-slate-100">બેરિયર પદ્ધતિઓ અને સ્વચ્છતા</h3>
+                        <p class="text-xs text-slate-400 mt-1">વિગતવાર વૈજ્ઞાનિક માર્ગદર્શિકા</p>
+                    </div>
+                </div>
+
+                <div class="space-y-8 text-slate-300 text-sm leading-relaxed px-1">
+                    <div class="space-y-4">
+                        <h4 class="text-lg font-bold text-rose-400 border-l-4 border-rose-400 pl-3">મુખ્ય બેરિયર પદ્ધતિઓ</h4>
+                        <ul class="list-disc pl-5 space-y-3">
+                            <li><strong class="text-slate-100">પુરુષ કોન્ડોમ (Male Condom):</strong> આ લેટેક્સ, પોલીયુરેથીન અથવા પોલીઆઇસોપ્રીનમાંથી બનેલું પાતળું આવરણ છે. તે STIs (જેમ કે HIV, સિફિલિસ) અને ગર્ભાવસ્થા બંને સામે રક્ષણ આપવા માટે સૌથી અસરકારક, સરળતાથી ઉપલબ્ધ અને સસ્તી પદ્ધતિ છે.</li>
+                            <li><strong class="text-slate-100">સ્ત્રી કોન્ડોમ (Female Condom):</strong> આ પોલીયુરેથીન અથવા નાઇટ્રાઇલમાંથી બનેલું પાઉચ છે જે શારીરિક સંબંધ પહેલાં યોનિમાર્ગ (Vagina) ની અંદર મૂકવામાં આવે છે. તે પણ STIs અને ગર્ભાવસ્થા બંને સામે રક્ષણ આપે છે.</li>
+                            <li><strong class="text-slate-100">ડાયાફ્રામ (Diaphragm):</strong> આ સિલિકોનથી બનેલો એક નાનો, છીછરો કપ છે જેને યોનિમાર્ગની અંદર ગર્ભાશયના મુખ (Cervix) ને કવર કરવા માટે મૂકવામાં આવે છે. વધુ અસરકારકતા માટે તેને સ્પર્મીસાઇડ (શુક્રાણુનાશક ક્રીમ/જેલ) સાથે વાપરવામાં આવે છે. <span class="text-rose-400 italic">(નોંધ: આ પદ્ધતિ STIs સામે રક્ષણ આપતી નથી).</span></li>
+                            <li><strong class="text-slate-100">સર્વાઇકલ કેપ (Cervical Cap):</strong> આ ડાયાફ્રામ જેવું જ હોય છે પરંતુ આકારમાં નાનું હોય છે અને સર્વિક્સ પર ચુસ્તપણે બેસે છે.</li>
+                            <li><strong class="text-slate-100">સ્પર્મીસાઇડ્સ (Spermicides):</strong> આ ક્રીમ, જેલ, ફોમ અથવા ફિલ્મ સ્વરૂપે આવે છે જેમાં એવા રસાયણો હોય છે જે શુક્રાણુઓને નિષ્ક્રિય કરે છે. તેનો ઉપયોગ મોટાભાગે કોન્ડોમ અથવા ડાયાફ્રામ જેવી અન્ય બેરિયર પદ્ધતિઓ સાથે વધારાની સુરક્ષા માટે કરવામાં આવે છે.</li>
+                        </ul>
+                    </div>
+
+                    <div class="space-y-4 pt-4 border-t border-slate-800">
+                        <h4 class="text-lg font-bold text-rose-400 border-l-4 border-rose-400 pl-3">સ્વચ્છતા (Hygiene) અને તેનું મહત્વ</h4>
+                        <p class="text-slate-400 font-medium bg-slate-800/30 p-4 rounded-xl border border-slate-700/50">શારીરિક અને જાતીય સ્વાસ્થ્ય જાળવવા માટે સ્વચ્છતા અત્યંત જરૂરી છે. યોગ્ય સ્વચ્છતા ન રાખવાથી બેક્ટેરિયલ અથવા ફંગલ ઇન્ફેક્શન થવાનું જોખમ રહે છે.</p>
+
+                        <h5 class="font-bold text-rose-400 mt-6 mb-2">૧. બેરિયર પદ્ધતિઓ વાપરતી વખતે રાખવાની સ્વચ્છતા:</h5>
+                        <ul class="list-disc pl-5 space-y-2">
+                            <li><strong class="text-slate-100">હાથ ધોવા:</strong> કોઈપણ બેરિયર પદ્ધતિ (જેમ કે કોન્ડોમ લગાવતા કે ડાયાફ્રામ અંદર મૂકતા પહેલા) ને સ્પર્શ કરતા પહેલા હાથ સાબુ અને પાણીથી બરાબર ધોવા જોઈએ.</li>
+                            <li><strong class="text-slate-100">સિંગલ યુઝ:</strong> કોન્ડોમનો માત્ર એક જ વાર ઉપયોગ કરવો. તેને ક્યારેય ધોઈને ફરીથી વાપરવો નહીં. બે વાર સંબંધ બાંધવા માટે દર વખતે નવો કોન્ડોમ વાપરવો.</li>
+                            <li><strong class="text-slate-100">યોગ્ય સંગ્રહ:</strong> કોન્ડોમને પાકિટમાં (wallet) લાંબા સમય સુધી કે સીધા સૂર્યપ્રકાશ અને ગરમીવાળી જગ્યાએ ન રાખવા, કારણ કે ગરમીથી લેટેક્સ નબળું પડી શકે છે. ઉપયોગ કરતા પહેલા હંમેશા એક્સપાયરી ડેટ (Expiry Date) તપાસવી.</li>
+                            <li><strong class="text-slate-100">રીયુઝેબલ સાધનોની સફાઈ:</strong> જો ડાયાફ્રામ અથવા સર્વાઇકલ કેપનો ઉપયોગ કરતા હોવ, તો ઉપયોગ પછી તેને હળવા સાબુ અને હૂંફાળા પાણીથી ધોઈ, બરાબર સૂકવીને તેના સ્વચ્છ કેસમાં પાછા મૂકવા જોઈએ.</li>
+                        </ul>
+
+                        <h5 class="font-bold text-rose-400 mt-6 mb-2">૨. વ્યક્તિગત અને જાતીય સ્વચ્છતા (Personal & Sexual Hygiene):</h5>
+                        <ul class="list-disc pl-5 space-y-2">
+                            <li><strong class="text-slate-100">સફાઈ:</strong> શારીરિક સંબંધ પહેલાં અને પછી ગુપ્તાંગોને હળવા ગરમ પાણીથી સાફ કરવા જોઈએ. યોનિમાર્ગની અંદર સાબુ કે કેમિકલયુક્ત વોશ (Intimate wash/Douching) નો ઉપયોગ ટાળવો જોઈએ, કારણ કે તે કુદરતી pH બેલેન્સ બગાડે છે અને સારા બેક્ટેરિયાનો નાશ કરે છે.</li>
+                            <li><strong class="text-slate-100">પેશાબ કરવો:</strong> શારીરિક સંબંધ બાંધ્યા પછી તરત જ પેશાબ કરવાની આદત રાખવી. આનાથી યુરેથ્રા (મૂત્રમાર્ગ) માં પ્રવેશેલા બેક્ટેરિયા બહાર નીકળી જાય છે અને યુરિનરી ટ્રેક્ટ ઇન્ફેક્શન (UTI) નું જોખમ નોંધપાત્ર રીતે ઘટે છે.</li>
+                            <li><strong class="text-slate-100">યોગ્ય અંડરવેર:</strong> હંમેશા સુતરાઉ (cotton) અને યોગ્ય ફિટિંગવાળા અંડરવેર પહેરવા જોઈએ. સિન્થેટિક કાપડ ભેજ પકડી રાખે છે, જેનાથી ફંગલ ઇન્ફેક્શન થઈ શકે છે.</li>
+                        </ul>
+
+                        <h5 class="font-bold text-rose-400 mt-6 mb-2">૩. માસિક ધર્મ દરમિયાન સ્વચ્છતા (Menstrual Hygiene):</h5>
+                        <ul class="list-disc pl-5 space-y-2">
+                            <li>ઇન્ફેક્શનથી બચવા માટે સેનિટરી પેડ કે ટેમ્પૂન દર ૪ થી ૬ કલાકે બદલવા જોઈએ.</li>
+                            <li>જો મેન્સ્ટ્રુઅલ કપ (Menstrual Cup) નો ઉપયોગ કરતા હોવ, તો માસિક ચક્રની શરૂઆતમાં અને અંતમાં તેને ઉકળતા પાણીમાં નાખીને સ્ટરીલાઈઝ (જંતુમુક્ત) કરવો ફરજિયાત છે. તેને બદલતી વખતે પણ હાથ સ્વચ્છ હોવા જરૂરી છે.</li>
+                        </ul>
+                    </div>
+                </div>
+            `,
+            'vaccines': `
+                <div class="flex items-center gap-4 mb-6 border-b border-slate-800 pb-4">
+                    <div class="w-12 h-12 rounded-2xl bg-rose-500/20 text-rose-400 flex items-center justify-center">
+                        <i data-lucide="syringe" class="w-6 h-6"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-black text-slate-100">રસીકરણ (Vaccines)</h3>
+                        <p class="text-xs text-slate-400 mt-1">વિગતવાર વૈજ્ઞાનિક માર્ગદર્શિકા</p>
+                    </div>
+                </div>
+
+                <div class="space-y-8 text-slate-300 text-sm leading-relaxed px-1">
+                    <div class="space-y-4">
+                        <h4 class="text-lg font-bold text-rose-400 border-l-4 border-rose-400 pl-3">રસી કેવી રીતે કામ કરે છે?</h4>
+                        <ul class="list-disc pl-5 space-y-3">
+                            <li><strong class="text-slate-100">ઓળખ અને એન્ટિબોડીઝ:</strong> રસીમાં જે-તે રોગના જીવાણુઓ (વાયરસ કે બેક્ટેરિયા) નબળા કે મૃત સ્વરૂપમાં અથવા તેમના પ્રોટીન સ્વરૂપમાં હોય છે. જ્યારે રસી શરીરમાં દાખલ થાય છે, ત્યારે આપણી રોગપ્રતિકારક શક્તિ તેને 'દુશ્મન' તરીકે ઓળખીને તેની સામે લડવા માટે એન્ટિબોડીઝ (Antibodies) બનાવે છે.</li>
+                            <li><strong class="text-slate-100">મેમરી (યાદશક્તિ):</strong> રોગપ્રતિકારક શક્તિ આ જીવાણુઓની રચના યાદ રાખી લે છે. ભવિષ્યમાં જ્યારે ખરેખર તે રોગના જીવાણુઓ હુમલો કરે, ત્યારે શરીર તરત જ એન્ટિબોડીઝ બનાવીને રોગ ગંભીર સ્વરૂપ ધારણ કરે તે પહેલાં જ જીવાણુઓનો નાશ કરી દે છે.</li>
+                        </ul>
+                    </div>
+
+                    <div class="space-y-4 pt-4 border-t border-slate-800">
+                        <h4 class="text-lg font-bold text-rose-400 border-l-4 border-rose-400 pl-3">રસીના મુખ્ય પ્રકારો</h4>
+                        <ul class="list-disc pl-5 space-y-2">
+                            <li><strong class="text-slate-100">૧. લાઇવ-એટેન્યુએટેડ રસી (Live-attenuated vaccines):</strong> આમાં જીવંત પરંતુ ખૂબ જ નબળા પડેલા જીવાણુઓ હોય છે, જે બીમારી કર્યા વગર પ્રતિકારક શક્તિ વધારે છે. (દા.ત., ઓરી, રૂબેલા, ચિકનપોક્સ).</li>
+                            <li><strong class="text-slate-100">૨. ઇનએક્ટિવેટેડ રસી (Inactivated vaccines):</strong> આ રસીમાં મૃત જીવાણુઓનો ઉપયોગ થાય છે. (દા.ત., હડકવા, હેપેટાઇટિસ A, ઇન્જેક્શનવાળી પોલિયોની રસી).</li>
+                            <li><strong class="text-slate-100">૩. સબયુનિટ અને કોન્જુગેટ રસી (Subunit/Conjugate vaccines):</strong> આમાં આખા જીવાણુને બદલે તેના માત્ર ચોક્કસ ભાગ (જેમ કે પ્રોટીન કે ખાંડ) નો ઉપયોગ થાય છે. (દા.ત., હેપેટાઇટિસ B, HPV).</li>
+                            <li><strong class="text-slate-100">૪. ટોક્સોઇડ રસી (Toxoid vaccines):</strong> આ રસી બેક્ટેરિયા દ્વારા ઉત્પન્ન થતા ઝેરી તત્વો (Toxins) સામે રક્ષણ આપે છે. (દા.ત., ટિટાનસ/ધનુર્વા, ડિપ્થેરિયા).</li>
+                            <li><strong class="text-slate-100">૫. mRNA રસી:</strong> આ આધુનિક ટેકનોલોજી છે જેમાં કોષોને વાયરસ જેવું પ્રોટીન બનાવવાની સૂચના આપવામાં આવે છે જેથી રોગપ્રતિકારક શક્તિ સક્રિય થાય. (દા.ત., કોવિડ-19 રસી).</li>
+                        </ul>
+                    </div>
+
+                    <div class="space-y-4 pt-4 border-t border-slate-800">
+                        <h4 class="text-lg font-bold text-rose-400 border-l-4 border-rose-400 pl-3">રસીકરણનું મહત્વ</h4>
+                        <ul class="list-disc pl-5 space-y-2">
+                            <li><strong class="text-slate-100">જીવનરક્ષક:</strong> રસીકરણ દર વર્ષે દુનિયાભરમાં લાખો બાળકો અને વયસ્કોના જીવ બચાવે છે અને અપંગતા આવતી રોકે છે.</li>
+                            <li><strong class="text-slate-100">હર્ડ ઇમ્યુનિટી (Herd Immunity):</strong> જ્યારે સમાજમાં મોટાભાગના લોકોને રસી મુકાયેલી હોય, ત્યારે રોગનો ફેલાવો અટકી જાય છે. આનાથી એવા લોકોને પણ આપમેળે રક્ષણ મળે છે જેઓ કોઈ કારણસર રસી લઈ શકતા નથી (જેમ કે નવજાત શિશુ અથવા કેન્સર જેવી ગંભીર બીમારીવાળા દર્દીઓ).</li>
+                            <li><strong class="text-slate-100">રોગ નાબૂદી:</strong> વ્યાપક રસીકરણને કારણે શીતળા (Smallpox) જેવી ભયાનક બીમારી દુનિયામાંથી સંપૂર્ણપણે નાબૂદ થઈ ગઈ છે અને પોલિયો પણ નાબૂદીના આરે છે.</li>
+                        </ul>
+                    </div>
+
+                    <div class="space-y-4 pt-4 border-t border-slate-800">
+                        <h4 class="text-lg font-bold text-rose-400 border-l-4 border-rose-400 pl-3">સામાન્ય આડઅસરો (Side Effects)</h4>
+                        <p class="text-slate-400 bg-slate-800/30 p-4 rounded-xl border border-slate-700/50 leading-relaxed">
+                            રસી લીધા પછી હળવો તાવ આવવો, ઈન્જેક્શનની જગ્યાએ થોડો દુખાવો થવો, સોજો આવવો કે લાલાશ થવી એ એકદમ સામાન્ય બાબત છે. આ એ વાતનું પ્રમાણ છે કે શરીરની રોગપ્રતિકારક શક્તિ રસી પ્રત્યે યોગ્ય પ્રતિભાવ આપી રહી છે અને એન્ટિબોડીઝ બનાવી રહી છે. આ લક્ષણો સામાન્ય રીતે એક કે બે દિવસમાં પોતાની મેળે જ મટી જાય છે.<br><br>
+                            <span class="text-rose-300 font-semibold italic">નોંધ:</span> બાળકો માટે રાષ્ટ્રીય રસીકરણ કાર્યક્રમ (National Immunization Schedule) મુજબ જન્મથી જ રસીકરણ શરૂ કરી દેવામાં આવે છે, જેમાં BCG, પોલિયો, પેન્ટાવેલેન્ટ અને ઓરી જેવી મુખ્ય રસીઓનો સમાવેશ થાય છે.
+                        </p>
+                    </div>
+                </div>
+            `,
+            'nutrition': `
+                <div class="flex items-center gap-4 mb-6 border-b border-slate-800 pb-4">
+                    <div class="w-12 h-12 rounded-2xl bg-rose-500/20 text-rose-400 flex items-center justify-center">
+                        <i data-lucide="clipboard-check" class="w-6 h-6"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-black text-slate-100">નિયમિત સ્ક્રીનિંગ અને પોષણ</h3>
+                        <p class="text-xs text-slate-400 mt-1">વિગતવાર વૈજ્ઞાનિક માર્ગદર્શિકા</p>
+                    </div>
+                </div>
+
+                <div class="space-y-8 text-slate-300 text-sm leading-relaxed px-1">
+
+                    <div class="space-y-4">
+                        <h4 class="text-lg font-bold text-rose-400 border-l-4 border-rose-400 pl-3">૧. નિયમિત સ્ક્રીનિંગ (સમયસર લેબ ટેસ્ટ) નું મહત્વ</h4>
+                        <ul class="list-disc pl-5 space-y-3">
+                            <li><strong class="text-slate-100">બીમારીની વહેલી જાણ:</strong> ઘણા રોગોની શરૂઆતમાં કોઈ લક્ષણો દેખાતા નથી. રેગ્યુલર બ્લડ ટેસ્ટ દ્વારા વિટામિન્સની ઉણપ, ડાયાબિટીસ, થાઈરોઈડ કે કોલેસ્ટ્રોલ જેવી સમસ્યાઓ ગંભીર સ્વરૂપ ધારણ કરે તે પહેલાં જ પકડી શકાય છે.</li>
+                            <li><strong class="text-slate-100">અશક્તિનું ચોક્કસ કારણ:</strong> ઘણીવાર પૂરતી ઊંઘ અને ખોરાક લેવા છતાં સતત થાક લાગે છે, જેનું કારણ લોહીની ઉણપ (એનિમિયા) કે અમુક ચોક્કસ વિટામિનની કમી હોઈ શકે છે. ટેસ્ટથી અટકળો કરવાને બદલે સાચું કારણ જાણી શકાય છે.</li>
+                        </ul>
+
+                        <h5 class="font-bold text-slate-200 mt-6 mb-2">મહત્વપૂર્ણ લેબ ટેસ્ટ્સ:</h5>
+                        <ul class="list-disc pl-5 space-y-2">
+                            <li><strong class="text-slate-100">CBC (કમ્પ્લીટ બ્લડ કાઉન્ટ):</strong> શરીરમાં લોહીના ટકા (હિમોગ્લોબિન) અને કોઈપણ પ્રકારનું છૂપું ઇન્ફેક્શન જાણવા માટે.</li>
+                            <li><strong class="text-slate-100">વિટામિન B12 અને D3:</strong> ખાસ કરીને ભારતીય આહાર પદ્ધતિ અને શાકાહારી લોકોમાં B12 અને D3 ની ઉણપ ખૂબ સામાન્ય છે. તેની કમી નબળાઈ, સાંધાના દુખાવા, યાદશક્તિ ઘટવી અને નર્વસ સિસ્ટમની સમસ્યાઓ સર્જે છે.</li>
+                            <li><strong class="text-slate-100">બ્લડ સુગર (HbA1c) અને લિપિડ પ્રોફાઇલ:</strong> ડાયાબિટીસની સ્થિતિ અને હૃદયના સ્વાસ્થ્ય (કોલેસ્ટ્રોલ લેવલ) ની સચોટ ચકાસણી માટે.</li>
+                            <li><strong class="text-slate-100">થાઇરોઇડ પ્રોફાઇલ (TSH):</strong> અચાનક વજન વધવું કે ઘટવું અને વાળ ખરવા પાછળ થાઇરોઇડ હોર્મોન્સનું અસંતુલન જવાબદાર હોઈ શકે છે.</li>
+                        </ul>
+                    </div>
+
+                    <div class="space-y-4 pt-4 border-t border-slate-800">
+                        <h4 class="text-lg font-bold text-rose-400 border-l-4 border-rose-400 pl-3">૨. પોષણ અને વિટામિન-પૌષ્ટિક આહાર (Nutrition)</h4>
+                        <p class="text-slate-400 font-medium bg-slate-800/30 p-4 rounded-xl border border-slate-700/50 leading-relaxed">
+                            યોગ્ય રિપોર્ટ આવ્યા પછી, જે વિટામિન કે મિનરલની ઉણપ હોય તેને પૌષ્ટિક ખોરાક દ્વારા પૂરી કરી શકાય છે. દવાઓ કરતા કુદરતી ખોરાકમાંથી મળતા પોષક તત્વો શરીર ઝડપથી ગ્રહણ કરે છે.
+                        </p>
+
+                        <ul class="list-disc pl-5 space-y-3 mt-4">
+                            <li><strong class="text-slate-100">વિટામિન C અને એન્ટીઓક્સીડન્ટ્સ:</strong> રોગપ્રતિકારક શક્તિ વધારવા અને શ્વેતકણો (White Blood Cells) ને સક્રિય કરવા માટે આ સૌથી જરૂરી છે. લીંબુ, સંતરા, આમળા, જામફળ અને ટામેટાં તેના ઉત્તમ સ્ત્રોત છે.</li>
+                            <li><strong class="text-slate-100">આયર્ન (લોહતત્વ):</strong> શરીરમાં ઓક્સિજનનું વહન કરવા, હિમોગ્લોબિન વધારવા અને અશક્તિ દૂર કરવા માટે આયર્ન જરૂરી છે. પાલક, ગોળ, બીટ, ખજૂર, અંજીર અને કઠોળમાંથી તે પૂરતા પ્રમાણમાં મળે છે. આયર્નવાળા ખોરાક સાથે વિટામિન C લેવાથી તેનું શોષણ સારી રીતે થાય છે.</li>
+                            <li><strong class="text-slate-100">પ્રોટીન:</strong> સ્નાયુઓની મજબૂતી, શારીરિક વિકાસ અને કોષોના રોજના સમારકામ માટે પ્રોટીન અનિવાર્ય છે. દૂધ, દહીં, પનીર, સોયાબીન, મગ, ચણા અને અન્ય કઠોળ પ્રોટીનના શ્રેષ્ઠ સ્ત્રોત છે.</li>
+                            <li><strong class="text-slate-100">ઝિંક અને ઓમેગા-3 ફેટી એસિડ્સ:</strong> ઇન્ફેક્શન સામે લડવા અને હૃદય/મગજને સ્વસ્થ રાખવા માટે અખરોટ, બદામ, ચિયા સીડ્સ (Chia seeds) અને ફ્લેક્સ સીડ્સ (અળસી) ને આહારમાં સામેલ કરવા જોઈએ.</li>
+                            <li><strong class="text-slate-100">હાઇડ્રેશન (પાણી):</strong> માત્ર ખોરાક જ નહીં, દિવસ દરમિયાન ૩ થી ૪ લીટર પાણી પીવાથી શરીરમાંથી ઝેરી તત્વો (Toxins) બહાર નીકળે છે અને આખો દિવસ સ્ફૂર્તિ રહે છે.</li>
+                        </ul>
+
+                        <p class="text-rose-200 bg-rose-500/10 p-4 rounded-xl border border-rose-500/20 leading-relaxed mt-4 italic">
+                            માત્ર સારો ખોરાક લેવો પૂરતો નથી; શરીર તે પોષક તત્વોને યોગ્ય રીતે પચાવી અને શોષી રહ્યું છે કે નહીં તે જાણવા માટે વર્ષમાં ઓછામાં ઓછું એક વાર પ્રિવેન્ટિવ હેલ્થ ચેકઅપ ( Preventive Health Checkup) કરાવવું હિતાવહ છે. રિપોર્ટના આધારે આહારમાં જરૂરી ફેરફાર કરવાથી રોગપ્રતિકારક શક્તિ એવી રીતે વિકસે છે કે શરીર ઋતુગત બીમારીઓ અને વાયરલ ઇન્ફેક્શન સામે આપમેળે જ ઢાલ બનીને ઊભું રહી શકે.
+                        </p>
+                    </div>
+                </div>
+            `
+        };
+
+        let currentFilter = 'all';
+
+        function renderGrid(list) {
+            const grid = document.getElementById('diseaseGrid');
+            grid.innerHTML = '';
+
+            if (list.length === 0) {
+                grid.innerHTML = `<div class="col-span-full text-center py-16 text-slate-500 font-medium">કોઈ મેળ ખાતી માહિતી મળી નથી. કૃપા કરીને અન્ય નામ કે લક્ષણ લખી જુઓ.</div>`;
+                return;
+            }
+
+            list.forEach(item => {
+                const card = document.createElement('div');
+                card.className = "glass-card rounded-3xl p-6 border border-slate-800 flex flex-col justify-between hover:border-cyan-500/50 hover:shadow-xl hover:shadow-cyan-500/5 transition-all duration-300 group";
+
+                const badgeColor = item.type === 'viral' ? 'bg-indigo-500/20 text-indigo-400 border-indigo-500/30' :
+                                   item.type === 'bacterial' ? 'bg-cyan-500/20 text-cyan-400 border-cyan-500/30' : 
+                                   'bg-purple-500/20 text-purple-400 border-purple-500/30';
+
+                card.innerHTML = `
+                    <div class="space-y-4">
+                        <div class="flex justify-between items-start gap-2">
+                            <h4 class="font-black text-lg text-slate-100 group-hover:text-cyan-400 transition-all">${item.name}</h4>
+                            <span class="text-[11px] px-2.5 py-1 rounded-full border ${badgeColor} font-bold whitespace-nowrap">${item.badge}</span>
+                        </div>
+
+                        <p class="text-xs text-slate-400"><strong>કારક:</strong> ${item.cause}</p>
+
+                        <div class="space-y-1.5">
+                            <p class="text-[11px] font-bold text-slate-400 uppercase tracking-wider">મુખ્ય લક્ષણો:</p>
+                            <ul class="text-xs text-slate-300 space-y-1">
+                                ${item.symptoms.slice(0, 3).map(s => `<li class="flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-cyan-400"></span>${s}</li>`).join('')}
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="mt-6 pt-4 border-t border-slate-800/80 flex items-center justify-between">
+                        <span class="text-[11px] text-slate-400 font-medium truncate max-w-[170px]">${item.treatment}</span>
+                        <button onclick="openModal('${item.id}')" class="px-3 py-1.5 rounded-xl bg-slate-800 hover:bg-cyan-500 hover:text-white text-xs font-semibold transition-all">
+                            સંપૂર્ણ વિગત
+                        </button>
+                    </div>
+                `;
+                grid.appendChild(card);
+            });
+            lucide.createIcons();
+        }
+
+        function handleSearch() {
+            const query = document.getElementById('searchInput').value.toLowerCase().trim();
+            const filtered = stiData.filter(d => {
+                const matchesFilter = currentFilter === 'all' || d.type === currentFilter;
+                const matchesSearch = d.name.toLowerCase().includes(query) || 
+                                      d.symptoms.some(s => s.toLowerCase().includes(query)) ||
+                                      d.cause.toLowerCase().includes(query) ||
+                                      d.treatment.toLowerCase().includes(query);
+                return matchesFilter && matchesSearch;
+            });
+            renderGrid(filtered);
+        }
+
+        function setFilter(type) {
+            currentFilter = type;
+            document.querySelectorAll('.filter-btn').forEach(btn => {
+                if (btn.dataset.filter === type) {
+                    btn.className = "filter-btn px-4 py-2 rounded-xl text-xs font-semibold glass-card border border-cyan-500/50 bg-cyan-500/10 text-cyan-400 transition-all";
+                } else {
+                    btn.className = "filter-btn px-4 py-2 rounded-xl text-xs font-semibold glass-card border border-slate-800 text-slate-400 hover:text-white transition-all";
+                }
+            });
+            handleSearch();
+        }
+
+        function openModal(id) {
+            const item = stiData.find(d => d.id === id);
+            if (!item) return;
+
+            const modalContent = document.getElementById('modalContent');
+            modalContent.innerHTML = `
+                <div class="space-y-5">
+                    <div>
+                        <span class="text-xs px-3 py-1 rounded-full bg-cyan-500/20 text-cyan-400 border border-cyan-500/30 font-bold">${item.badge}</span>
+                        <h3 class="text-2xl font-black mt-2 text-slate-100">${item.name}</h3>
+                        <p class="text-xs text-slate-400 mt-0.5">મુખ્ય કારણ/કારક: <span class="text-slate-200 font-semibold">${item.cause}</span></p>
+                    </div>
+
+                    <div class="space-y-2">
+                        <h5 class="text-xs font-bold text-cyan-400 uppercase tracking-wider">વિગતવાર લક્ષણો (Symptoms)</h5>
+                        <ul class="text-xs text-slate-300 space-y-1.5 list-disc list-inside">
+                            ${item.symptoms.map(s => `<li>${s}</li>`).join('')}
+                        </ul>
+                    </div>
+
+                    <div class="space-y-2">
+                        <h5 class="text-xs font-bold text-indigo-400 uppercase tracking-wider">લેબોરેટરી નિદાન ટેસ્ટ (Diagnostic Tests)</h5>
+                        <div class="flex flex-wrap gap-2">
+                            ${item.diagnosis.map(d => `<span class="px-2.5 py-1 rounded-lg bg-indigo-500/10 border border-indigo-500/20 text-indigo-300 text-xs">${d}</span>`).join('')}
+                        </div>
+                    </div>
+
+                    <div class="space-y-2">
+                        <h5 class="text-xs font-bold text-emerald-400 uppercase tracking-wider">બચાવના ઉપાયો (Prevention)</h5>
+                        <ul class="text-xs text-slate-300 space-y-1.5 list-disc list-inside">
+                            ${item.prevention.map(p => `<li>${p}</li>`).join('')}
+                        </ul>
+                    </div>
+
+                    <div class="p-4 rounded-2xl bg-cyan-950/40 border border-cyan-500/30">
+                        <h5 class="text-xs font-bold text-cyan-300">પ્રમાણિત સારવાર / ઘરેલું ઉપાયો (Treatment):</h5>
+                        <p class="text-xs text-slate-300 mt-1 leading-relaxed">${item.treatment}</p>
+                    </div>
+                </div>
+            `;
+            document.getElementById('diseaseModal').classList.remove('hidden');
+            lucide.createIcons();
+        }
+
+        function closeModal() {
+            document.getElementById('diseaseModal').classList.add('hidden');
+        }
+
+        // --- FUNCTIONS FOR EMERGENCY MODAL ---
+        function openEmergencyModal() {
+            document.getElementById('emergencyModal').classList.remove('hidden');
+            lucide.createIcons();
+        }
+
+        function closeEmergencyModal() {
+            document.getElementById('emergencyModal').classList.add('hidden');
+        }
+
+        // --- FUNCTIONS FOR GUIDE MODAL ---
+        function openGuideModal(guideId) {
+            const content = guideData[guideId];
+            if(content) {
+                document.getElementById('guideModalContent').innerHTML = content;
+                document.getElementById('guideModal').classList.remove('hidden');
+                lucide.createIcons();
+            }
+        }
+
+        function closeGuideModal() {
+            document.getElementById('guideModal').classList.add('hidden');
+        }લલલલલલલલલલલલલલવવવનનન
+
+        // --- FUNCTIONS FOR VIDEO MODAL (NEW) ---
+        function openVideoModal(videoUrl) {
+            document.getElementById('modalIframe').src = videoUrl;
+            document.getElementById('videoModal').classList.remove('hidden');
+            document.getElementById('videoModal').classList.add('flex');
+            lucide.createIcons();
+        }
+
+        function closeVideoModal() {
+            document.getElementById('modalIframe').src = ""; // Stops video playback when closed
+            document.getElementById('videoModal').classList.add('hidden');
+            document.getElementById('videoModal').classList.remove('flex');
+        }
+
+        function runDeepAnalysis() {
+            const selected = Array.from(document.querySelectorAll('#symptomChecklist input:checked')).map(cb => cb.value);
+            const out = document.getElementById('analyzerOutput');
+            out.classList.remove('hidden');
+
+            if (selected.length === 0) {
+                out.innerHTML = `<p class="text-xs text-amber-400 font-semibold">કૃપા કરીને ચકાસણી માટે ઓછામાં ઓછું એક લક્ષણ પસંદ કરો.</p>`;
+                return;
+            }
+
+            let score = selected.length * 12; // Adjusted for more options
+            let riskLevel = "સામાન્ય (Low)";
+            let riskColor = "text-emerald-400";
+            let desc = "તમારા લક્ષણો સામાન્ય શારીરિક થાક, હળવો ચેપ અથવા બળતરા હોઈ શકે છે. પૂરતું પાણી પીઓ, પોષક આહાર લો અને સ્વચ્છતા રાખો.";
+
+            if (selected.includes('penis_pain')) {
+                score = 31.5;
+                riskLevel = "ખતરો (Danger)";
+                riskColor = "text-rose-500";
+                desc = "ખતરો! પ્રજનન સમયે દુખાવો એ સંક્રમણ કે અન્ય સમસ્યાનું લક્ષણ હોઈ શકે છે. તાત્કાલિક ડૉક્ટરને બતાવો.";
+            } else if (selected.includes('breathing_diff') || selected.includes('jaundice') || selected.includes('blood_urine')) {
+                score = Math.max(score, 85);
+                riskLevel = "ગંભીર જોખમ (Severe Health Risk)";
+                riskColor = "text-red-500";
+                desc = "શ્વાસ લેવામાં તકલીફ, કમળો કે પેશાબમાં લોહી જેવા લક્ષણો ગંભીર બીમારી (જેમકે ન્યુમોનિયા, લિવર ઇન્ફેક્શન કે પથરી) સૂચવે છે. તાત્કાલિક મેડિકલ સહાય લો.";
+            } else if (selected.includes('sores') || selected.includes('discharge') || selected.includes('swollen_nodes')) {
+                score = Math.max(score, 75);
+                riskLevel = "ઉચ્ચ જોખમ (High Risk - Immediate Attention)";
+                riskColor = "text-rose-400";
+                desc = "તમે પસંદ કરેલા લક્ષણો (ચાંદા, સ્ત્રાવ કે સોજી ગયેલી ગાંઠો) સક્રિય બેક્ટેરિયલ/વાઇરલ ચેપ તરફ મજબૂત નિર્દેશ કરે છે. વિલંબ કર્યા વિના યોગ્ય ડૉક્ટર પાસે તપાસ કરાવો.";
+            } else if (selected.includes('warts')) {
+                score = Math.max(score, 60);
+                riskLevel = "મધ્યમ જોખમ (HPV/Skin Condition Probability)";
+                riskColor = "text-indigo-400";
+                desc = "મસા જેવા લક્ષણો હ્યુમન પેપિલોમા વાયરસ (HPV) અથવા ત્વચા સંબંધી સમસ્યા સૂચવે છે. ડૉક્ટર પાસે ક્લિનિકલ સ્ક્રીનિંગ કરાવવું હિતાવહ છે.";
+            } else if (selected.includes('fever') && (selected.includes('diarrhea') || selected.includes('nausea'))) {
+                score = Math.max(score, 50);
+                riskLevel = "મધ્યમ જોખમ (Viral/Bacterial Fever)";
+                riskColor = "text-amber-400";
+                desc = "તાવ સાથે ઝાડા કે ઉલટી પાણીજન્ય રોગ (જેમકે ટાઇફોઇડ કે મેલેરિયા) તરફ નિર્દેશ કરે છે. યોગ્ય બ્લડ ટેસ્ટ કરાવો.";
+            }
+
+            let displayScore = score === 31.5 ? "31.5" : Math.min(score, 98);
+
+            out.innerHTML = `
+                <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 pb-3 border-b border-slate-700">
+                    <div>
+                        <span class="text-xs font-bold text-slate-400 uppercase">રિસ્ક લેવલ સ્ટેટસ:</span>
+                        <h4 class="text-base font-black ${riskColor}">${riskLevel}</h4>
+                    </div>
+                    <div class="text-right">
+                        <span class="text-2xl font-black ${riskColor}">${displayScore}%</span>
+                        <span class="text-xs text-slate-400 block">સંભાવના સ્કોર</span>
+                    </div>
+                </div>
+                <p class="text-xs text-slate-300 leading-relaxed">${desc}</p>
+                <div class="text-[11px] text-slate-400 italic bg-slate-800/40 p-3 rounded-xl border border-slate-700/50">
+                    સૂચના: આ AI ગણતરી ફક્ત પ્રાથમિક માર્ગદર્શન માટે છે. અંતિમ નિદાન લેબોરેટરી ટેસ્ટ દ્વારા જ શક્ય છે.
+                </div>
+            `;
+        }
+
+        function resetAnalyzer() {
+            document.querySelectorAll('#symptomChecklist input').forEach(cb => cb.checked = false);
+            document.getElementById('analyzerOutput').classList.add('hidden');
+        }
+
+        function toggleTheme() {
+            const body = document.getElementById('appBody');
+            const themeIcon = document.getElementById('themeIcon');
+            if (body.classList.contains('light')) {
+                body.classList.remove('light');
+                body.className = "bg-slate-950 text-slate-100 min-h-screen transition-colors duration-300 antialiased font-sans flex flex-col";
+                themeIcon.setAttribute('data-lucide', 'sun');
+            } else {
+                body.classList.add('light');
+                body.className = "light bg-slate-50 text-slate-900 min-h-screen transition-colors duration-300 antialiased font-sans flex flex-col";
+                themeIcon.setAttribute('data-lucide', 'moon');
+            }
+            lucide.createIcons();
+        }
+
+        // Initialize application on load
+        window.onload = function() {
+            renderGrid(stiData);
+            lucide.createIcons();
+        };
+    </script>
 </body>
 </html>
